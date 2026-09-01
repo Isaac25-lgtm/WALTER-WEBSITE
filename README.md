@@ -14,7 +14,7 @@
   <img alt="Fastify 5" src="https://img.shields.io/badge/Fastify-5-202020?style=flat-square&logo=fastify&logoColor=white">
   <img alt="TypeScript 5.9 strict" src="https://img.shields.io/badge/TypeScript-5.9%20strict-3178C6?style=flat-square&logo=typescript&logoColor=white">
   <img alt="Drizzle ORM" src="https://img.shields.io/badge/Drizzle-ORM-C5F74F?style=flat-square&logo=drizzle&logoColor=black">
-  <img alt="Node >= 20.9" src="https://img.shields.io/badge/Node-%3E%3D20.9-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white">
+  <img alt="Node 20.9+" src="https://img.shields.io/badge/Node-20.9%2B-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white">
   <img alt="155 tests" src="https://img.shields.io/badge/tests-155-4C1?style=flat-square&logo=vitest&logoColor=white">
 </p>
 
