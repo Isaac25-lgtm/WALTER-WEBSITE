@@ -1,4 +1,26 @@
-# Active Technical Services — Website
+<div align="center">
+
+<img src="apps/web/public/media/brand/ats-logo-master.png" alt="Active Technical Services — Gift of God" width="360">
+
+<h1>Active Technical Services — Website</h1>
+
+<p><strong>Engineering &nbsp;·&nbsp; Civil construction &nbsp;·&nbsp; Fabrication &nbsp;·&nbsp; Industrial services</strong></p>
+
+<p>Jinja, Uganda &nbsp;·&nbsp; Dodoma, Tanzania</p>
+
+<p>
+  <img alt="Next.js 16" src="https://img.shields.io/badge/Next.js-16-000000?style=flat-square&logo=nextdotjs&logoColor=white">
+  <img alt="React 19" src="https://img.shields.io/badge/React-19-087EA4?style=flat-square&logo=react&logoColor=white">
+  <img alt="Fastify 5" src="https://img.shields.io/badge/Fastify-5-202020?style=flat-square&logo=fastify&logoColor=white">
+  <img alt="TypeScript 5.9 strict" src="https://img.shields.io/badge/TypeScript-5.9%20strict-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img alt="Drizzle ORM" src="https://img.shields.io/badge/Drizzle-ORM-C5F74F?style=flat-square&logo=drizzle&logoColor=black">
+  <img alt="Node >= 20.9" src="https://img.shields.io/badge/Node-%3E%3D20.9-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white">
+  <img alt="155 tests" src="https://img.shields.io/badge/tests-155-4C1?style=flat-square&logo=vitest&logoColor=white">
+</p>
+
+</div>
+
+---
 
 The public website and private management application for **Active Technical Services (ATS)**, an East African engineering, civil-construction, fabrication and industrial-services company based in **Jinja, Uganda**, with a branch in **Dodoma, Tanzania**.
 
@@ -8,8 +30,20 @@ The repository is an npm-workspaces monorepo containing a statically exported Ne
 
 ---
 
+## Preview
+
+<div align="center">
+  <img src="project/visual-checks/prompt-07/home-full-desktop-1440x900.png" alt="ATS homepage at 1440×900 — hero, nine-service grid, about split, closing CTA and footer" width="760">
+  <p><em>The public homepage, captured at 1440 × 900 during visual verification.</em></p>
+</div>
+
+Every screenshot under [`project/visual-checks/`](project/visual-checks/) is a recorded build check across desktop, tablet and mobile breakpoints — including the contact form's validation and unavailable states, and the `/walter` draft editor's saved, unsaved and version-conflict states.
+
+---
+
 ## Contents
 
+- [Preview](#preview)
 - [What ATS does](#what-ats-does)
 - [Architecture](#architecture)
 - [Repository layout](#repository-layout)
