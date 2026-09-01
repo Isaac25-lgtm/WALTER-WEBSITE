@@ -1,0 +1,123 @@
+{
+  "notes": [
+    "Names, roles and page citations are taken from the documents. Photographs on Administration pages are not labelled with names.",
+    "The Tanzania 2023 document lists two directors. The Uganda 2025 profile lists three. Both counts are preserved.",
+    "No person named Walter appears in the supplied PDFs or logos."
+  ],
+  "people": [
+    {
+      "id": "person-nyeko-francis",
+      "name_raw": "Nyeko Francis",
+      "name_normalized": "Nyeko Francis",
+      "also_styled": ["NYEKO FRANCIS"],
+      "roles": [
+        {
+          "role_raw": "Currently the head of Directors",
+          "role_normalized": "Head of Directors",
+          "source_file": "active company profile new 2025 civil and construction-1.pdf",
+          "page": 2,
+          "scope": "uganda",
+          "confidence": "high"
+        },
+        {
+          "role_raw": "Currently the head of Directors",
+          "role_normalized": "Head of Directors",
+          "source_file": "COMPANY CONTEXT.pdf",
+          "page": 2,
+          "scope": "tanzania-branch",
+          "confidence": "high"
+        }
+      ],
+      "expertise_raw": "knowledge and experience in the filed of Engineering specifically Civil and Mechanical",
+      "responsibilities_raw": "Lobbying for Contracts , General management and administration",
+      "listed_as_founder": true,
+      "founder_count_context": {
+        "uganda_2025": "one of three directors: Nyeko Francis, Adolf Serete, and Ochan Tony",
+        "tanzania_2023": "one of two directors: Nyeko Francis and Adolf Serete"
+      },
+      "portrait": {
+        "labelled_in_source": false,
+        "inference": "The left Administration photograph on both profiles is commonly assumed to be Nyeko Francis because it sits beside his biography. This is an inference, not a caption.",
+        "candidate_asset_ids": [
+          "profile_2025-p02-img007",
+          "company_context-p02-img005"
+        ],
+        "copied_as": "context/assets/people/director-portrait-a-plaid-jacket.jpg"
+      },
+      "spelling_notes": "Source uses 'filed of Engineering' (field). Uganda visual transcription also has 'immerse' in Adolf's adjacent paragraph."
+    },
+    {
+      "id": "person-adolf-serete",
+      "name_raw": "Adolf Serete",
+      "name_normalized": "Adolf Serete",
+      "also_styled": ["ADOLF SERETE"],
+      "roles": [
+        {
+          "role_raw": "technical director",
+          "role_normalized": "Technical Director",
+          "source_file": "active company profile new 2025 civil and construction-1.pdf",
+          "page": 2,
+          "scope": "uganda",
+          "confidence": "high"
+        },
+        {
+          "role_raw": "He is a technical director",
+          "role_normalized": "Technical Director",
+          "source_file": "COMPANY CONTEXT.pdf",
+          "page": 2,
+          "scope": "tanzania-branch",
+          "confidence": "high"
+        }
+      ],
+      "expertise_raw": "immense level of experience in the technical aspect that involves analysing all technical drawings and actively involve in the technical field",
+      "uganda_visual_variant": "Uganda 2025 page 2 visual reading includes 'immerse level of experience' (likely the same sentence as Tanzania 'immense').",
+      "listed_as_founder": true,
+      "portrait": {
+        "labelled_in_source": false,
+        "inference": "The right Administration photograph (man in coveralls with laptop) is commonly assumed to be Adolf Serete. This is an inference, not a caption.",
+        "candidate_asset_ids": [
+          "profile_2025-p02-img008",
+          "company_context-p02-img006"
+        ],
+        "copied_as": "context/assets/people/director-portrait-b-coveralls-office.jpg"
+      }
+    },
+    {
+      "id": "person-ochan-tony",
+      "name_raw": "Ochan Tony",
+      "name_normalized": "Ochan Tony",
+      "roles": [
+        {
+          "role_raw": "The company was founded by three directors: Nyeko Francis, Adolf Serete, and Ochan Tony",
+          "role_normalized": "Director (named as founder; no separate biography on the inspected pages)",
+          "source_file": "active company profile new 2025 civil and construction-1.pdf",
+          "page": 2,
+          "scope": "uganda",
+          "confidence": "high"
+        }
+      ],
+      "absent_from": [
+        {
+          "source_file": "COMPANY CONTEXT.pdf",
+          "page": 2,
+          "notes": "Tanzania 2023 Administration names only Nyeko Francis and Adolf Serete."
+        }
+      ],
+      "biography_present": false,
+      "portrait_labelled": false,
+      "notes": "Do not invent a title beyond 'director/founder' as stated on Uganda 2025 page 2."
+    }
+  ],
+  "unnamed_people_in_photographs": {
+    "group_photo": {
+      "source_file": "active company profile new 2025 civil and construction-1.pdf",
+      "page": 6,
+      "description": "Outdoor group of roughly 18–20 people on the Philosophy page. None are named.",
+      "privacy": "Publication consent not documented."
+    },
+    "workers": {
+      "description": "Many project photographs show identifiable workers, some in overalls printed ACTIVE TECHNICAL SERVICES LTD or ACTIVE TECHNICAL SERVICES (U) LTD.",
+      "privacy": "Publication consent not documented."
+    }
+  }
+}

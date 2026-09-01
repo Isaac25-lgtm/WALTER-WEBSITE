@@ -1,0 +1,78 @@
+{
+  "desktop": {
+    "header_box": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 84
+    },
+    "logo_box": {
+      "x": 180,
+      "y": 9.5,
+      "width": 233.5,
+      "height": 65
+    },
+    "nav_box": {
+      "x": 850.515625,
+      "y": 30.09375,
+      "width": 230.5,
+      "height": 23.796875
+    },
+    "hamburger_visible": false,
+    "call_bar_visible": false,
+    "footer_box": {
+      "x": 0,
+      "y": 551.375,
+      "width": 1440,
+      "height": 348.78125
+    }
+  },
+  "tablet": {
+    "header_box": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 80
+    },
+    "hamburger_visible": true,
+    "desktop_nav_visible": false,
+    "call_bar_visible": false
+  },
+  "mobile_open": {
+    "header_box": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 80
+    },
+    "panel_box": {
+      "x": 0,
+      "y": 80,
+      "width": 390,
+      "height": 320
+    },
+    "toggle_expanded": "true"
+  },
+  "mobile": {
+    "call_bar_box": {
+      "x": 0,
+      "y": 784,
+      "width": 390,
+      "height": 60
+    },
+    "call_bar_visible": true,
+    "footer_box": {
+      "x": 0,
+      "y": 1646.734375,
+      "width": 390,
+      "height": 635.765625
+    }
+  },
+  "export_checks": {
+    "google_fonts": false,
+    "whatsapp": false,
+    "walter": false,
+    "metalworks": false,
+    "woff_in_export": true
+  }
+}

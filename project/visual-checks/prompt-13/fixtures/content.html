@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website content fixture | Active Technical Services</title>
+    <link rel="stylesheet" href="/walter.css" />
+  </head>
+  <body>
+    <div class="walter-shell">
+      <a class="walter-skip-link" href="#main-content">Skip to management content</a>
+      <main id="main-content">
+        <div class="walter-page walter-page-wide">
+          <header class="walter-toolbar">
+            <div>
+              <h1>Management sign in</h1>
+              <p>Signed in as administrator.</p>
+            </div>
+            <button type="button">Sign out</button>
+          </header>
+          <nav class="walter-section-nav" aria-label="Management sections">
+            <button type="button">Inquiries</button>
+            <button type="button" class="is-active" aria-current="page">Website Content</button>
+          </nav>
+          <section class="walter-content" aria-labelledby="walter-content-heading">
+            <h2 id="walter-content-heading">Website Content</h2>
+            <p>Edit approved public copy locally. Saving a draft does not change the public static website.</p>
+            <div class="walter-content-layout">
+              <ul class="walter-draft-list">
+                <li class="walter-draft-item">
+                  <label for="walter-draft-homepage.heroHeading">
+                    Homepage hero heading
+                    <input id="walter-draft-homepage.heroHeading" value="Local draft heading" maxlength="120" />
+                  </label>
+                  <p class="walter-draft-meta">Saved draft · 20/120</p>
+                  <div class="walter-draft-actions">
+                    <button type="button">Save draft</button>
+                    <button type="button" class="walter-text-button">Reset to canonical</button>
+                  </div>
+                </li>
+              </ul>
+              <aside class="walter-preview" aria-labelledby="walter-preview-heading">
+                <h3 id="walter-preview-heading">Local preview</h3>
+                <p class="walter-preview-notice">
+                  This preview is local only. It does not publish copy or regenerate the public static export.
+                </p>
+                <p class="walter-preview-title">Local draft heading</p>
+                <p>
+                  Active Technical Services provides civil, mechanical, fabrication and industrial support from Jinja,
+                  Uganda, with a branch in Dodoma, Tanzania.
+                </p>
+              </aside>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+{
+  "walter_1440x900": {
+    "title": "Management sign in | Active Technical Services",
+    "h1": "Management sign in",
+    "skip": 1
+  },
+  "inbox_1440x900": {
+    "h2": "Inquiries",
+    "mailto": 2,
+    "tel": 2,
+    "publication_nav": 1
+  },
+  "content_1440x900": {
+    "h2": "Website Content",
+    "preview": 1,
+    "saved": 1,
+    "version": 1
+  },
+  "publication_1440x900": {
+    "h2": "Prepared publications",
+    "prepare": 1,
+    "subject_leak": 0
+  },
+  "walter_768x1024": {
+    "title": "Management sign in | Active Technical Services",
+    "h1": "Management sign in",
+    "skip": 1
+  },
+  "inbox_768x1024": {
+    "h2": "Inquiries",
+    "mailto": 2,
+    "tel": 2,
+    "publication_nav": 1
+  },
+  "content_768x1024": {
+    "h2": "Website Content",
+    "preview": 1,
+    "saved": 1,
+    "version": 1
+  },
+  "publication_768x1024": {
+    "h2": "Prepared publications",
+    "prepare": 1,
+    "subject_leak": 0
+  },
+  "walter_390x844": {
+    "title": "Management sign in | Active Technical Services",
+    "h1": "Management sign in",
+    "skip": 1
+  },
+  "inbox_390x844": {
+    "h2": "Inquiries",
+    "mailto": 2,
+    "tel": 2,
+    "publication_nav": 1
+  },
+  "content_390x844": {
+    "h2": "Website Content",
+    "preview": 1,
+    "saved": 1,
+    "version": 1
+  },
+  "publication_390x844": {
+    "h2": "Prepared publications",
+    "prepare": 1,
+    "subject_leak": 0
+  }
+}

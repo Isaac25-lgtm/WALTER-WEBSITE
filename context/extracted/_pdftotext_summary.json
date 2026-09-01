@@ -1,0 +1,519 @@
+{
+  "profile_2025": [
+    {
+      "page": 1,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 2,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 3,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 4,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 5,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 6,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 7,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 8,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 9,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 10,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 11,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 12,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 13,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 14,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 15,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 16,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 17,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 18,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 19,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 20,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 21,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 22,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 23,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 24,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 25,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 26,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 27,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 28,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 29,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 30,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 31,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 32,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 33,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 34,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 35,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 36,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 37,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 38,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    }
+  ],
+  "company_context": [
+    {
+      "page": 1,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 2,
+      "char_count": 1310,
+      "has_text": true,
+      "text": "                                                                                     1\n\nAbout Us\n ACTIVE TECHNICAL SERVICES LTD was registered on 18 th October, 2023 as a\n limited liability company under the Companies act, 2002 of the laws of\n Tanzania with the certiﬁcate Number 169422168.\n\n The company is also registered with the Tanzania Revenue Authority under the\n TIN 169-422-168.There by making it legally recognized company andauthorised\n to operated in its ﬁeld of speciality as speciﬁed in the companies memorandum\n and article of association.\n\n\nAdministration\n The Company was founded under a joint body by two directors;\n Nyeko Francis and Adolf Serete .\n NYEKO FRANCIS:\n Currently the head of Directors with a lot of knowledge and experience in the\n ﬁled of Engineering speciﬁcally Civil and Mechanical . He is also actively involved\n in Lobbying for Contracts , General management and administration.\n\n ADOLF SERETE:\n He is a technical director with an immense level of experience in the technical\n aspect that involves analysing all technical drawings and actively involve in the\n technical ﬁeld.\n\n\n\n\n                                                         ATS\n                                                         GIFT 0F GOD\n                                                          ACTIVE TECHNICAL\n                                                            SERVICES LTD.\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 3,
+      "char_count": 538,
+      "has_text": true,
+      "text": "                                                             2\nOur Vision\n  To be a leading shop for excellent engineering services.\n\n  To be a leading shop for excellent technicians.\n\n  To be a leading centre for quality work.\n\n  To be a leading shop for supply of labour.\n\n\n\n\n                               ATS\n                               GIFT 0F GOD\n                                       TECHNICIAL\n                                ACTIVE TECHNICAL\n                                  SERVICES(U)\n                                 SERVICES     LTD.\n                                           LTD.\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 4,
+      "char_count": 197,
+      "has_text": true,
+      "text": "                                                                             3\nCore Values\n In order to achieve the vision, the company shares the following core values.\n - Accountability.\n - Integrity.\n - Transparency.\n - Diligence.\n - Team Spirit.\n - Loyalty.\n - Eﬃciency.\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 5,
+      "char_count": 409,
+      "has_text": true,
+      "text": "                                                                              4\nOur Mission\n- Developing and operating a ﬁnancially sound enterprise with proﬁtable growth.\n- To support our clients to achieve success by acting as their trusted service\n  providers.\n- To provide quality, cost eﬀective, personalized and innovative service to meet\n   the changing needs of our clients.\n- To empower our manpower through continuous professional developments to\n  face the dynamic challenges.\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 6,
+      "char_count": 770,
+      "has_text": true,
+      "text": "                                                                               5\n\n Our Philosophy\n- We are committed to promote high standards of discipline and excellence to\n  aﬃrm quality standards and values.\n- We are dedicated to maintain a strong internal administration, thereby enabling\n  provision of quality services and ensure client satisfaction.\n- At ACTIVE TECHNICAL SERVICES LTD a ‘Customer is a King’ and strongly believe that\n  good relationships with our customers are a prerequisite to our success.\n\n\n\n\n                                ATS\n                                GIFT 0F GOD\n                                        TECHNICIAL\n                                 ACTIVE TECHNICAL\n                                   SERVICES(U)\n                                  SERVICES     LTD.\n                                            LTD.\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 7,
+      "char_count": 730,
+      "has_text": true,
+      "text": "                                                                            6\nProducts / Services.\n The company majors in provision of quality services in the area of 7\n - Labour Supply\n - Welding & Fabrication\n - Structural Works\n - Insulation (Lagging)\n - Plant Installation which include Machines, Pipe works and Maintenance.\n The company also provide skilled and semi skilled man power at a market\n friendly price.\n -The company also does commissioning after the work is done.\n\n\n\n\n                               ATS\n                               GIFT 0F GOD\n                                       TECHNICIAL\n                                ACTIVE TECHNICAL\n                                  SERVICES(U)\n                                 SERVICES     LTD.\n                                           LTD.\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 8,
+      "char_count": 874,
+      "has_text": true,
+      "text": "                                                                                7\n\nProduction\n We oﬀer ﬁrst class production and our workmanship is of high quality.\n In order to accomplish and produce quality work we have been able to install\n state of the equipment.\n\n The company also formed a structure of four departments so as to realize\n eﬀective service to the clients.\n\n 1. Technical service.\n 2. Finance and logistics.\n 3. Human resource and administration.\n 4. Legal aﬀairs.\n\n The company believes that to obtain maximum production from its personnel,\n their health and safety must be of a great paramount. However, this can only be\n achieved when the overall working environment is conducive.\n\n The company prepare programs to its personnel in which they get relevant\n information and are introduced to new tools and equipments that quarante\n a safe and healthy working environment which led to high production in the\n shortest period of time.\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 9,
+      "char_count": 268,
+      "has_text": true,
+      "text": "                                                                    8\n                        ACTIVE TECHNICAL\n      ATS\n      GIFT 0F GOD         SERVICES LTD.\n\n\nINSTALLATION OF MACHINES, FABRICATION OF THE WHOLE STRUCTURE &\nALL PIPE WORK BOTH MILED STEEL AND STAINLESS PIPES FOR SOAP PLANT\nIN MOUNT MERU MILLERS UGANDA LIMITED - LIRA.\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 10,
+      "char_count": 81,
+      "has_text": true,
+      "text": "                                                9\n\n\nFABRICATION , ERECTION AND SHEETING OF AWARE HOUSE\nIN UGANDA POLICE - NAMANVE\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 11,
+      "char_count": 81,
+      "has_text": true,
+      "text": "FABRICATION OF THE SEED CLEANER STRUCTURE AND   10\nINSTALLATION OF MACHINE - LIRA\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 12,
+      "char_count": 77,
+      "has_text": true,
+      "text": "FABRICATION OF STRUCTURE AND PIPE WORK IN OIL LIBYA   11\nGAS FACTORY - MUKONO\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 13,
+      "char_count": 66,
+      "has_text": true,
+      "text": "                                          12\nERECTION AND SHEETING OF AWARE HOUSE IN\nPEPSE DEPOT SITE - LIRA\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 14,
+      "char_count": 71,
+      "has_text": true,
+      "text": "                                           13\nFABRICATION OF OIL TANKS IN\nMOUNT MERU MILLERS UGANDA LIMITED - LIRA\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 15,
+      "char_count": 99,
+      "has_text": true,
+      "text": "                                                14\n\nFABRICATION AND INSTALLATION OF SEED CLEANER\nSTRUCTURE IN MOUNT MERU MILLERS SINGIDA - TANZANIA\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 16,
+      "char_count": 327,
+      "has_text": true,
+      "text": "                                               15\nFABRICATION AND ERECTION OF CHIMNEY AND\nSTRUCTURE IN MOUNT MERU MILLERS ARUSHA - TANZANIA\n\n\n\n\n                  ATS\n                  GIFT 0F GOD\n                          TECHNICIAL\n                   ACTIVE TECHNICAL\n                     SERVICES(U)\n                    SERVICES     LTD.\n                              LTD.\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 17,
+      "char_count": 96,
+      "has_text": true,
+      "text": "                                               16\n\n\nFABRICATION, PIPE WORK AND ERECTION OF AWARE HOUSE\nSTRUCTURE IN BURUNDI BREWARIES - BURUNDI\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 18,
+      "char_count": 99,
+      "has_text": true,
+      "text": "                                                  17\n\nINSTALLATION OF MACHINES, PIPE WORK BOTH MILD &\nSTAINLESS PIPES IN BIRARUDI BREWARIES - BURUNDI\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 19,
+      "char_count": 78,
+      "has_text": true,
+      "text": "                                                18\n\n\nFABRICATION OF STORAGE TANKS IN SUNAFRIC INDUSTRIES\nUGANDA LIMITED - LIRA\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 20,
+      "char_count": 65,
+      "has_text": true,
+      "text": "                                             19\nERECTION OF THE STRUCTURE IN MUSUMBA STEEL\nBUJUMBURA - BURUNDI\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 21,
+      "char_count": 36,
+      "has_text": true,
+      "text": "                                    20\nERECTION OF THE STRUCTURE IN LIRA\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 22,
+      "char_count": 43,
+      "has_text": true,
+      "text": "                                           21\nERECTION OF THE STRUCTURE IN UGANDA LIRA\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 23,
+      "char_count": 38,
+      "has_text": true,
+      "text": "                                      22\nERECTION OF THE STRUCTURE IN RWANDA\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 24,
+      "char_count": 38,
+      "has_text": true,
+      "text": "                                      23\nERECTION OF THE STRUCTURE IN RWANDA\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 25,
+      "char_count": 101,
+      "has_text": true,
+      "text": "                                             24\n                             MUSUMBA STEEL\nERECTION OF THE STRUCTURE IN RWANDA\nBUJUMBURA - BURUNDI\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 26,
+      "char_count": 51,
+      "has_text": true,
+      "text": "                                                  25\n\nERECTION OF THE STRUCTURE IN KANJANSI AIRFILELD\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 27,
+      "char_count": 78,
+      "has_text": true,
+      "text": "  ERECTION OF THE STRUCTURE IN LIRA   26\n\n\n\n\nERECTION OF THE STRUCTURE IN RWANDA\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 28,
+      "char_count": 162,
+      "has_text": true,
+      "text": "                                                       27\nERECTION OF THE STRUCTURE IN LIRA\n\n\n\n\n                                    ERECTION OF THE STRUCTURE\n                                       IN KANJANSI AIRFIELD\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 29,
+      "char_count": 76,
+      "has_text": true,
+      "text": "                                      28\nERECTION OF THE STRUCTURE IN LIRA\n\n\n\n\nERECTION OF THE STRUCTURE IN RWANDA\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 30,
+      "char_count": 87,
+      "has_text": true,
+      "text": "                                                 29\nERECTION OF THE STRUCTURE IN LIRA\n\n\n\n\nERECTION OF THE STRUCTURE IN KANJANSI AIRFIELD\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 31,
+      "char_count": 48,
+      "has_text": true,
+      "text": "                                                30\nERECTION OF THE STRUCTURE AT OIL LIBIA MUKONO\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 32,
+      "char_count": 65,
+      "has_text": true,
+      "text": "                                             31\nERECTION OF THE STRUCTURE IN MUSUMBA STEEL\nBUJUMBURA - BURUNDI\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 33,
+      "char_count": 457,
+      "has_text": true,
+      "text": "                                                   32\n\n\n\n\nLOCATION :\nActive Technical Services Ltd is located in\nDodoma - Tanzania as shown in the address below.\n\n     HEAD OFFICE:\n     P.O. BOX 551, DODOMA - TANZANIA\n     +256 782 318 727\n     +255 764 306 184\n     :activetechnicalservices@gmail.com\n\n\n\n\n              ATS\n              GIFT 0F GOD\n                      TECHNICIAL\n               ACTIVE TECHNICAL\n                 SERVICES(U)\n                SERVICES     LTD.\n                          LTD.\n\f",
+      "method": "pdftotext-layout"
+    },
+    {
+      "page": 34,
+      "char_count": 15,
+      "has_text": true,
+      "text": "ATS\nGIFT 0F GOD\n\f",
+      "method": "pdftotext-layout"
+    }
+  ],
+  "logo_pdf": [
+    {
+      "page": 1,
+      "char_count": 0,
+      "has_text": false,
+      "text": "\f",
+      "method": "pdftotext-layout"
+    }
+  ]
+}

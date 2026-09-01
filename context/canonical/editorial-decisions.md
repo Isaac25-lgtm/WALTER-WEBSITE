@@ -1,0 +1,98 @@
+# Editorial decisions (provisional defaults)
+
+These defaults let later prompts proceed without treating unresolved source conflicts as verified public facts. They do **not** redesign the public visual architecture.
+
+Raw document wording remains in `context/extracted/`. Canonical copy uses polished grammar where allowed below.
+
+## 1. Public name
+
+| Use | Value |
+| --- | --- |
+| Marketing / public name | Active Technical Services |
+| Abbreviation | ATS |
+| Uganda legal footer name | Active Technical Services (U) Ltd |
+| Tanzania branch legal name | Active Technical Services Ltd |
+| Mark | Gift of God |
+
+Do not place the full legal name inside every public heading. Do not use Walter as a public name.
+
+## 2. Headquarters and branch
+
+**Locked by user authority plus this prompt:** Uganda is the primary public operation; Tanzania is a company branch.
+
+Provisional public defaults:
+
+- Primary operation / headquarters: **Jinja, Uganda**
+- Tanzania branch: **Dodoma, Tanzania**
+- P.O. Box 122 and Plot 23A, Lubas Road are **postal and physical details of the same Jinja operation** until the user states they are separate sites
+- Do **not** publicly call Dodoma the company headquarters
+- Preserve the Tanzania document’s raw “HEAD OFFICE” wording only in evidence files
+
+## 3. Primary contact
+
+| Role | Value | Status |
+| --- | --- | --- |
+| Primary call / WhatsApp candidate | +256 782 318 727 | Provisional. WhatsApp is inferred from an icon on COMPANY CONTEXT.pdf page 33, not from explicit user confirmation |
+| Secondary Uganda telephone | +256 755 318 727 | Documented on the 2025 Uganda location page |
+| Tanzania local telephone | +255 764 306 184 | Documented on the Tanzania location page |
+| Email | activetechnicalservices@gmail.com | Same address on both location pages |
+
+Display formatting for public copy may use spaces (`+256 782 318 727`). E.164 candidates remain in contacts evidence.
+
+## 4. Leadership
+
+- **Nyeko Francis** — Head of Directors (both source profiles). Public factual profile allowed.
+- **Adolf Serete** — Technical Director (both source profiles). Public factual profile allowed.
+- **Ochan Tony** — retained in internal canonical evidence only. **No public biography** until his current role is confirmed.
+- Uncaptioned Administration portraits are **not** linked to named people.
+
+## 5. Walter
+
+Walter remains private to `/walter`.
+
+Do not place Walter’s name in public company copy, metadata, legal text or branding unless the user later asks.
+
+## 6. Retail hardware and prices
+
+The supplied documents establish engineering and construction **services**, not a retail-hardware catalogue.
+
+- Do not invent hardware products
+- Do not invent prices
+- Pricing mode: **quote / inquiry only** (provisional)
+- Future `/walter/pricing` is an empty, owner-editable capability
+- Initial canonical pricing data is an empty array
+- Retail products and public prices remain pending additional user content
+
+Vision-line use of the word “shop” is source wording for engineering services, not proof of a hardware store.
+
+## 7. Project spelling
+
+- Keep exact raw captions in evidence/canonical `caption_raw` / spelling fields
+- Use professionally corrected grammar in normalized public candidate copy
+- Do **not** silently publish uncertain client or location names
+- **KANJANSI / Kajjansi** remains unresolved — public candidate copy should say “Kanjansi Airfield (source spelling)” or omit the toponym until confirmed
+- **PEPSE / Pepsi** remains unresolved — keep PEPSE in public candidate titles
+- **Burundi Breweries / Birarudi Breweries** remain separate projects
+- Ordinary mistakes such as “aware house” → “warehouse” and “miled steel” → “mild steel” are allowed **only** in editorial candidate text, not in raw fields
+
+## 8. Publication rights
+
+The user supplied the profiles as company context. Explicit public-publication rights for identifiable people, client names and third-party logos are **not** documented.
+
+- Project photographs may be shortlisted for the private build
+- Identifiable-person images: `publication_review_required`
+- Third-party client names and visible logos: `publication_review_required`
+- Do not create or publish third-party client-logo artwork
+- Do not discard the images
+
+## 9. Canonical logo
+
+Use **`active logo.pdf`** as the canonical source.
+
+Production conversion (SVG/PNG/favicon) happens in a later prompt. Do not redesign, recolor, retrace or modernize the mark here.
+
+## Questions this file does **not** reopen
+
+- Whether Uganda and Tanzania are one company (yes)
+- Whether Tanzania is a branch (yes)
+- Whether Walter is the public legal name (no)

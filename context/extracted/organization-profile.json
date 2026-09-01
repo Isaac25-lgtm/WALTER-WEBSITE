@@ -1,0 +1,178 @@
+{
+  "public_brand_name": {
+    "provisional": "Active Technical Services",
+    "abbreviation": "ATS",
+    "mark": "Gift of God",
+    "notes": "Do not treat Walter as a public legal or brand name. Walter is the owner/project-administrator identity for a future private /walter route."
+  },
+  "abbreviation": "ATS",
+  "slogan_mark": {
+    "preferred_display_from_logo_files": "GIFT OF GOD",
+    "text_layer_variant_tanzania_pdf": "GIFT 0F GOD"
+  },
+  "legal_names": {
+    "uganda": {
+      "value_raw": "ACTIVE TECHNICAL SERVICES (U) LTD",
+      "value_normalized": "Active Technical Services (U) Ltd",
+      "source_file": "active company profile new 2025 civil and construction-1.pdf",
+      "pages": [1, 2, 37],
+      "scope": "uganda"
+    },
+    "tanzania": {
+      "value_raw": "ACTIVE TECHNICAL SERVICES LTD",
+      "value_normalized": "Active Technical Services Ltd",
+      "source_file": "COMPANY CONTEXT.pdf",
+      "pages": [1, 2, 33],
+      "scope": "tanzania-branch"
+    },
+    "overlapping_footer_artwork_tanzania": {
+      "value_raw": "ACTIVE TECHNICIAL SERVICES (U) LTD. / ACTIVE TECHNICAL SERVICES LTD.",
+      "source_file": "COMPANY CONTEXT.pdf",
+      "pages": [3, 6, 7, 16, 33],
+      "notes": "TECHNICIAL is source spelling. Footer stacks Uganda-style and Tanzania-style names."
+    }
+  },
+  "company_overview": {
+    "from_documents": "The supplied profiles present an engineering, civil-construction, fabrication and industrial-services company that supplies labour, welds and fabricates, erects steel structures, installs plant/machines and pipework, lags/insulates, maintains and commissions plant, and (in the 2025 Uganda profile) executes civil foundations, warehouses and factory buildings. It is not documented as a retail hardware shop.",
+    "not_marketing_rewrite": true
+  },
+  "history": {
+    "uganda_registration": {
+      "date_raw": "13th November, 2013",
+      "status_raw": "limited liability company under section 16 (1) of the companies act of the laws of Uganda",
+      "certificate_number_raw": "174763",
+      "source_file": "active company profile new 2025 civil and construction-1.pdf",
+      "page": 2,
+      "transcription_method": "visual-reading-of-outlined-text",
+      "scope": "uganda"
+    },
+    "tanzania_registration": {
+      "date_raw": "18 th October, 2023",
+      "status_raw": "limited liability company under the Companies act, 2002 of the laws of Tanzania",
+      "certificate_number_raw": "169422168",
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page": 2,
+      "scope": "tanzania-branch"
+    },
+    "founding_directors": {
+      "uganda_2025_raw": "The company was founded by three directors: Nyeko Francis, Adolf Serete, and Ochan Tony.",
+      "tanzania_2023_raw": "The Company was founded under a joint body by two directors; Nyeko Francis and Adolf Serete."
+    },
+    "document_dates_from_pdf_metadata": {
+      "tanzania_pages_cdr": "2023-12-12",
+      "uganda_2025_cdr": "2025-11-20",
+      "logo_pdf": "2026-08-26"
+    }
+  },
+  "uganda_operation": {
+    "legal_name": "ACTIVE TECHNICAL SERVICES (U) LTD",
+    "main_office_wording": "MAIN OFFICES IS LOCATED IN JINJA",
+    "postal": "P.O. Box 122 Jinja - Uganda",
+    "physical": "Lubas Road - Jinja, Plot 23A",
+    "phones": ["+256 (0) 782 318 727", "+256 (0) 755 318 727"],
+    "email": "activetechnicalservices@gmail.com",
+    "tin_raw": "1003422693",
+    "tin_label_raw": "Uganda Revenue Authority under TIN 1003422693",
+    "source_pages": {"about": 2, "location": 37}
+  },
+  "tanzania_branch": {
+    "user_clarification": "Tanzania is a company branch of the same company, not an unrelated business.",
+    "legal_name": "ACTIVE TECHNICAL SERVICES LTD",
+    "document_self_description": "located in Dodoma - Tanzania; contact block labelled HEAD OFFICE",
+    "postal": "P.O. BOX 551, DODOMA - TANZANIA",
+    "phones": ["+256 782 318 727", "+255 764 306 184"],
+    "email": "activetechnicalservices@gmail.com",
+    "tin_raw": "169-422-168",
+    "certificate_number_raw": "169422168",
+    "source_pages": {"about": 2, "location": 33}
+  },
+  "registration_evidence": {
+    "uganda": {
+      "certificate_number": "174763",
+      "tin": "1003422693",
+      "date": "13th November, 2013",
+      "act": "section 16 (1) of the companies act of the laws of Uganda",
+      "source_file": "active company profile new 2025 civil and construction-1.pdf",
+      "page": 2
+    },
+    "tanzania": {
+      "certificate_number": "169422168",
+      "tin": "169-422-168",
+      "date": "18 th October, 2023",
+      "act": "Companies act, 2002 of the laws of Tanzania",
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page": 2,
+      "notes": "Certificate number 169422168 and TIN 169-422-168 are the same digits with different punctuation."
+    }
+  },
+  "mission": {
+    "raw_bullets": [
+      "Developing and operating a financially sound enterprise with profitable growth.",
+      "To support our clients to achieve success by acting as their trusted service providers.",
+      "To provide quality, cost effective, personalized and innovative service to meet the changing needs of our clients.",
+      "To empower our manpower through continuous professional developments to face the dynamic challenges."
+    ],
+    "source_file_primary": "active company profile new 2025 civil and construction-1.pdf",
+    "page_primary": 5,
+    "also": {"source_file": "COMPANY CONTEXT.pdf", "page": 5}
+  },
+  "vision": {
+    "raw_bullets": [
+      "To be a leading shop for excellent engineering services.",
+      "To be a leading shop for excellent technicians.",
+      "To be a leading centre for quality work.",
+      "To be a leading shop for supply of labour."
+    ],
+    "source_file_primary": "active company profile new 2025 civil and construction-1.pdf",
+    "page_primary": 3,
+    "also": {"source_file": "COMPANY CONTEXT.pdf", "page": 3},
+    "notes": "The word shop appears in three of four vision lines. Do not interpret this as proof of a retail hardware shop; it is the source wording for an engineering-services vision."
+  },
+  "philosophy": {
+    "raw_bullets": [
+      "We are committed to promote high standards of discipline and excellence to affirm quality standards and values.",
+      "We are dedicated to maintain a strong internal administration, thereby enabling provision of quality services and ensure client satisfaction.",
+      "At ACTIVE TECHNICAL SERVICES LTD a ‘Customer is a King’ and strongly believe that good relationships with our customers are a prerequisite to our success."
+    ],
+    "uganda_2025_name_in_third_bullet_visual": "ACTIVE TECHN CAL SERV CES (U) LTD (outlined text with missing letters on PDF page 6)",
+    "source_file_primary": "active company profile new 2025 civil and construction-1.pdf",
+    "page_primary": 6,
+    "also": {"source_file": "COMPANY CONTEXT.pdf", "page": 6}
+  },
+  "core_values": [
+    "Accountability",
+    "Integrity",
+    "Transparency",
+    "Diligence",
+    "Team Spirit",
+    "Loyalty",
+    "Efficiency"
+  ],
+  "core_values_source": {
+    "uganda": {"file": "active company profile new 2025 civil and construction-1.pdf", "page": 4},
+    "tanzania": {"file": "COMPANY CONTEXT.pdf", "page": 4}
+  },
+  "business_classification": {
+    "from_documents": "Engineering, civil construction, welding/fabrication, structural steel, industrial plant installation, pipework, labour supply, insulation/lagging, maintenance and commissioning.",
+    "not_documented_as": "Conventional retail hardware shop with product catalogue and prices."
+  },
+  "departments_named": [
+    "Technical service",
+    "Finance and logistics",
+    "Human resource and administration",
+    "Legal affairs"
+  ],
+  "departments_source": {
+    "uganda": {"file": "active company profile new 2025 civil and construction-1.pdf", "page": 8},
+    "tanzania": {"file": "COMPANY CONTEXT.pdf", "page": 8}
+  },
+  "unresolved_identity_questions": [
+    "Which legal name to print as the public master name: ACTIVE TECHNICAL SERVICES (U) LTD vs ACTIVE TECHNICAL SERVICES LTD.",
+    "Whether Dodoma 'HEAD OFFICE' wording should appear publicly, given user clarification that Tanzania is a branch.",
+    "Which Jinja description is headquarters: MAIN BRACH (P.O. Box 122) vs BRANCH OFFICE (Lubas Road Plot 23A).",
+    "Whether Ochan Tony is a current director, a historical founder, or both.",
+    "Whether Walter should appear anywhere on the public site.",
+    "Whether client names (Mount Meru Millers, Uganda Police, Oil Libya, Pepsi/PEPSE, Sunafric, Musumba Steel, Burundi/Birarudi Breweries) are cleared for public use.",
+    "Exact founding date for the original Uganda company versus Tanzania registration date."
+  ]
+}

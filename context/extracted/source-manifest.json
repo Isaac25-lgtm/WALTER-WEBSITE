@@ -1,0 +1,115 @@
+{
+  "generated_for": "prompt-1-source-ingestion",
+  "repository_root": "F:\\MY FILES\\DATA SCIENCE\\WALTER'S WEBSITE",
+  "originals_must_remain_unchanged": true,
+  "large_pdfs_not_duplicated_into_context": true,
+  "user_authority": {
+    "uganda_and_tanzania_are_one_company": true,
+    "tanzania_is_a_branch": true,
+    "walter_is_owner_project_administrator_not_public_legal_name": true,
+    "public_brand": "Active Technical Services / ATS with Gift of God mark"
+  },
+  "sources": [
+    {
+      "filename": "active company profile new 2025 civil and construction-1.pdf",
+      "relative_path": "active company profile new 2025 civil and construction-1.pdf",
+      "absolute_path": "F:\\MY FILES\\DATA SCIENCE\\WALTER'S WEBSITE\\active company profile new 2025 civil and construction-1.pdf",
+      "file_size_bytes": 66857765,
+      "sha256": "26633e31db42fbb1c2c298a6a83040f33b9ac4131677e7d712b73eda3a6ac797",
+      "pdf_page_count": 38,
+      "page_count_verified": true,
+      "pdf_metadata": {
+        "title": "active company profile new 2025 civil and construction.cdr",
+        "author": "luke",
+        "creator": "CorelDRAW 2018",
+        "producer": "Corel PDF Engine Version 20.0.0.633",
+        "creation_date": "D:20251120075237+06'00'",
+        "mod_date": "D:20251120075237+06'00'"
+      },
+      "has_extractable_text": false,
+      "pages_with_extractable_text": 0,
+      "visual_inspection_required": true,
+      "visual_inspection_completed": true,
+      "pages_rendered_for_inspection": 38,
+      "embedded_image_records": 161,
+      "source_role": "current-uganda-profile",
+      "provisional_authority_level": "primary-for-uganda-identity-and-current-operations",
+      "notes": "Outlined/vectorized CorelDRAW text. pypdf and pdftotext returned blank pages. All 38 pages were rendered at 120 dpi and read visually. Printed page numbers are one less than PDF page numbers (PDF p.2 is printed '1')."
+    },
+    {
+      "filename": "COMPANY CONTEXT.pdf",
+      "relative_path": "COMPANY CONTEXT.pdf",
+      "absolute_path": "F:\\MY FILES\\DATA SCIENCE\\WALTER'S WEBSITE\\COMPANY CONTEXT.pdf",
+      "file_size_bytes": 115659880,
+      "sha256": "59f2e3aedf0c3f5e071b3b50eb94c6cd8cd80be34dc6c500e499de53e22fb90e",
+      "pdf_page_count": 34,
+      "page_count_verified": true,
+      "pdf_metadata": {
+        "title": "active company profile new 2023 tanzania pages.cdr",
+        "author": "luke",
+        "creator": "CorelDRAW 2018",
+        "producer": "Corel PDF Engine Version 20.0.0.633",
+        "creation_date": "D:20231212031752-08'00'",
+        "mod_date": "D:20231212031752-08'00'"
+      },
+      "has_extractable_text": true,
+      "pages_with_extractable_text": 33,
+      "pages_without_extractable_text": [1],
+      "visual_inspection_required": true,
+      "visual_inspection_completed": true,
+      "pages_rendered_for_inspection": 34,
+      "embedded_image_records": 119,
+      "source_role": "tanzania-branch-and-historical-project-context",
+      "provisional_authority_level": "primary-for-tanzania-registration-and-branch-contacts; secondary-for-shared-projects",
+      "notes": "CDR title identifies these as 2023 Tanzania pages. Text layer exists from PDF page 2 onward. Page 1 is cover photography only. Footer artwork overlaps 'ACTIVE TECHNICIAL SERVICES (U) LTD.' and 'ACTIVE TECHNICAL SERVICES LTD.' Text layer sometimes stores 'GIFT 0F GOD' with digit zero; rendered pages show letter O."
+    },
+    {
+      "filename": "active logo.pdf",
+      "relative_path": "active logo.pdf",
+      "absolute_path": "F:\\MY FILES\\DATA SCIENCE\\WALTER'S WEBSITE\\active logo.pdf",
+      "file_size_bytes": 16082,
+      "sha256": "f0404fc3983505654c556b3fb084a60e5f53d42f2c5126d9637a590203035a2e",
+      "pdf_page_count": 1,
+      "page_count_verified": true,
+      "pdf_metadata": {
+        "title": "Untitled-1",
+        "author": "carter",
+        "creator": "CorelDRAW 2018",
+        "producer": "Corel PDF Engine Version 20.0.0.633",
+        "creation_date": "D:20260826055132+06'00'",
+        "mod_date": "D:20260826055132+06'00'"
+      },
+      "has_extractable_text": false,
+      "visual_inspection_required": true,
+      "visual_inspection_completed": true,
+      "embedded_image_records": 0,
+      "contains_usable_vector_paths": true,
+      "source_role": "preferred-brand-art",
+      "provisional_authority_level": "primary-logo-production-source",
+      "notes": "No Font resources, no Image XObjects, no embedded rasters. File size and object structure are consistent with outlined vector artwork. 200 dpi rasterization matches the JPG canvas (1654x1166)."
+    },
+    {
+      "filename": "active logo.jpg",
+      "relative_path": "active logo.jpg",
+      "absolute_path": "F:\\MY FILES\\DATA SCIENCE\\WALTER'S WEBSITE\\active logo.jpg",
+      "file_size_bytes": 79866,
+      "sha256": "2cdb345e2a3cd4d505a2f00a35c66cdb55aa7dddce9e1ff37691dd163e4e8ea4",
+      "pdf_page_count": null,
+      "page_count_verified": false,
+      "pdf_metadata": {},
+      "raster": {
+        "pixel_dimensions": [1654, 1166],
+        "mode": "RGB",
+        "format": "JPEG",
+        "dpi_from_jfif": 200,
+        "info_keys": ["jfif", "jfif_version", "dpi", "jfif_unit", "jfif_density", "adobe", "adobe_transform", "icc_profile"]
+      },
+      "has_extractable_text": false,
+      "visual_inspection_required": true,
+      "visual_inspection_completed": true,
+      "source_role": "raster-logo-reference",
+      "provisional_authority_level": "secondary-logo-reference-and-colour-sampling",
+      "notes": "Same canvas size as the PDF rendered at 200 dpi. Large white surround around the yellow badge. JPEG compression artefacts. Not the preferred production source."
+    }
+  ]
+}

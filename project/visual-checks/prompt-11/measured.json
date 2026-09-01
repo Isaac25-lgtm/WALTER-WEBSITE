@@ -1,0 +1,24 @@
+{
+  "thank_you_actions": {
+    "tel": "tel:+256782318727",
+    "mailto": "mailto:activetechnicalservices@gmail.com",
+    "home": "/",
+    "contact": "/contact/",
+    "photos": 0,
+    "walter_in_header": false
+  },
+  "contact_empty_origin": {
+    "notice": "Online inquiry submission is being prepared. Please contact us by telephone or email.\n\n+256 782 318 727 \u00b7 activetechnicalservices@gmail.com",
+    "url": "http://127.0.0.1:4173/contact/",
+    "submit_label": "Submit"
+  },
+  "walter": {
+    "title": "Management sign in | Active Technical Services",
+    "h1": "Management sign in",
+    "email": 1,
+    "password": 1,
+    "public_nav": 0
+  },
+  "walter_unavailable": "Management sign-in is not available yet.",
+  "password_still_in_dom": false
+}

@@ -1,0 +1,178 @@
+{
+  "inspected_at": "2026-08-31T10:44:33.717370+00:00",
+  "source": "Live computed styles from https://metalfabrication.ie/ in Chrome (Playwright channel=chrome), zoom 100%, deviceScaleFactor 1. Do not copy Metalworks identity. Tokens describe appearance to reproduce with ATS content.",
+  "uncertainty": [
+    "Custom webfont identification is limited to network-loaded families (Open Sans, Inter, Roboto for Maps). Do not assert additional display fonts because a screenshot resembles them.",
+    "Animation durations were 0s where computed. Carousel/Instagram motion timing is unknown.",
+    "Box shadows on cards were not separately dumped; contact H1 box-shadow was none."
+  ],
+  "font_families": {
+    "body": {
+      "observed_stack": "\"Open Sans\", Helvetica, Arial, Lucida, sans-serif",
+      "identification": "computed_style plus Google Fonts network request for Open Sans woff2",
+      "confidence": "high"
+    },
+    "headings": {
+      "observed_stack": "\"Open Sans\", Helvetica, Arial, Lucida, sans-serif",
+      "identification": "computed_style",
+      "confidence": "high"
+    },
+    "primary_buttons": {
+      "observed_stack": "Inter, Helvetica, Arial, Lucida, sans-serif",
+      "identification": "computed_style on Contact us / View Portfolio",
+      "confidence": "high"
+    },
+    "form_submit": {
+      "observed_stack": "\"Open Sans\", Helvetica, Arial, Lucida, sans-serif",
+      "identification": "computed_style on Submit",
+      "confidence": "high"
+    },
+    "maps": {
+      "observed_stack": "Roboto (Google Maps embed)",
+      "identification": "network request only; not an ATS UI font",
+      "confidence": "high",
+      "ats_use": "not_applicable"
+    },
+    "html_root": {
+      "observed_stack": "\"Times New Roman\"",
+      "identification": "computed_style on html; not used by visible Divi modules",
+      "confidence": "high",
+      "notes": "Do not treat as the public typeface."
+    },
+    "unidentified_display": {
+      "identification": "unknown",
+      "notes": "No additional custom family asserted from screenshot resemblance."
+    }
+  },
+  "font_weights": {
+    "body": 400,
+    "header_phone_and_nav_sample": 500,
+    "service_card_h3": 500,
+    "hero_h1": 700,
+    "contact_h1": 700,
+    "portfolio_h2": 700,
+    "primary_button": 700,
+    "form_submit": 700,
+    "section_h2_home": 800
+  },
+  "font_sizes_px": {
+    "body": 14,
+    "nav": 15,
+    "service_card_h3": 20,
+    "primary_button": 20,
+    "form_submit": 18,
+    "section_h2": 35,
+    "contact_h1": 40,
+    "hero_h1_desktop": 50,
+    "hero_h1_tablet": 40,
+    "hero_h1_mobile": 30
+  },
+  "line_heights_px": {
+    "body_sample_header_phone": 23.8,
+    "service_card_h3": 20,
+    "section_h2": 35,
+    "primary_button": 34,
+    "form_submit": 30.6,
+    "contact_h1": 64,
+    "hero_h1_desktop": 65,
+    "hero_h1_tablet": 52,
+    "hero_h1_mobile": 39
+  },
+  "letter_spacing": {
+    "hero_h1": "normal",
+    "section_h2": "normal",
+    "primary_button": "normal",
+    "contact_h1": "normal"
+  },
+  "text_transform": {
+    "hero_h1": "none",
+    "nav": "none",
+    "primary_button": "none"
+  },
+  "colours": {
+    "black": "rgb(0, 0, 0)",
+    "white": "rgb(255, 255, 255)",
+    "heading_dark": "rgb(51, 51, 51)",
+    "body_grey": "rgb(102, 102, 102)",
+    "accent_red": "rgb(224, 43, 32)",
+    "cta_band_grey": "rgb(71, 71, 71)",
+    "cream_section": "rgba(155, 108, 0, 0.07)",
+    "header_computed_on_et-l": "rgba(0, 0, 0, 0)",
+    "notes": "Visible header/footer bars are black. Transparent computed background on some header wrappers; row/section fills supply the black bar."
+  },
+  "gradients": {
+    "observed": [],
+    "notes": "No CSS gradient string was captured. Overlay tiles use dark photographic overlays; exact overlay gradient unknown."
+  },
+  "shadows": {
+    "contact_h1": "none",
+    "cards": "unknown — not dumped from computed styles",
+    "form_card": "unknown"
+  },
+  "border_radii": {
+    "primary_button": "10px",
+    "view_portfolio_button": "10px",
+    "form_parent": "10px",
+    "form_submit": "5px",
+    "service_card_images": "unknown — visually rounded; radius px not computed",
+    "thank_you_photo": "unknown — visually rounded"
+  },
+  "borders": {
+    "primary_button_rest": "0px solid rgb(255, 255, 255)",
+    "primary_button_hover": "border-color becomes transparent / rgba(255,255,255,0); fill unchanged",
+    "header_section": "et_pb_with_border class present; computed border widths not dumped"
+  },
+  "button_states": {
+    "primary": {
+      "rest": {
+        "background": "rgb(224, 43, 32)",
+        "color": "rgb(255, 255, 255)",
+        "border_radius": "10px",
+        "height_px": 58,
+        "font": "Inter 700 20px/34px"
+      },
+      "hover": {
+        "background": "rgb(224, 43, 32)",
+        "color": "rgb(255, 255, 255)",
+        "border_color": "transparent or near-transparent",
+        "notes": "Fill did not invert. Transition duration computed 0s on contact h1; button transition unknown."
+      },
+      "active_focus": "unknown — not captured"
+    },
+    "secondary_black": {
+      "rest": {
+        "background": "rgb(0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "border_radius": "10px",
+        "height_px": 58,
+        "label": "View Portfolio"
+      },
+      "hover": "unknown"
+    },
+    "form_submit": {
+      "rest": {
+        "background": "rgb(224, 43, 32)",
+        "color": "rgb(255, 255, 255)",
+        "border_radius": "5px",
+        "height_px": 41.375,
+        "font": "Open Sans 700 18px/30.6px"
+      },
+      "hover": "unknown"
+    }
+  },
+  "icon_style": {
+    "header_phone": "emoji/handset prefix in link text plus separate red icon cluster — exact SVG unknown",
+    "social": "square brand-coloured icons (Facebook, Instagram, TikTok)",
+    "hamburger": "32x32 mobile_menu_bar",
+    "carousel_dots": "present on portfolio; size/colour unknown",
+    "call_widget": "text 'Call Us Now' plus emoji on mobile full-width bar"
+  },
+  "animation_and_transition": {
+    "contact_h1_transition": "all 0s ease 0s",
+    "header_transform_after_scroll": "none",
+    "carousel_autoplay": "unknown",
+    "instagram_load_more": "unknown duration; button visible",
+    "lazy_loading": "unknown",
+    "notes": "Do not invent timings. Where computed duration is 0s, treat as no CSS transition."
+  }
+}

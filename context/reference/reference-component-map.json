@@ -1,0 +1,258 @@
+{
+  "inspected_at": "2026-08-31T10:44:33.717370+00:00",
+  "rule": "Map reference structure to ATS slots. Never copy Metalworks copy, logos, photos, embeds, testimonials, or contacts. Canonical ATS JSON remains the factual source.",
+  "components": [
+    {
+      "reference_component_id": "ref-header-logo",
+      "reference_route": "/",
+      "purpose": "Brand mark linking home",
+      "observed_structure": "Left white logo ~97x65 in 76px wrap; links to /",
+      "ATS_content_source": "site-settings.logo_canonical_asset_id (Gift of God / active logo.pdf)",
+      "ATS_status": "ready",
+      "implementation_notes": "Use ATS logo only. Do not use Metalworks_logo PNG."
+    },
+    {
+      "reference_component_id": "ref-header-nav",
+      "reference_route": "/",
+      "purpose": "Primary navigation",
+      "observed_structure": "Desktop: Residential | Commercial | Contact. Both first items hash-scroll to /#what-we-do. Mobile: hamburger absolute panel with the same three labels.",
+      "ATS_content_source": "IA adaptation: two items may hash-scroll to services; Contact → ATS contact route. Labels must be ATS, not Residential/Commercial.",
+      "ATS_status": "requires_editorial_copy",
+      "implementation_notes": "Preserve count/rhythm (two section links + Contact) unless a later prompt records a different ATS IA. Do not invent extra public nav items for /walter or blog."
+    },
+    {
+      "reference_component_id": "ref-header-tel",
+      "reference_route": "/",
+      "purpose": "Click-to-call in header",
+      "observed_structure": "Right-aligned tel link with red icon; 14px white text",
+      "ATS_content_source": "site-settings.primary_phone +256 782 318 727",
+      "ATS_status": "ready",
+      "implementation_notes": "WhatsApp confirmation still pending; header tel can still point at the canonical number."
+    },
+    {
+      "reference_component_id": "ref-hero",
+      "reference_route": "/",
+      "purpose": "Full-bleed photographic hero with centred headline, subline, red CTA",
+      "observed_structure": "Dark photo, white Open Sans 700 H1 centred, red Contact us to /contact/, optional gold scroll cue",
+      "ATS_content_source": "asset-shortlist hero candidates + future ATS hero message slot (not yet authored as final public claims)",
+      "ATS_status": "requires_editorial_copy",
+      "implementation_notes": "Use ATS photographs only. Do not copy reference H1 wording or workshop stills."
+    },
+    {
+      "reference_component_id": "ref-google-rating-badge",
+      "reference_route": "/",
+      "purpose": "Trust badge under hero CTA",
+      "observed_structure": "108x59 image of a Google rating widget",
+      "ATS_content_source": "none — ATS has no approved public rating widget",
+      "ATS_status": "empty_until_approved",
+      "implementation_notes": "Do not copy the Metalworks rating graphic. Omit until an ATS-owned equivalent exists."
+    },
+    {
+      "reference_component_id": "ref-service-cards",
+      "reference_route": "/#what-we-do",
+      "purpose": "What we do — three image+title+line cards",
+      "observed_structure": "3 columns desktop; stacked tablet/mobile; rounded photos; H3 20px",
+      "ATS_content_source": "services.json — nine canonical services",
+      "ATS_status": "ready",
+      "implementation_notes": "Content-slot adaptation: keep card visual language; wrap to additional rows so all nine services appear. Do not drop services to match the reference count of three. Do not invent extra section types."
+    },
+    {
+      "reference_component_id": "ref-project-overlays",
+      "reference_route": "/",
+      "purpose": "Six full-bleed overlay project tiles",
+      "observed_structure": "Two rows, three tiles desktop; dark overlay + centred white titles; not edge-rounded like service cards",
+      "ATS_content_source": "projects.json featured/publication-review records + asset-shortlist featured",
+      "ATS_status": "requires_editorial_copy",
+      "implementation_notes": "Only approved projects. If fewer than six are publishable, leave remaining tiles empty rather than inventing jobs."
+    },
+    {
+      "reference_component_id": "ref-view-portfolio-cta",
+      "reference_route": "/",
+      "purpose": "Black button to portfolio",
+      "observed_structure": "58px, radius 10px, Inter 700 20px, /portfolio/",
+      "ATS_content_source": "ATS portfolio analogue route",
+      "ATS_status": "ready",
+      "implementation_notes": "Label may stay 'View Portfolio' as UI chrome or use an ATS editorial equivalent; destination is ATS projects gallery, not /project/ archive."
+    },
+    {
+      "reference_component_id": "ref-about-split",
+      "reference_route": "/",
+      "purpose": "About band: logo/name + body copy on cream",
+      "observed_structure": "rgba(155,108,0,0.07) section; two columns desktop, stacked smaller viewports",
+      "ATS_content_source": "company.json short/medium descriptions; Gift of God logo",
+      "ATS_status": "requires_editorial_copy",
+      "implementation_notes": "Do not copy Metalworks '100+ years' or any reference marketing sentence."
+    },
+    {
+      "reference_component_id": "ref-instagram-feed",
+      "reference_route": "/",
+      "purpose": "Latest work social grid",
+      "observed_structure": "Six square posts, Load More, Follow on Instagram",
+      "ATS_content_source": "site-settings.social_links is null",
+      "ATS_status": "empty_until_approved",
+      "implementation_notes": "Keep slot; hide or empty until ATS social URLs exist. Do not embed metalworksdublin Instagram."
+    },
+    {
+      "reference_component_id": "ref-brand-logos",
+      "reference_route": "/",
+      "purpose": "Brands we have worked with",
+      "observed_structure": "Heading plus client-logo row/stack",
+      "ATS_content_source": "none until client-mark permission exists",
+      "ATS_status": "empty_until_approved",
+      "implementation_notes": "Do not copy Guinness/Jones/etc. Do not invent ATS client logos from photographs."
+    },
+    {
+      "reference_component_id": "ref-bottom-cta-band",
+      "reference_route": "/",
+      "purpose": "Dark photographic full-bleed CTA",
+      "observed_structure": "padding 100px, grey overlay, centred line, red Contact us",
+      "ATS_content_source": "editorial CTA slot + contact route; quote-only, no prices",
+      "ATS_status": "requires_editorial_copy",
+      "implementation_notes": "ATS photo from shortlist; no invented price cards."
+    },
+    {
+      "reference_component_id": "ref-footer",
+      "reference_route": "all first-party pages",
+      "purpose": "Three-column black footer + copyright",
+      "observed_structure": "Logo+social | About/Contact/Privacy/Terms | phone email address; Privacy/Terms href unknown",
+      "ATS_content_source": "site-settings + locations.json; legal footer name pending dual-entity decision",
+      "ATS_status": "requires_editorial_copy",
+      "implementation_notes": "Jinja primary + Dodoma branch. Do not copy Dublin address. Social icons empty until URLs exist. Privacy/Terms destinations unknown on reference — ATS may add real legal pages later without inventing reference URLs."
+    },
+    {
+      "reference_component_id": "ref-call-widget",
+      "reference_route": "all captured pages",
+      "purpose": "Floating/fixed click-to-call",
+      "observed_structure": "Mobile: fixed full-width 390x60 bottom bar. Desktop/tablet: DOM present, geometry unknown.",
+      "ATS_content_source": "site-settings.primary_phone / whatsapp_number",
+      "ATS_status": "ready",
+      "implementation_notes": "Reproduce mobile full-width bar. Desktop treatment unknown — do not invent a corner FAB unless later evidence appears. WhatsApp icon pending confirmation."
+    },
+    {
+      "reference_component_id": "ref-contact-heading",
+      "reference_route": "/contact/",
+      "purpose": "Page title on black ground",
+      "observed_structure": "Contact Us H1 40px/64px white centred",
+      "ATS_content_source": "editorial heading slot (Contact Us is generic chrome)",
+      "ATS_status": "ready",
+      "implementation_notes": "Generic label may be reused. Do not copy surrounding Metalworks intro sentences."
+    },
+    {
+      "reference_component_id": "ref-contact-intro",
+      "reference_route": "/contact/",
+      "purpose": "Email and phone line above form",
+      "observed_structure": "Sentence with mailto and tel",
+      "ATS_content_source": "site-settings.email and primary_phone",
+      "ATS_status": "ready",
+      "implementation_notes": "Replace Irish contacts; keep placement."
+    },
+    {
+      "reference_component_id": "ref-contact-form",
+      "reference_route": "/contact/",
+      "purpose": "Inquiry form",
+      "observed_structure": "White card radius 10px; First, Last, Email, Mobile, Message required; optional file max 1MB; Submit bottom-right red 5px radius",
+      "ATS_content_source": "content-model inquiries fields; quote-only",
+      "ATS_status": "ready",
+      "implementation_notes": "Visible field set is compatible. HTML required attributes were false; validation is JS listing five fields. File stays optional."
+    },
+    {
+      "reference_component_id": "ref-contact-map",
+      "reference_route": "/contact/",
+      "purpose": "Location map",
+      "observed_structure": "Google Maps iframe 1080x450 (Dublin Metalworks pin)",
+      "ATS_content_source": "site-settings.map_status = no_coordinates_in_sources",
+      "ATS_status": "empty_until_approved",
+      "implementation_notes": "Placeholder only. Do not reuse the reference embed or invent a Jinja/Dodoma pin."
+    },
+    {
+      "reference_component_id": "ref-portfolio-carousel",
+      "reference_route": "/portfolio/",
+      "purpose": "Hero image carousel with dots",
+      "observed_structure": "Full-width images; height 405.5 desktop, 216 tablet, 110 mobile; dots bottom centre",
+      "ATS_content_source": "asset-shortlist gallery/featured + approved projects",
+      "ATS_status": "requires_editorial_copy",
+      "implementation_notes": "ATS photos only. Autoplay timing unknown."
+    },
+    {
+      "reference_component_id": "ref-testimonials",
+      "reference_route": "/portfolio/",
+      "purpose": "What our customers say — three quote cards",
+      "observed_structure": "Three cards: quote mark, body, name in red",
+      "ATS_content_source": "none — no approved ATS testimonials",
+      "ATS_status": "empty_until_approved",
+      "implementation_notes": "Preserve geometry as empty/hidden. Do not copy names or quotes. Do not invent testimonials."
+    },
+    {
+      "reference_component_id": "ref-portfolio-ctas",
+      "reference_route": "/portfolio/",
+      "purpose": "Repeated Contact us buttons",
+      "observed_structure": "Two red 58px buttons to /contact/",
+      "ATS_content_source": "ATS contact route",
+      "ATS_status": "ready",
+      "implementation_notes": "Keep placement and count."
+    },
+    {
+      "reference_component_id": "ref-portfolio-grid",
+      "reference_route": "/portfolio/",
+      "purpose": "Project stills gallery",
+      "observed_structure": "Dark section, ~four across desktop first row; additional frames below",
+      "ATS_content_source": "canonical projects + gallery asset ids subject to publication review",
+      "ATS_status": "requires_editorial_copy",
+      "implementation_notes": "Hover/lightbox timing unknown. No reference images."
+    },
+    {
+      "reference_component_id": "ref-thank-you",
+      "reference_route": "/thank-you/",
+      "purpose": "Form success page",
+      "observed_structure": "Black page, Thank you, two lines, large rounded photo, footer",
+      "ATS_content_source": "editorial thank-you slot + approved ATS gallery still",
+      "ATS_status": "requires_editorial_copy",
+      "implementation_notes": "Do not copy dental-clinic photograph or Metalworks thanks copy beyond generic 'Thank you'."
+    },
+    {
+      "reference_component_id": "ref-blog-index",
+      "reference_route": "/blog/",
+      "purpose": "WordPress blog index, not in public nav",
+      "observed_structure": "Sidebar blog layout, not Divi marketing chrome",
+      "ATS_content_source": "none",
+      "ATS_status": "not_applicable",
+      "implementation_notes": "Do not add a public ATS blog because the reference has one."
+    },
+    {
+      "reference_component_id": "ref-blog-post",
+      "reference_route": "/metal-fabrication-vs-stainless-steel/",
+      "purpose": "Single article",
+      "observed_structure": "Long-form post with header/footer",
+      "ATS_content_source": "none",
+      "ATS_status": "not_applicable",
+      "implementation_notes": "Do not copy article copy. Not an ATS public route."
+    },
+    {
+      "reference_component_id": "ref-project-archive",
+      "reference_route": "/project/",
+      "purpose": "Empty CPT archive",
+      "observed_structure": "No Results Found + search sidebar",
+      "ATS_content_source": "none",
+      "ATS_status": "not_applicable",
+      "implementation_notes": "Do not implement as an ATS public route. Portfolio is the work gallery."
+    },
+    {
+      "reference_component_id": "ref-projects-404",
+      "reference_route": "/projects/",
+      "purpose": "404 probe",
+      "observed_structure": "Page Not Found template with chrome",
+      "ATS_content_source": "none",
+      "ATS_status": "not_applicable",
+      "implementation_notes": "Do not ship a public /projects/ 404 as a feature. Generic 404 chrome may exist later without copying this template's copy."
+    },
+    {
+      "reference_component_id": "ref-scroll-cue",
+      "reference_route": "/",
+      "purpose": "Hero base scroll affordance",
+      "observed_structure": "Thin gold line/arrow visible on some viewports",
+      "ATS_content_source": "decorative chrome",
+      "ATS_status": "ready",
+      "implementation_notes": "Optional visual; no ATS copy. Exact colour/geometry not computed — approximate from screenshots if implemented."
+    }
+  ]
+}

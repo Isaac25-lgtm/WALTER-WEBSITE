@@ -1,0 +1,34 @@
+{
+  "logo_pdf": {
+    "filename": "active logo.pdf",
+    "size": 16082,
+    "has_stream": true,
+    "font_mentions": false,
+    "type1_or_truetype": false,
+    "xobject": false,
+    "image_xobject": false,
+    "path_ops_bt": 0,
+    "fill_stroke": 3,
+    "has_to_unicode": false,
+    "has_text_showing_Tj": false,
+    "pdf_version_header": "%PDF-1.7\r\n%\u00e2\u00e3\u00cf\u00d3\r",
+    "obj_count_heuristic": 0
+  },
+  "profile_2025_header": "skipped-large",
+  "profile_2025": {
+    "filename": "active company profile new 2025 civil and construction-1.pdf",
+    "pdf_version_header": "%PDF-1.7\r\n%\u00e2\u00e3\u00cf\u00d3\r",
+    "has_to_unicode_in_first_2mb": false,
+    "has_Tj_in_first_2mb": true,
+    "font_in_first_2mb": false,
+    "xobject_in_first_2mb": true
+  },
+  "company_context": {
+    "filename": "COMPANY CONTEXT.pdf",
+    "pdf_version_header": "%PDF-1.7\r\n%\u00e2\u00e3\u00cf\u00d3\r",
+    "has_to_unicode_in_first_2mb": false,
+    "has_Tj_in_first_2mb": true,
+    "font_in_first_2mb": false,
+    "xobject_in_first_2mb": true
+  }
+}

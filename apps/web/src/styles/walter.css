@@ -1,0 +1,343 @@
+.walter-shell {
+  min-height: 100vh;
+  margin: 0;
+  background: #111827;
+  color: #f9fafb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.walter-skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -3rem;
+  z-index: 2;
+  padding: 0.5rem 0.75rem;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+}
+
+.walter-skip-link:focus {
+  top: 0.75rem;
+}
+
+.walter-page {
+  box-sizing: border-box;
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.walter-page-wide {
+  max-width: 56rem;
+}
+
+.walter-page h1,
+.walter-page h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.walter-page h2 {
+  font-size: 1.2rem;
+}
+
+.walter-page p,
+.walter-notice {
+  margin: 0 0 1.25rem;
+  line-height: 1.5;
+}
+
+.walter-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.walter-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.walter-form label,
+.walter-status-controls label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.walter-form input,
+.walter-status-controls select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #4b5563;
+  border-radius: 4px;
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+.walter-form button,
+.walter-page button {
+  justify-self: start;
+  padding: 0.6rem 1rem;
+  border: 0;
+  border-radius: 4px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.walter-form button:disabled,
+.walter-page button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.walter-text-button {
+  background: transparent;
+  color: #93c5fd;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.walter-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.walter-filters button {
+  background: #1f2937;
+  color: #e5e7eb;
+}
+
+.walter-filters button.is-active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.walter-inquiry-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.walter-inquiry-row {
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  background: #1f2937;
+  color: #f9fafb;
+  border-radius: 4px;
+}
+
+.walter-inquiry-open {
+  justify-self: start;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+}
+
+.walter-inquiry-name {
+  font-weight: 700;
+}
+
+.walter-inquiry-meta,
+.walter-inquiry-status,
+.walter-inquiry-row time {
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+
+.walter-inquiry-meta a,
+.walter-detail-list a {
+  color: #93c5fd;
+}
+
+.walter-draft-group h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.walter-draft-group ul {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.walter-draft-description,
+.walter-draft-canonical {
+  display: block;
+  margin: 0.35rem 0;
+  color: #9ca3af;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.walter-detail-list {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0 0 1.25rem;
+}
+
+.walter-detail-list div {
+  margin: 0;
+}
+
+.walter-detail-list dt {
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+
+.walter-detail-list dd {
+  margin: 0.2rem 0 0;
+}
+
+.walter-message {
+  white-space: pre-wrap;
+}
+
+.walter-status-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: end;
+}
+
+.walter-section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.walter-section-nav button {
+  background: #1f2937;
+  color: #e5e7eb;
+}
+
+.walter-section-nav button.is-active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.walter-load-more {
+  margin-top: 1rem;
+}
+
+.walter-content-layout {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.walter-draft-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.walter-draft-item label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.walter-draft-item input,
+.walter-draft-item textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #4b5563;
+  border-radius: 4px;
+  background: #1f2937;
+  color: #f9fafb;
+  font: inherit;
+}
+
+.walter-draft-item textarea {
+  min-height: 6rem;
+}
+
+.walter-draft-meta {
+  margin: 0.4rem 0 0.6rem;
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+
+.walter-draft-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.walter-preview {
+  box-sizing: border-box;
+  padding: 1rem;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  background: #0b1220;
+}
+
+.walter-preview h3,
+.walter-preview-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.walter-preview-notice,
+.walter-preview-kicker {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .walter-inquiry-row {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.4fr) minmax(0, 1fr);
+  }
+
+  .walter-content-layout {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    align-items: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .walter-page {
+    padding: 2rem 1rem;
+  }
+
+  .walter-toolbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 390px) {
+  .walter-page {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .walter-inquiry-row,
+  .walter-draft-actions,
+  .walter-section-nav {
+    width: 100%;
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "desktop": {
+    "header_box": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 84
+    },
+    "header_row_box": {
+      "x": 259,
+      "y": 0,
+      "width": 922,
+      "height": 84
+    },
+    "logo_box": {
+      "x": 259,
+      "y": 9.5,
+      "width": 233.5,
+      "height": 65
+    },
+    "phone_box": {
+      "x": 1042.015625,
+      "y": 30.09375,
+      "width": 138.984375,
+      "height": 23.796875
+    },
+    "hero_box": {
+      "x": 0,
+      "y": 84,
+      "width": 1440,
+      "height": 538
+    },
+    "hero_font_size": "50px",
+    "cta_box": {
+      "x": 588.984375,
+      "y": 434.796875,
+      "width": 262.03125,
+      "height": 58
+    },
+    "overflow_x": 1440,
+    "scroll_height": 2389,
+    "hamburger_visible": false,
+    "call_bar_visible": false,
+    "mosaic": 0,
+    "latest_work": 0,
+    "client_brands": 0,
+    "service_count": 9,
+    "services_box": {
+      "x": 0,
+      "y": 20,
+      "width": 1440,
+      "height": 556.375
+    },
+    "about_box": {
+      "x": 0,
+      "y": 610.375,
+      "width": 1440,
+      "height": 290.578125
+    },
+    "closing_cta_box": {
+      "x": 0,
+      "y": 269.953125,
+      "width": 1440,
+      "height": 360.796875
+    },
+    "footer_box": {
+      "x": 0,
+      "y": 499.75,
+      "width": 1440,
+      "height": 401
+    },
+    "footer_text": "Active Technical Services \u00b7 Gift of God\n\nServices\nPortfolio\nContact\n\n+256 782 318 727\n\nactivetechnicalservices@gmail.com\n\nPlot 23A, Lubas Road, Jinja, Uganda\n\nTanzania branch: P.O. Box 551, Dodoma, Tanzania\n\n\u00a9 2026 Active Technical Services (U) Ltd"
+  },
+  "tablet": {
+    "header_box": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 80
+    },
+    "hero_box": {
+      "x": 0,
+      "y": 80,
+      "width": 768,
+      "height": 507
+    },
+    "hero_font_size": "40px",
+    "hamburger_visible": true,
+    "desktop_nav_visible": false,
+    "call_bar_visible": false,
+    "overflow_x": 768,
+    "service_columns": "614px"
+  },
+  "mobile_open": {
+    "panel_box": {
+      "x": 0,
+      "y": 80,
+      "width": 390,
+      "height": 320
+    },
+    "toggle_expanded": "true"
+  },
+  "mobile": {
+    "header_box": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 80
+    },
+    "hero_box": {
+      "x": 0,
+      "y": 80,
+      "width": 390,
+      "height": 507
+    },
+    "hero_font_size": "30px",
+    "call_bar_box": {
+      "x": 0,
+      "y": 784,
+      "width": 390,
+      "height": 60
+    },
+    "call_bar_visible": true,
+    "overflow_x": 390,
+    "footer_box": {
+      "x": 0,
+      "y": 2966.296875,
+      "width": 390,
+      "height": 611.96875
+    }
+  },
+  "export_checks": {
+    "google_fonts": false,
+    "whatsapp": false,
+    "walter": false,
+    "metalworks": false,
+    "context_assets": false,
+    "woff_in_export": true
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "notes": "Public homepage copy slots. Provenance stays in this canonical file and must not be emitted into the public snapshot or HTML. Facts only; no unverified claims.",
+  "homepage": {
+    "heroHeading": {
+      "text": "Engineering, fabrication and construction solutions",
+      "source_file": "context/canonical/company.json",
+      "canonical_field": "business_classification",
+      "editorial_note": "Short factual headline from the documented engineering, fabrication and civil-construction classification. No duration, ranking, or superlative claims."
+    },
+    "heroSupporting": {
+      "text": "Active Technical Services provides civil, mechanical, fabrication and industrial support from Jinja, Uganda, with a branch in Dodoma, Tanzania.",
+      "source_file": "context/canonical/company.json",
+      "canonical_field": "short_company_description",
+      "editorial_note": "Compressed from the canonical short description so the hero line length stays comparable to the recorded supporting line."
+    },
+    "servicesHeading": {
+      "text": "What do we do?",
+      "source_file": "context/canonical/services.json",
+      "canonical_field": "services",
+      "editorial_note": "Section label for the nine canonical services and the /#what-we-do hash target. Not a Metalworks marketing sentence."
+    },
+    "servicesIntroduction": {
+      "text": "ATS delivers nine documented engineering and construction services from Jinja, with branch support in Dodoma.",
+      "source_file": "context/canonical/services.json",
+      "canonical_field": "services",
+      "editorial_note": "Introduces the nine-service grid without reducing the list or inventing capabilities."
+    },
+    "aboutEyebrow": {
+      "text": "ATS · Gift of God",
+      "source_file": "context/canonical/company.json",
+      "canonical_field": "abbreviation",
+      "editorial_note": "Public abbreviation and mark only. Walter is not used."
+    },
+    "aboutHeading": {
+      "text": "Active Technical Services",
+      "source_file": "context/canonical/company.json",
+      "canonical_field": "public_name",
+      "editorial_note": "Public trading name for the about split heading."
+    },
+    "aboutParagraphs": [
+      {
+        "text": "Active Technical Services (ATS) is an East African engineering, civil-construction, fabrication and industrial-services company based in Jinja, Uganda, with a branch in Dodoma, Tanzania.",
+        "source_file": "context/canonical/company.json",
+        "canonical_field": "short_company_description",
+        "editorial_note": "Canonical short description, unchanged in substance."
+      },
+      {
+        "text": "ATS supplies skilled labour and delivers welding and fabrication, structural steelwork, plant and machine installation, pipework, insulation, maintenance and commissioning, together with civil foundations, warehouses, factory buildings and production-line bases.",
+        "source_file": "context/canonical/company.json",
+        "canonical_field": "medium_company_description",
+        "editorial_note": "Public-safe restatement of the medium description. Internal source-document wording is omitted."
+      }
+    ],
+    "portfolioCtaLabel": {
+      "text": "View Portfolio",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "pricing_mode",
+      "editorial_note": "Recorded portfolio-button label. The destination is /portfolio/; named projects remain unpublished."
+    },
+    "closingCtaHeading": {
+      "text": "Request a quotation",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "pricing_mode",
+      "editorial_note": "Quote-only public pricing mode. No prices, warranties, or guaranteed results."
+    },
+    "closingCtaSupporting": {
+      "text": "Contact Active Technical Services about civil, fabrication or plant-installation work.",
+      "source_file": "context/canonical/company.json",
+      "canonical_field": "business_classification",
+      "editorial_note": "Factual invitation to inquire. No invented certifications or client relationships."
+    },
+    "contactCtaLabel": {
+      "text": "Contact us",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "email",
+      "editorial_note": "Recorded primary-button label. Routes to /contact/."
+    }
+  },
+  "contact": {
+    "heading": {
+      "text": "Contact Us",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "email",
+      "editorial_note": "Recorded Contact-page H1. Not a Metalworks sentence."
+    },
+    "introduction": {
+      "text": "For project enquiries and quotation requests, complete the form below or contact Active Technical Services by email or telephone.",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "email",
+      "editorial_note": "Quote-only enquiry path. No response-time, 24-hour, or WhatsApp claims."
+    },
+    "telephoneAlternativeText": {
+      "text": "Call Active Technical Services",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "primary_phone",
+      "editorial_note": "Accessible name for the public tel link. The number is not labelled WhatsApp."
+    },
+    "emailAlternativeText": {
+      "text": "Email Active Technical Services",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "email",
+      "editorial_note": "Accessible name for the public mailto link."
+    },
+    "formUnavailableMessage": {
+      "text": "Online inquiry submission is being prepared. Please contact us by telephone or email.",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "pricing_mode",
+      "editorial_note": "Used when the public API origin is missing, the API is asleep, or storage is unavailable. Must not claim sent, submitted, saved, received, or successful."
+    },
+    "formRateLimitedMessage": {
+      "text": "Too many inquiry attempts. Try again later, or contact us by telephone or email.",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "primary_phone",
+      "editorial_note": "Public 429 state. No countdown or internal rate-limit numbers."
+    },
+    "formAttachmentUnavailableMessage": {
+      "text": "File upload is not available yet. Remove the file to send your message, or contact us by telephone or email.",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "pricing_mode",
+      "editorial_note": "Public 422 state while R2 is unimplemented. File bytes are never sent."
+    },
+    "formInvalidMessage": {
+      "text": "Check your details and try again, or contact us by telephone or email.",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "email",
+      "editorial_note": "Public 400 state. Does not expose Zod issues."
+    },
+    "formInternalErrorMessage": {
+      "text": "The inquiry could not be sent. Please try again, or contact us by telephone or email.",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "form_internal_error_message",
+      "editorial_note": "Public 500 and unexpected envelope state. No stack traces."
+    },
+    "formTimeoutMessage": {
+      "text": "The request timed out. Please try again, or contact us by telephone or email.",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "form_timeout_message",
+      "editorial_note": "Browser AbortController timeout. Distinct from a generic network failure."
+    },
+    "formNetworkErrorMessage": {
+      "text": "A network error occurred. Please try again, or contact us by telephone or email.",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "form_network_error_message",
+      "editorial_note": "Fetch failed without an abort. Must not claim sent or received."
+    },
+    "formSubmittingMessage": {
+      "text": "Submitting…",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "form_submitting_message",
+      "editorial_note": "Submit button label and polite live status while the request is in flight."
+    },
+    "jinjaLocationLabel": {
+      "text": "Jinja, Uganda",
+      "source_file": "context/canonical/locations.json",
+      "canonical_field": "display_name",
+      "editorial_note": "Primary public operation. Full street address stays in the footer."
+    },
+    "tanzaniaBranchLabel": {
+      "text": "Tanzania branch: Dodoma, Tanzania",
+      "source_file": "context/canonical/locations.json",
+      "canonical_field": "public_label",
+      "editorial_note": "Dodoma is a branch, not the public head office."
+    }
+  },
+  "thankYou": {
+    "heading": {
+      "text": "Thank you",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "thank_you_heading",
+      "editorial_note": "Recorded thank-you H1. Not a Metalworks sentence."
+    },
+    "supporting": {
+      "text": "We will be in touch.",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "thank_you_supporting",
+      "editorial_note": "No response-time, 24-hour, or WhatsApp claims."
+    },
+    "otherWork": {
+      "text": "In the meantime, please take a look at some of our other work.",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "thank_you_other_work",
+      "editorial_note": "Reference structure only. The photograph slot stays empty while project media is unpublished."
+    },
+    "returnHomeLabel": {
+      "text": "Return home",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "thank_you_return_home",
+      "editorial_note": "Static-export link back to /."
+    },
+    "returnContactLabel": {
+      "text": "Return to contact",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "thank_you_return_contact",
+      "editorial_note": "Static-export link back to /contact/."
+    }
+  }
+}

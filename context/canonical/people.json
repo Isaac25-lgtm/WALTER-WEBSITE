@@ -1,0 +1,49 @@
+{
+  "notes": [
+    "Only people named in the source profiles. The private owner/administrator identity is omitted from this public-facing canonical file.",
+    "Uncaptioned portraits are not linked to these records."
+  ],
+  "people": [
+    {
+      "id": "person-nyeko-francis",
+      "canonical_name": "Nyeko Francis",
+      "documented_titles": ["Head of Directors"],
+      "jurisdiction_source_context": "Named in both the 2025 Uganda profile (PDF page 2) and the 2023 Tanzania pages (PDF page 2).",
+      "short_factual_profile": "Documented as Head of Directors, with experience cited in civil and mechanical engineering, plus contract lobbying, general management and administration.",
+      "public_profile_status": "allowed_factual_summary",
+      "portrait_status": "uncaptioned_not_linked",
+      "provenance": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "page": 2},
+        {"source_file": "COMPANY CONTEXT.pdf", "page": 2}
+      ],
+      "unresolved_fields": ["Which uncaptioned portrait, if any, may be published against this name"]
+    },
+    {
+      "id": "person-adolf-serete",
+      "canonical_name": "Adolf Serete",
+      "documented_titles": ["Technical Director"],
+      "jurisdiction_source_context": "Named in both source profiles, PDF page 2 of each.",
+      "short_factual_profile": "Documented as Technical Director, responsible for analysing technical drawings and for on-site technical work.",
+      "public_profile_status": "allowed_factual_summary",
+      "portrait_status": "uncaptioned_not_linked",
+      "provenance": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "page": 2},
+        {"source_file": "COMPANY CONTEXT.pdf", "page": 2}
+      ],
+      "unresolved_fields": ["Which uncaptioned portrait, if any, may be published against this name"]
+    },
+    {
+      "id": "person-ochan-tony",
+      "canonical_name": "Ochan Tony",
+      "documented_titles": ["Named as one of three founding directors in the 2025 Uganda About Us page"],
+      "jurisdiction_source_context": "Uganda 2025 profile page 2 only. Absent from the Tanzania 2023 two-director list.",
+      "short_factual_profile": "Named as a founder/director. No biography paragraph appears in the supplied documents.",
+      "public_profile_status": "internal_only_until_role_confirmed",
+      "portrait_status": "none_labelled",
+      "provenance": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "page": 2}
+      ],
+      "unresolved_fields": ["Current role", "Whether to list on a public About page"]
+    }
+  ]
+}

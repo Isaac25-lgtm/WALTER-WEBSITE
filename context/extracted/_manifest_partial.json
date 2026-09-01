@@ -1,0 +1,94 @@
+[
+  {
+    "filename": "active company profile new 2025 civil and construction-1.pdf",
+    "relative_path": "active company profile new 2025 civil and construction-1.pdf",
+    "absolute_path": "F:\\MY FILES\\DATA SCIENCE\\WALTER'S WEBSITE\\active company profile new 2025 civil and construction-1.pdf",
+    "file_size_bytes": 66857765,
+    "sha256": "26633e31db42fbb1c2c298a6a83040f33b9ac4131677e7d712b73eda3a6ac797",
+    "page_count": 38,
+    "metadata": {
+      "/CreationDate": "D:20251120075237+06'00'",
+      "/ModDate": "D:20251120075237+06'00'",
+      "/Producer": "Corel PDF Engine Version 20.0.0.633",
+      "/Author": "luke",
+      "/Creator": "CorelDRAW 2018",
+      "/Title": "active company profile new 2025 civil and construction.cdr"
+    },
+    "has_extractable_text": false,
+    "pages_with_text": [],
+    "pages_without_text": [],
+    "encrypted": false,
+    "error": null,
+    "source_key": "profile_2025"
+  },
+  {
+    "filename": "COMPANY CONTEXT.pdf",
+    "relative_path": "COMPANY CONTEXT.pdf",
+    "absolute_path": "F:\\MY FILES\\DATA SCIENCE\\WALTER'S WEBSITE\\COMPANY CONTEXT.pdf",
+    "file_size_bytes": 115659880,
+    "sha256": "59f2e3aedf0c3f5e071b3b50eb94c6cd8cd80be34dc6c500e499de53e22fb90e",
+    "page_count": 34,
+    "metadata": {
+      "/CreationDate": "D:20231212031752-08'00'",
+      "/ModDate": "D:20231212031752-08'00'",
+      "/Producer": "Corel PDF Engine Version 20.0.0.633",
+      "/Author": "luke",
+      "/Creator": "CorelDRAW 2018",
+      "/Title": "active company profile new 2023 tanzania pages.cdr"
+    },
+    "has_extractable_text": false,
+    "pages_with_text": [],
+    "pages_without_text": [],
+    "encrypted": false,
+    "error": null,
+    "source_key": "company_context"
+  },
+  {
+    "filename": "active logo.pdf",
+    "relative_path": "active logo.pdf",
+    "absolute_path": "F:\\MY FILES\\DATA SCIENCE\\WALTER'S WEBSITE\\active logo.pdf",
+    "file_size_bytes": 16082,
+    "sha256": "f0404fc3983505654c556b3fb084a60e5f53d42f2c5126d9637a590203035a2e",
+    "page_count": 1,
+    "metadata": {
+      "/CreationDate": "D:20260826055132+06'00'",
+      "/ModDate": "D:20260826055132+06'00'",
+      "/Producer": "Corel PDF Engine Version 20.0.0.633",
+      "/Author": "carter",
+      "/Creator": "CorelDRAW 2018",
+      "/Title": "Untitled-1"
+    },
+    "has_extractable_text": false,
+    "pages_with_text": [],
+    "pages_without_text": [],
+    "encrypted": false,
+    "error": null,
+    "source_key": "logo_pdf"
+  },
+  {
+    "filename": "active logo.jpg",
+    "relative_path": "active logo.jpg",
+    "absolute_path": "F:\\MY FILES\\DATA SCIENCE\\WALTER'S WEBSITE\\active logo.jpg",
+    "file_size_bytes": 79866,
+    "sha256": "2cdb345e2a3cd4d505a2f00a35c66cdb55aa7dddce9e1ff37691dd163e4e8ea4",
+    "page_count": null,
+    "metadata": {},
+    "pixel_dimensions": [
+      1654,
+      1166
+    ],
+    "mode": "RGB",
+    "format": "JPEG",
+    "info_keys": [
+      "jfif",
+      "jfif_version",
+      "dpi",
+      "jfif_unit",
+      "jfif_density",
+      "adobe",
+      "adobe_transform",
+      "icc_profile"
+    ],
+    "source_key": "logo_jpg"
+  }
+]

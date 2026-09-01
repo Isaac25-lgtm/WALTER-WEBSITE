@@ -1,0 +1,72 @@
+{
+  "analysis_scope": [
+    "active logo.pdf (preferred)",
+    "active logo.jpg (raster reference)",
+    "logo usage on profile covers and location pages"
+  ],
+  "do_not_redesign": true,
+  "marks": {
+    "abbreviation": "ATS",
+    "slogan_or_mark": "GIFT OF GOD",
+    "slogan_text_layer_variant": "GIFT 0F GOD",
+    "slogan_notes": "Rendered pages and the logo files show the letter O in OF. COMPANY CONTEXT.pdf text layer often stores a digit zero (GIFT 0F GOD). Preserve both. Some inner-profile logo treatments colour GIFT OF GOD red; the standalone logo files use dark blue/purple stencil lettering."
+  },
+  "primary_wordmark_composition": {
+    "container": "Horizontal rectangle, bright yellow fill, thin green border.",
+    "line_1": "ATS — heavy slab/serif capitals, vertical blue-to-pale-blue/white gradient with a horizontal glint through the letter bodies.",
+    "line_2": "GIFT OF GOD — smaller all-caps stencil-serif, solid dark blue/purple in the standalone files.",
+    "legal_name_outside_badge": "Profile pages place ACTIVE TECHNICAL SERVICES (U) LTD. or ACTIVE TECHNICAL SERVICES LTD. under the yellow badge. The standalone logo files do not include the legal name inside the badge."
+  },
+  "colour_observations_provisional": {
+    "warning": "Sampled from active logo.jpg by quantizing non-white pixels. These are provisional RGB values, not a specified brand palette.",
+    "dominant_yellow_field_quantized_rgb": [
+      [240, 240, 16],
+      [240, 240, 0]
+    ],
+    "blue_purple_lettering_quantized_rgb": [
+      [48, 64, 144],
+      [64, 64, 144],
+      [80, 80, 160]
+    ],
+    "green_border_quantized_rgb": [0, 160, 80],
+    "white_surround_rgb": [255, 255, 255],
+    "center_pixel_sample_rgba": [148, 151, 196, 255],
+    "corner_pixels": "All four corners of the JPG are white (255,255,255)."
+  },
+  "geometry": {
+    "jpg_and_pdf_render_canvas_px": [1654, 1166],
+    "canvas_aspect_ratio": 1.4185,
+    "dpi": 200,
+    "safe_area": "Substantial white margin around the yellow badge on all sides. The badge itself is a wide rectangle, roughly 3:1 visually, inset from the canvas.",
+    "pdf_render_of_logo_pdf_at_200dpi_px": [1654, 1166]
+  },
+  "pdf_versus_jpg": {
+    "same_canvas_size_at_200dpi": true,
+    "pdf_file_size_bytes": 16082,
+    "jpg_file_size_bytes": 79866,
+    "pdf_has_embedded_rasters": false,
+    "pdf_has_font_resources": false,
+    "pdf_contains_usable_vector_paths": true,
+    "inference": "The JPG is a 200 dpi raster export of the same CorelDRAW artwork. The PDF is outlined vectors (no live text). Prefer the PDF for production; the JPG is a preview/fallback."
+  },
+  "on_document_variants": [
+    "Cover headers add the legal name beside the badge.",
+    "Tanzania location-page logo: GIFT OF GOD appears darker/blacker in the visual reading of COMPANY CONTEXT.pdf page 33.",
+    "Some inner pages colour GIFT OF GOD red.",
+    "Tanzania footers overlap ACTIVE TECHNICIAL SERVICES (U) LTD. with ACTIVE TECHNICAL SERVICES LTD. (TECHNICIAL is source spelling)."
+  ],
+  "accessibility_concerns": [
+    "ATS letter bottoms fade toward pale blue/white on yellow — likely insufficient contrast at the base of the letters.",
+    "Yellow field on white canvas has weak edge contrast except for the thin green border.",
+    "Small stencil GIFT OF GOD may fail small-size rendering on screens.",
+    "Do not 'fix' the mark; later UI work should keep the artwork and add sufficient surrounding contrast or size."
+  ],
+  "recommended_production_source_file": {
+    "path": "active logo.pdf",
+    "reason": "Outlined vector paths, no JPEG artefacts, smaller file, same artwork as the JPG."
+  },
+  "copied_inspection_files": [
+    "context/assets/brand/active-logo.jpg",
+    "context/assets/brand/active-logo-pdf-render-200dpi.png"
+  ]
+}

@@ -1,0 +1,545 @@
+{
+  "inspected_at": "2026-08-31T10:44:33.717370+00:00",
+  "browser": "Google Chrome (Playwright channel=chrome), headless, zoom 100%, deviceScaleFactor=1",
+  "browser_zoom": "100%",
+  "device_pixel_ratio": 1,
+  "notes": [
+    "Full-page PNG captures. Header, footer and on-page widgets are included.",
+    "Google Maps iframe is present on /contact/ in the DOM; map tiles may be blank in headless capture.",
+    "The Call Us Now control exists in the DOM with z-index 2147483647; geometry was 0x0 at capture time and is treated as uncertain.",
+    "Screenshots are private engineering evidence and must never be copied to public/ or used as ATS media."
+  ],
+  "screenshots": [
+    {
+      "id": "ss-home-desktop",
+      "route": "home",
+      "source_url": "https://metalfabrication.ie/",
+      "viewport": "1440x900",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/desktop/home-1440x900-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/",
+        "scroll_height_px": 4984,
+        "flags": [],
+        "timestamp": "2026-08-31T10:45:18.048366+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-contact-desktop",
+      "route": "contact",
+      "source_url": "https://metalfabrication.ie/contact/",
+      "viewport": "1440x900",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/desktop/contact-1440x900-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Contact - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/contact/",
+        "scroll_height_px": 1848,
+        "flags": [
+          "form_present",
+          "iframe_present"
+        ],
+        "timestamp": "2026-08-31T10:45:23.404292+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-portfolio-desktop",
+      "route": "portfolio",
+      "source_url": "https://metalfabrication.ie/portfolio/",
+      "viewport": "1440x900",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/desktop/portfolio-1440x900-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Portfolio - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/portfolio/",
+        "scroll_height_px": 4358,
+        "flags": [],
+        "timestamp": "2026-08-31T10:45:33.432412+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-blog-desktop",
+      "route": "blog",
+      "source_url": "https://metalfabrication.ie/blog/",
+      "viewport": "1440x900",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/desktop/blog-1440x900-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Blog - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/blog/",
+        "scroll_height_px": 1231,
+        "flags": [
+          "form_present"
+        ],
+        "timestamp": "2026-08-31T10:45:40.582595+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-thank-you-desktop",
+      "route": "thank-you",
+      "source_url": "https://metalfabrication.ie/thank-you/",
+      "viewport": "1440x900",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/desktop/thank-you-1440x900-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Thank You - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/thank-you/",
+        "scroll_height_px": 1453,
+        "flags": [],
+        "timestamp": "2026-08-31T10:45:46.707378+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-blog-post-desktop",
+      "route": "blog-post",
+      "source_url": "https://metalfabrication.ie/metal-fabrication-vs-stainless-steel/",
+      "viewport": "1440x900",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/desktop/blog-post-1440x900-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Unveiling the Distinction: Metal Fabrication vs. Stainless Steel - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/metal-fabrication-vs-stainless-steel/",
+        "scroll_height_px": 6232,
+        "flags": [],
+        "timestamp": "2026-08-31T10:45:55.826843+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-project-desktop",
+      "route": "project",
+      "source_url": "https://metalfabrication.ie/project/",
+      "viewport": "1440x900",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/desktop/project-1440x900-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Projects - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/project/",
+        "scroll_height_px": 900,
+        "flags": [
+          "form_present"
+        ],
+        "timestamp": "2026-08-31T10:46:01.875859+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-projects-desktop",
+      "route": "projects",
+      "source_url": "https://metalfabrication.ie/projects/",
+      "viewport": "1440x900",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/desktop/projects-1440x900-full.png",
+      "file_exists": true,
+      "http_status": 404,
+      "observed_state": {
+        "page_title": "Page Not Found - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/projects/",
+        "scroll_height_px": 900,
+        "flags": [
+          "form_present"
+        ],
+        "timestamp": "2026-08-31T10:46:07.372943+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-home-tablet",
+      "route": "home",
+      "source_url": "https://metalfabrication.ie/",
+      "viewport": "768x1024",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/tablet/home-768x1024-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/",
+        "scroll_height_px": 8145,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible"
+        ],
+        "timestamp": "2026-08-31T10:46:20.290991+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-contact-tablet",
+      "route": "contact",
+      "source_url": "https://metalfabrication.ie/contact/",
+      "viewport": "768x1024",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/tablet/contact-768x1024-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Contact - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/contact/",
+        "scroll_height_px": 2172,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible",
+          "form_present",
+          "iframe_present"
+        ],
+        "timestamp": "2026-08-31T10:46:24.468684+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-portfolio-tablet",
+      "route": "portfolio",
+      "source_url": "https://metalfabrication.ie/portfolio/",
+      "viewport": "768x1024",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/tablet/portfolio-768x1024-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Portfolio - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/portfolio/",
+        "scroll_height_px": 3719,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible"
+        ],
+        "timestamp": "2026-08-31T10:46:39.353215+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-blog-tablet",
+      "route": "blog",
+      "source_url": "https://metalfabrication.ie/blog/",
+      "viewport": "768x1024",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/tablet/blog-768x1024-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Blog - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/blog/",
+        "scroll_height_px": 1712,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible",
+          "form_present"
+        ],
+        "timestamp": "2026-08-31T10:46:44.012483+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-thank-you-tablet",
+      "route": "thank-you",
+      "source_url": "https://metalfabrication.ie/thank-you/",
+      "viewport": "768x1024",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/tablet/thank-you-768x1024-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Thank You - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/thank-you/",
+        "scroll_height_px": 1675,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible"
+        ],
+        "timestamp": "2026-08-31T10:46:48.554611+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-blog-post-tablet",
+      "route": "blog-post",
+      "source_url": "https://metalfabrication.ie/metal-fabrication-vs-stainless-steel/",
+      "viewport": "768x1024",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/tablet/blog-post-768x1024-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Unveiling the Distinction: Metal Fabrication vs. Stainless Steel - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/metal-fabrication-vs-stainless-steel/",
+        "scroll_height_px": 9130,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible"
+        ],
+        "timestamp": "2026-08-31T10:46:54.068353+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-project-tablet",
+      "route": "project",
+      "source_url": "https://metalfabrication.ie/project/",
+      "viewport": "768x1024",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/tablet/project-768x1024-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Projects - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/project/",
+        "scroll_height_px": 1140,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible",
+          "form_present"
+        ],
+        "timestamp": "2026-08-31T10:46:57.608667+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-projects-tablet",
+      "route": "projects",
+      "source_url": "https://metalfabrication.ie/projects/",
+      "viewport": "768x1024",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/tablet/projects-768x1024-full.png",
+      "file_exists": true,
+      "http_status": 404,
+      "observed_state": {
+        "page_title": "Page Not Found - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/projects/",
+        "scroll_height_px": 1182,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible",
+          "form_present"
+        ],
+        "timestamp": "2026-08-31T10:47:01.733130+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-home-mobile",
+      "route": "home",
+      "source_url": "https://metalfabrication.ie/",
+      "viewport": "390x844",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/mobile/home-390x844-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/",
+        "scroll_height_px": 7801,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible"
+        ],
+        "timestamp": "2026-08-31T10:47:10.864687+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-contact-mobile",
+      "route": "contact",
+      "source_url": "https://metalfabrication.ie/contact/",
+      "viewport": "390x844",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/mobile/contact-390x844-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Contact - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/contact/",
+        "scroll_height_px": 2408,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible",
+          "form_present",
+          "iframe_present"
+        ],
+        "timestamp": "2026-08-31T10:47:17.711819+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-portfolio-mobile",
+      "route": "portfolio",
+      "source_url": "https://metalfabrication.ie/portfolio/",
+      "viewport": "390x844",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/mobile/portfolio-390x844-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Portfolio - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/portfolio/",
+        "scroll_height_px": 3252,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible"
+        ],
+        "timestamp": "2026-08-31T10:47:27.198106+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-blog-mobile",
+      "route": "blog",
+      "source_url": "https://metalfabrication.ie/blog/",
+      "viewport": "390x844",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/mobile/blog-390x844-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Blog - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/blog/",
+        "scroll_height_px": 1584,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible",
+          "form_present"
+        ],
+        "timestamp": "2026-08-31T10:47:34.541824+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-thank-you-mobile",
+      "route": "thank-you",
+      "source_url": "https://metalfabrication.ie/thank-you/",
+      "viewport": "390x844",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/mobile/thank-you-390x844-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Thank You - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/thank-you/",
+        "scroll_height_px": 1524,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible"
+        ],
+        "timestamp": "2026-08-31T10:47:38.563403+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-blog-post-mobile",
+      "route": "blog-post",
+      "source_url": "https://metalfabrication.ie/metal-fabrication-vs-stainless-steel/",
+      "viewport": "390x844",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/mobile/blog-post-390x844-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Unveiling the Distinction: Metal Fabrication vs. Stainless Steel - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/metal-fabrication-vs-stainless-steel/",
+        "scroll_height_px": 7055,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible"
+        ],
+        "timestamp": "2026-08-31T10:47:43.857450+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-project-mobile",
+      "route": "project",
+      "source_url": "https://metalfabrication.ie/project/",
+      "viewport": "390x844",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/mobile/project-390x844-full.png",
+      "file_exists": true,
+      "http_status": 200,
+      "observed_state": {
+        "page_title": "Projects - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/project/",
+        "scroll_height_px": 1196,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible",
+          "form_present"
+        ],
+        "timestamp": "2026-08-31T10:47:47.659220+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    },
+    {
+      "id": "ss-projects-mobile",
+      "route": "projects",
+      "source_url": "https://metalfabrication.ie/projects/",
+      "viewport": "390x844",
+      "device_pixel_ratio": 1,
+      "browser_zoom": "100%",
+      "capture_type": "full_page",
+      "file_path": "context/reference/screenshots/mobile/projects-390x844-full.png",
+      "file_exists": true,
+      "http_status": 404,
+      "observed_state": {
+        "page_title": "Page Not Found - Metal Fabrication | Metal Works Dublin",
+        "final_url": "https://metalfabrication.ie/projects/",
+        "scroll_height_px": 1238,
+        "flags": [
+          "mobile_or_tablet_hamburger_visible",
+          "form_present"
+        ],
+        "timestamp": "2026-08-31T10:47:52.297446+00:00"
+      },
+      "notes": "Headless Chrome full-page screenshot at listed viewport."
+    }
+  ]
+}

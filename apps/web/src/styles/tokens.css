@@ -1,0 +1,93 @@
+:root {
+  --ats-black: rgb(0, 0, 0);
+  --ats-near-black: rgb(20, 20, 20);
+  --ats-white: rgb(255, 255, 255);
+  --ats-heading: rgb(51, 51, 51);
+  --ats-body: rgb(102, 102, 102);
+  --ats-muted: rgb(153, 153, 153);
+  --ats-accent: rgb(224, 43, 32);
+  --ats-cta-band: rgb(71, 71, 71);
+  --ats-cream: rgba(155, 108, 0, 0.07);
+  --ats-border: rgb(51, 51, 51);
+  --ats-focus: rgb(224, 43, 32);
+
+  --ats-content-max: 1080px;
+  --ats-form-card-max: 1051px;
+  --ats-gutter-desktop: 180px;
+  --ats-gutter-tablet: 77px;
+  --ats-gutter-mobile: 39px;
+  --ats-header-row-max: 922px;
+  --ats-header-gutter-desktop: 259px;
+
+  --ats-header-height-desktop: 84px;
+  --ats-header-height-compact: 80px;
+  --ats-logo-height-desktop: 65px;
+  --ats-logo-height-compact: 52px;
+  --ats-footer-padding-desktop: 54px;
+  --ats-footer-padding-compact: 50px;
+  --ats-footer-height-desktop: 401px;
+  --ats-hero-height-desktop: 538px;
+  --ats-hero-height-compact: 507px;
+  --ats-cta-band-padding: 100px;
+  --ats-call-bar-height: 60px;
+  --ats-map-height: 450px;
+  --ats-input-min-height: 40px;
+  --ats-input-surface: rgb(238, 238, 238);
+
+  --ats-radius-button: 10px;
+  --ats-radius-submit: 5px;
+  --ats-radius-card: 10px;
+  --ats-shadow-none: none;
+
+  --ats-font-body: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+  --ats-font-button: Inter, Helvetica, Arial, sans-serif;
+  --ats-body-size: 14px;
+  --ats-body-line: 23.8px;
+  --ats-nav-size: 15px;
+  --ats-nav-weight: 500;
+  --ats-phone-size: 14px;
+  --ats-h1-desktop: 50px;
+  --ats-h1-desktop-line: 65px;
+  --ats-h1-tablet: 40px;
+  --ats-h1-tablet-line: 52px;
+  --ats-h1-mobile: 30px;
+  --ats-h1-mobile-line: 39px;
+  --ats-h1-contact: 40px;
+  --ats-h1-contact-line: 64px;
+  --ats-thankyou-image-max: 972px;
+  --ats-radius-thankyou-image: 30px;
+  --ats-h2-size: 35px;
+  --ats-h2-line: 35px;
+  --ats-h2-weight: 800;
+  --ats-h3-size: 20px;
+  --ats-h3-line: 20px;
+  --ats-button-size: 20px;
+  --ats-button-line: 34px;
+  --ats-button-weight: 700;
+  --ats-submit-size: 18px;
+  --ats-submit-line: 30.6px;
+
+  --ats-space-1: 8px;
+  --ats-space-2: 12px;
+  --ats-space-3: 16px;
+  --ats-space-4: 24px;
+  --ats-space-5: 32px;
+  --ats-space-6: 50px;
+  --ats-space-7: 54px;
+  --ats-space-8: 100px;
+
+  --ats-z-skip: 11000;
+  --ats-z-header: 200;
+  --ats-z-menu: 300;
+  --ats-z-call-bar: 10000;
+
+  --ats-nav-collapse: 980px;
+  --ats-call-bar-max: 480px;
+  --ats-transition: 0s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ats-transition: 0s;
+  }
+}

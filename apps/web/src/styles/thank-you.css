@@ -1,0 +1,66 @@
+.thank-you-page {
+  box-sizing: border-box;
+  background: var(--ats-black);
+  color: var(--ats-white);
+  padding: 50px 0 96px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .thank-you-page {
+    padding-bottom: 128px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .thank-you-page {
+    padding: 54px 0 54px;
+  }
+}
+
+.thank-you-page h1 {
+  margin: 0 0 16px;
+  color: var(--ats-white);
+  font-size: var(--ats-h1-contact);
+  line-height: var(--ats-h1-contact-line);
+  font-weight: 700;
+  text-align: center;
+}
+
+.thank-you-supporting,
+.thank-you-other-work {
+  margin: 0 auto 16px;
+  max-width: 920px;
+  color: var(--ats-white);
+  text-align: center;
+}
+
+.thank-you-other-work {
+  margin-bottom: 32px;
+}
+
+.thank-you-photo {
+  width: min(var(--ats-thankyou-image-max), 100%);
+  margin: 0 auto;
+}
+
+.thank-you-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--ats-radius-thankyou-image);
+}
+
+.thank-you-contacts,
+.thank-you-actions {
+  margin: 0 auto 16px;
+  max-width: 920px;
+  color: var(--ats-white);
+  text-align: center;
+}
+
+.thank-you-contacts a,
+.thank-you-actions a {
+  color: var(--ats-white);
+  text-decoration: underline;
+}

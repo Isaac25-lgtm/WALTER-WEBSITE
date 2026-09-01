@@ -1,0 +1,48 @@
+{
+  "name": "ats-website",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Active Technical Services public static site and protected API",
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "packages/contracts",
+    "packages/config"
+  ],
+  "scripts": {
+    "dev": "node scripts/run-in-workspace.mjs run dev --workspace=@ats/web",
+    "dev:web": "node scripts/run-in-workspace.mjs run dev --workspace=@ats/web",
+    "dev:api": "node scripts/run-in-workspace.mjs run dev --workspace=@ats/api",
+    "build": "npm run build:api && npm run build:web",
+    "build:web": "npm run content:check && node scripts/build-web.mjs",
+    "build:api": "node scripts/run-in-workspace.mjs run build --workspace=@ats/api",
+    "lint": "eslint apps packages scripts eslint.config.mjs vitest.config.ts",
+    "typecheck": "node scripts/run-in-workspace.mjs run typecheck --workspaces --if-present",
+    "test": "vitest run",
+    "db:generate": "node scripts/run-in-workspace.mjs run db:generate --workspace=@ats/api",
+    "db:check": "node scripts/run-in-workspace.mjs run db:check --workspace=@ats/api",
+    "db:migrate": "node scripts/db-migrate.mjs",
+    "content:generate": "node scripts/generate-public-content.mjs",
+    "content:check": "node scripts/check-public-content.mjs",
+    "content:compile-publication:test": "node scripts/compile-publication-content.mjs --test",
+    "verify": "npm run content:check && npm run content:compile-publication:test && npm run lint && npm run typecheck && npm run test && npm run db:check && npm run build:api && npm run build:web"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.34.0",
+    "eslint": "9.34.0",
+    "eslint-config-next": "16.3.3",
+    "globals": "16.3.0",
+    "typescript": "5.9.2",
+    "typescript-eslint": "8.41.0",
+    "vitest": "3.2.4",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.1",
+    "jsdom": "26.1.0"
+  },
+  "engines": {
+    "node": ">=20.9.0",
+    "npm": ">=10"
+  },
+  "license": "UNLICENSED"
+}

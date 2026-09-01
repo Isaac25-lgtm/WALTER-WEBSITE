@@ -1,0 +1,225 @@
+{
+  "desktop": {
+    "header_box": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 84
+    },
+    "h1_box": {
+      "x": 180,
+      "y": 138,
+      "width": 1080,
+      "height": 64
+    },
+    "h1_css": {
+      "fontSize": "40px",
+      "lineHeight": "64px",
+      "fontWeight": "700",
+      "textAlign": "center",
+      "color": "rgb(255, 255, 255)"
+    },
+    "intro_css": {
+      "textAlign": "center"
+    },
+    "intro_p_css": {
+      "textAlign": "center",
+      "maxWidth": "920px"
+    },
+    "container_box": {
+      "x": 180,
+      "y": 138,
+      "width": 1080,
+      "height": 770.125
+    },
+    "intro_box": {
+      "x": 180,
+      "y": 138,
+      "width": 1080,
+      "height": 143.59375
+    },
+    "card_box": {
+      "x": 194.5,
+      "y": 313.59375,
+      "width": 1051,
+      "height": 594.53125
+    },
+    "card_css": {
+      "borderRadius": "10px",
+      "padding": "24px",
+      "backgroundColor": "rgb(255, 255, 255)"
+    },
+    "grid_columns": "491.5px 491.5px",
+    "grid_gap": {
+      "columnGap": "20px",
+      "rowGap": "18px"
+    },
+    "first_name_box": {
+      "x": 218.5,
+      "y": 367.390625,
+      "width": 491.5,
+      "height": 41.796875
+    },
+    "first_name_css": {
+      "height": "41.7969px",
+      "backgroundColor": "rgb(238, 238, 238)",
+      "borderRadius": "4px"
+    },
+    "message_box": {
+      "x": 218.5,
+      "y": 544.578125,
+      "width": 1003,
+      "height": 160.78125
+    },
+    "message_css": {
+      "height": "160.781px",
+      "resize": "vertical"
+    },
+    "submit_box": {
+      "x": 1121.5,
+      "y": 842.75,
+      "width": 100,
+      "height": 41.375
+    },
+    "submit_css": {
+      "width": "100px",
+      "height": "41.375px",
+      "borderRadius": "5px",
+      "fontSize": "18px",
+      "lineHeight": "30.6px",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, Lucida, sans-serif"
+    },
+    "page_padding": {
+      "paddingTop": "54px",
+      "paddingBottom": "80px",
+      "backgroundColor": "rgb(0, 0, 0)"
+    },
+    "map_count": 0,
+    "overflow_x": 1440,
+    "scroll_height": 1389,
+    "call_bar_visible": false,
+    "whatsapp": false,
+    "walter": false,
+    "metalworks": false,
+    "card_left_offset": 14.5,
+    "card_right_offset": 14.5,
+    "intro_to_card_gap": 32.0,
+    "places_visible": 0,
+    "submit_box_scrolled": {
+      "x": 1121.5,
+      "y": 549.75,
+      "width": 100,
+      "height": 41.375
+    },
+    "footer_box": {
+      "x": 0,
+      "y": 499.125,
+      "width": 1440,
+      "height": 401
+    },
+    "footer_text": "Active Technical Services \u00b7 Gift of God\n\nServices\nPortfolio\nContact\n\n+256 782 318 727\n\nactivetechnicalservices@gmail.com\n\nPlot 23A, Lubas Road, Jinja, Uganda\n\nTanzania branch: P.O. Box 551, Dodoma, Tanzania\n\n\u00a9 2026 Active Technical Services (U) Ltd",
+    "unavailable_text": "Online inquiry submission is being prepared. Please contact us by telephone or email.\n\n+256 782 318 727 \u00b7 activetechnicalservices@gmail.com",
+    "unavailable_success_words": false,
+    "url_after_valid": "http://127.0.0.1:4173/contact/"
+  },
+  "tablet": {
+    "h1_css": {
+      "fontSize": "40px",
+      "lineHeight": "64px",
+      "textAlign": "center"
+    },
+    "container_box": {
+      "x": 77,
+      "y": 130,
+      "width": 614,
+      "height": 967.109375
+    },
+    "card_box": {
+      "x": 77,
+      "y": 329.390625,
+      "width": 614,
+      "height": 767.71875
+    },
+    "grid_columns": "566px",
+    "overflow_x": 768,
+    "scroll_height": 1781,
+    "call_bar_visible": false,
+    "hamburger_visible": true,
+    "map_count": 0
+  },
+  "mobile": {
+    "h1_css": {
+      "fontSize": "40px",
+      "lineHeight": "64px"
+    },
+    "container_box": {
+      "x": 39,
+      "y": 130,
+      "width": 312,
+      "height": 1030.5
+    },
+    "card_box": {
+      "x": 39,
+      "y": 376.984375,
+      "width": 312,
+      "height": 783.515625
+    },
+    "grid_columns": "272px",
+    "call_bar_box": {
+      "x": 0,
+      "y": 784,
+      "width": 390,
+      "height": 60
+    },
+    "call_bar_viewport": {
+      "x": 0,
+      "y": 784,
+      "width": 390,
+      "height": 60,
+      "top": 784,
+      "right": 390,
+      "bottom": 844,
+      "left": 0
+    },
+    "call_bar_visible": true,
+    "overflow_x": 390,
+    "scroll_height": 1976,
+    "map_count": 0,
+    "submit_viewport": {
+      "x": 231,
+      "y": 360.125,
+      "width": 100,
+      "height": 41.375,
+      "top": 360.125,
+      "right": 331,
+      "bottom": 401.5,
+      "left": 231
+    },
+    "hint_viewport": {
+      "x": 59,
+      "y": 292.53125,
+      "width": 272,
+      "height": 47.59375,
+      "top": 292.53125,
+      "right": 331,
+      "bottom": 340.125,
+      "left": 59
+    },
+    "submit_call_bar_clearance": 382.5,
+    "hint_call_bar_clearance": 443.875,
+    "validation_summary": "Please correct the following:\n\nEnter your first name.\nEnter your last name.\nEnter a valid email address.\nEnter a telephone number.\nEnter a message.",
+    "unavailable_text": "Online inquiry submission is being prepared. Please contact us by telephone or email.\n\n+256 782 318 727 \u00b7 activetechnicalservices@gmail.com",
+    "url_after_valid": "http://127.0.0.1:4173/contact/",
+    "notice_viewport": {
+      "x": 39,
+      "y": 441.5,
+      "width": 312,
+      "height": 160.984375,
+      "top": 441.5,
+      "right": 351,
+      "bottom": 602.484375,
+      "left": 39
+    },
+    "notice_call_bar_clearance": 181.515625
+  }
+}

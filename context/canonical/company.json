@@ -1,0 +1,66 @@
+{
+  "public_name": "Active Technical Services",
+  "abbreviation": "ATS",
+  "slogan": "Gift of God",
+  "uganda_legal_name": "Active Technical Services (U) Ltd",
+  "tanzania_branch_legal_name": "Active Technical Services Ltd",
+  "founding_and_registration_summary": "The Uganda operation is documented as a limited-liability company registered on 13 November 2013 under section 16(1) of the Companies Act of Uganda (certificate 174763; URA TIN 1003422693). The Tanzania branch is documented as a limited-liability company registered on 18 October 2023 under the Companies Act, 2002 of Tanzania (certificate 169422168; TRA TIN 169-422-168). These are jurisdiction-specific registrations of one company; Tanzania is a branch, not a separate business.",
+  "short_company_description": "Active Technical Services (ATS) is an East African engineering, civil-construction, fabrication and industrial-services company based in Jinja, Uganda, with a branch in Dodoma, Tanzania.",
+  "medium_company_description": "ATS supplies skilled labour and delivers welding and fabrication, structural steelwork, plant and machine installation, pipework, insulation, maintenance and commissioning. The 2025 Uganda profile also documents civil foundations, warehouses, factory buildings and production-line bases. The company is not presented in the supplied documents as a retail hardware shop.",
+  "extended_company_description": "Publicly, ATS trades as Active Technical Services, using the ATS wordmark and the Gift of God mark. Uganda legal materials use Active Technical Services (U) Ltd; Tanzania branch materials use Active Technical Services Ltd. Documented work includes soap-plant and mill installations, industrial tanks, warehouse erection and sheeting, seed-cleaner structures, chimneys, and civil sequences from excavation through ground beams and machine pits. Project photography shows jobs in Uganda (including Jinja offices, Lira, Namanve, Mukono and Kanjansi Airfield as spelled in the sources), Tanzania (Singida and Arusha), Burundi and Rwanda. Leadership named in both profiles is Nyeko Francis (Head of Directors) and Adolf Serete (Technical Director). Contact defaults are Jinja postal and physical addresses, a Dodoma branch postal address, shared email, and Uganda plus Tanzania telephone numbers. Prices, retail catalogues, certifications and social profiles are not documented.",
+  "mission": [
+    "Develop and operate a financially sound enterprise with profitable growth.",
+    "Support clients by acting as their trusted service provider.",
+    "Provide quality, cost-effective, personalised and innovative service as client needs change.",
+    "Empower manpower through continuous professional development."
+  ],
+  "vision": [
+    "To be a leading shop for excellent engineering services.",
+    "To be a leading shop for excellent technicians.",
+    "To be a leading centre for quality work.",
+    "To be a leading shop for supply of labour."
+  ],
+  "vision_editorial_note": "The word shop is retained from the source vision lines. It is not used here as evidence of a retail hardware store.",
+  "philosophy": [
+    "Promote high standards of discipline and excellence in quality and values.",
+    "Maintain strong internal administration so that services stay consistent and clients remain satisfied.",
+    "Treat the customer as central: good relationships with customers are a prerequisite to success."
+  ],
+  "core_values": [
+    "Accountability",
+    "Integrity",
+    "Transparency",
+    "Diligence",
+    "Team spirit",
+    "Loyalty",
+    "Efficiency"
+  ],
+  "geographic_coverage": {
+    "primary_operation": "Jinja, Uganda",
+    "branch": "Dodoma, Tanzania",
+    "documented_project_countries": ["Uganda", "Tanzania", "Burundi", "Rwanda"]
+  },
+  "business_classification": "Engineering, civil construction, welding and fabrication, structural steel, industrial plant installation, pipework, labour supply, insulation/lagging, maintenance and commissioning. Not documented as a retail hardware store.",
+  "provenance": {
+    "uganda_profile": {
+      "source_file": "active company profile new 2025 civil and construction-1.pdf",
+      "pages": [1, 2, 3, 4, 5, 6, 7, 8, 37]
+    },
+    "tanzania_pages": {
+      "source_file": "COMPANY CONTEXT.pdf",
+      "pages": [2, 3, 4, 5, 6, 7, 8, 33]
+    },
+    "logo": {
+      "source_file": "active logo.pdf",
+      "page": 1
+    }
+  },
+  "publication_status": "canonical_draft_for_private_build",
+  "unresolved_fields": [
+    "Whether both legal names should appear in the public footer",
+    "Whether project countries beyond Uganda and Tanzania should appear on the public homepage",
+    "Ochan Tony current role",
+    "Retail catalogue if any",
+    "Opening hours and social profiles"
+  ]
+}

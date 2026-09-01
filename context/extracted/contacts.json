@@ -1,0 +1,150 @@
+{
+  "notes": [
+    "Values are page-cited and not treated as a final public contact block.",
+    "Uganda and Tanzania records are stored separately. They were not merged.",
+    "WhatsApp is inferred only where a WhatsApp icon appears next to a number."
+  ],
+  "uganda_main_office": {
+    "source_file": "active company profile new 2025 civil and construction-1.pdf",
+    "page": 37,
+    "printed_page_number": 36,
+    "heading_raw": "LOCATION :",
+    "intro_raw": "ACTIVE TECHNICAL SERVICES MAIN OFFICES IS LOCATED IN JINJA AS SHOWN IN THE ADDRESS BELOW.",
+    "prompt_raw": "For more Information, Please Contact:",
+    "company_name_raw": "ACTIVE TECHNICAL SERVICES (U) LTD",
+    "office_label_raw": "MAIN BRACH",
+    "office_label_normalized": "Main Branch",
+    "spelling_notes": "Source spelling is MAIN BRACH (missing 'N'). MAIN OFFICES IS is the source grammar.",
+    "postal_address_raw": "P.O. Box 122 Jinja - Uganda",
+    "postal_address_normalized": "P.O. Box 122, Jinja, Uganda",
+    "telephones_raw": [
+      "Tel: +256 (0) 782 318 727",
+      "+256 (0) 755 318 727"
+    ],
+    "physical_address": null,
+    "email": null,
+    "confidence": "high",
+    "scope": "uganda"
+  },
+  "uganda_branch_office": {
+    "source_file": "active company profile new 2025 civil and construction-1.pdf",
+    "page": 37,
+    "printed_page_number": 36,
+    "office_label_raw": "BRANCH OFFICE",
+    "physical_address_raw": [
+      "Lubas Road - Jinja",
+      "Plot 23A"
+    ],
+    "physical_address_normalized": "Plot 23A, Lubas Road, Jinja, Uganda",
+    "telephones_raw": [
+      "Tel: +256 (0) 782 318 727",
+      "+256 (0) 755 318 727"
+    ],
+    "email_raw": "Email: activetechnicalservices@gmail.com",
+    "email_normalized": "activetechnicalservices@gmail.com",
+    "confidence": "high",
+    "scope": "uganda",
+    "open_question": "Whether MAIN BRACH (P.O. Box 122) and BRANCH OFFICE (Lubas Road Plot 23A) are two sites or one Jinja office described twice. Same telephone numbers are repeated."
+  },
+  "tanzania_branch": {
+    "source_file": "COMPANY CONTEXT.pdf",
+    "page": 33,
+    "printed_page_number": 32,
+    "heading_raw": "LOCATION :",
+    "intro_raw": "Active Technical Services Ltd is located in Dodoma - Tanzania as shown in the address below.",
+    "office_label_raw": "HEAD OFFICE:",
+    "office_label_user_clarification": "User states Tanzania is a branch, not headquarters. Document label HEAD OFFICE is preserved as raw evidence.",
+    "postal_address_raw": "P.O. BOX 551, DODOMA - TANZANIA",
+    "postal_address_normalized": "P.O. Box 551, Dodoma, Tanzania",
+    "physical_street_address": null,
+    "telephones_raw": [
+      "+256 782 318 727",
+      "+255 764 306 184"
+    ],
+    "email_raw": ":activetechnicalservices@gmail.com",
+    "email_normalized": "activetechnicalservices@gmail.com",
+    "confidence": "high",
+    "scope": "tanzania-branch"
+  },
+  "telephone_numbers": [
+    {
+      "raw": "+256 (0) 782 318 727",
+      "normalized_e164_candidate": "+256782318727",
+      "country": "Uganda",
+      "appears_on": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "page": 37, "context": "MAIN BRACH and BRANCH OFFICE"},
+        {"source_file": "COMPANY CONTEXT.pdf", "page": 33, "context": "Dodoma contact block, WhatsApp icon beside this number"}
+      ],
+      "whatsapp_candidate": true,
+      "whatsapp_evidence": "COMPANY CONTEXT.pdf page 33 shows a WhatsApp icon next to +256 782 318 727.",
+      "confidence": "high"
+    },
+    {
+      "raw": "+256 (0) 755 318 727",
+      "normalized_e164_candidate": "+256755318727",
+      "country": "Uganda",
+      "appears_on": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "page": 37, "context": "MAIN BRACH and BRANCH OFFICE"}
+      ],
+      "whatsapp_candidate": false,
+      "confidence": "high"
+    },
+    {
+      "raw": "+255 764 306 184",
+      "normalized_e164_candidate": "+255764306184",
+      "country": "Tanzania",
+      "appears_on": [
+        {"source_file": "COMPANY CONTEXT.pdf", "page": 33, "context": "Dodoma contact block, ordinary telephone icon"}
+      ],
+      "whatsapp_candidate": false,
+      "confidence": "high"
+    }
+  ],
+  "whatsapp_candidates": [
+    {
+      "number_raw": "+256 782 318 727",
+      "evidence": "WhatsApp icon on COMPANY CONTEXT.pdf page 33",
+      "status": "candidate-only-not-confirmed-as-public-CTA"
+    }
+  ],
+  "email_addresses": [
+    {
+      "raw": "activetechnicalservices@gmail.com",
+      "normalized": "activetechnicalservices@gmail.com",
+      "appears_on": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "page": 37},
+        {"source_file": "COMPANY CONTEXT.pdf", "page": 33}
+      ],
+      "confidence": "high"
+    }
+  ],
+  "physical_addresses": [
+    {
+      "raw": "Lubas Road - Jinja / Plot 23A",
+      "scope": "uganda",
+      "source_file": "active company profile new 2025 civil and construction-1.pdf",
+      "page": 37
+    }
+  ],
+  "postal_addresses": [
+    {
+      "raw": "P.O. Box 122 Jinja - Uganda",
+      "scope": "uganda",
+      "source_file": "active company profile new 2025 civil and construction-1.pdf",
+      "page": 37
+    },
+    {
+      "raw": "P.O. BOX 551, DODOMA - TANZANIA",
+      "scope": "tanzania-branch",
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page": 33
+    }
+  ],
+  "not_found_in_sources": [
+    "Uganda street map pin beyond Lubas Road / Plot 23A",
+    "Tanzania street/plot address",
+    "Separate Tanzania email",
+    "Public social media handles",
+    "Website URL"
+  ]
+}

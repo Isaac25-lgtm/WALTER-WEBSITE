@@ -1,0 +1,199 @@
+{
+  "notes": [
+    "The documents describe engineering, fabrication, labour supply, plant work and (in the 2025 profile) civil construction. They do not list retail hardware SKUs or prices.",
+    "Retail hardware is flagged for user confirmation. Do not invent products or prices.",
+    "Associated project evidence is by caption/page, not a claim that every photo is that client."
+  ],
+  "retail_hardware": {
+    "documented_in_sources": false,
+    "user_confirmation_required": true,
+    "notes": "A heading 'Products / Services' appears, but the bullets are labour, welding, structural works, lagging and plant installation. No shop catalogue, SKU or public price list is present."
+  },
+  "services": [
+    {
+      "id": "svc-civil-construction",
+      "canonical_name": "Civil and construction works",
+      "raw_document_wording": ["CIVIL AND CONSTRUCTION WORKS"],
+      "description_supported_by_documents": "2025 Uganda profile pages 9–17 (printed 8–16) document excavation of foundation bases, concrete blinding, re-bar fixing, formwork, column bases and stubs, strip footings, plinth walls, murram backfill, ground beams, foundation bolts, steel column erection, overhead crane assembly, roofing sheets, machine foundation pits, superstructure walls, plastering, louvered vents, sheet cladding, tubemill/factory house interiors, cooling tank, factory workshop, warehouse and factory toilets.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [9, 10, 11, 12, 13, 14, 15, 16, 17]}
+      ],
+      "associated_project_evidence": ["proj-civil-foundations-process", "proj-tubemill-house", "proj-factory-workshop-toilets"],
+      "future_website_category": "Civil & construction",
+      "confidence": "high"
+    },
+    {
+      "id": "svc-mechanical-engineering",
+      "canonical_name": "Mechanical engineering",
+      "raw_document_wording": ["MECHANICAL ENGINEERING"],
+      "description_supported_by_documents": "2025 profile section banner on PDF page 22 introducing machine installation, structure fabrication and pipework for the Mount Meru Millers soap plant.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [22]}
+      ],
+      "associated_project_evidence": ["proj-mount-meru-soap-plant-lira"],
+      "future_website_category": "Mechanical engineering",
+      "confidence": "high"
+    },
+    {
+      "id": "svc-labour-supply",
+      "canonical_name": "Labour supply",
+      "raw_document_wording": ["Labour Supply", "supply of labour", "skilled and semi skilled man power at a market friendly price"],
+      "description_supported_by_documents": "Listed under Products/Services and in the vision statements. Also stated that the company supplies skilled and semi-skilled manpower at a market-friendly price. No numerical rates are given.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [3, 7]},
+        {"source_file": "COMPANY CONTEXT.pdf", "pages": [3, 7]}
+      ],
+      "associated_project_evidence": [],
+      "future_website_category": "Labour supply",
+      "confidence": "high"
+    },
+    {
+      "id": "svc-welding-fabrication",
+      "canonical_name": "Welding and fabrication",
+      "raw_document_wording": ["Welding & Fabrication"],
+      "description_supported_by_documents": "Named service line. Project captions repeatedly use FABRICATION of structures, tanks, seed-cleaner frames, chimneys and pipework. Photographs show plate rolling, tank assembly and on-site welding.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [7, 23]},
+        {"source_file": "COMPANY CONTEXT.pdf", "pages": [7, 9, 11, 12, 14, 15, 16, 17]}
+      ],
+      "associated_project_evidence": ["proj-sunafric-tanks-lira", "proj-mount-meru-soap-plant-lira", "proj-seed-cleaner-lira"],
+      "future_website_category": "Welding & fabrication",
+      "confidence": "high"
+    },
+    {
+      "id": "svc-structural-works",
+      "canonical_name": "Structural works",
+      "raw_document_wording": ["Structural Works", "ERECTION OF THE STRUCTURE"],
+      "description_supported_by_documents": "Named service. Many project pages are captioned ERECTION OF THE STRUCTURE in Lira, Rwanda, Kanjansi Airfield, Musumba Steel and Oil Libya Mukono.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [7, 13, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36]},
+        {"source_file": "COMPANY CONTEXT.pdf", "pages": [7, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]}
+      ],
+      "associated_project_evidence": ["proj-musumba-steel-bujumbura", "proj-rwanda-structure", "proj-kanjansi-airfield", "proj-lira-structure"],
+      "future_website_category": "Structural steel & erection",
+      "confidence": "high"
+    },
+    {
+      "id": "svc-insulation-lagging",
+      "canonical_name": "Insulation (lagging)",
+      "raw_document_wording": ["Insulation (Lagging)"],
+      "description_supported_by_documents": "Named on the Products/Services list. No dedicated lagging project caption was found.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [7]},
+        {"source_file": "COMPANY CONTEXT.pdf", "pages": [7]}
+      ],
+      "associated_project_evidence": [],
+      "future_website_category": "Insulation / lagging",
+      "confidence": "medium"
+    },
+    {
+      "id": "svc-machine-installation",
+      "canonical_name": "Machine installation",
+      "raw_document_wording": ["Plant Installation which include Machines, Pipe works and Maintenance.", "INSTALLATION OF MACHINES"],
+      "description_supported_by_documents": "Soap plant, seed-cleaner and Burundi brewery captions describe machine installation. Photographs show motors, vessels and plant inside steel frames.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [7, 22]},
+        {"source_file": "COMPANY CONTEXT.pdf", "pages": [7, 9, 11, 18]}
+      ],
+      "associated_project_evidence": ["proj-mount-meru-soap-plant-lira", "proj-seed-cleaner-lira", "proj-birarudi-breweries"],
+      "future_website_category": "Plant & machine installation",
+      "confidence": "high"
+    },
+    {
+      "id": "svc-mild-steel-pipework",
+      "canonical_name": "Mild-steel pipework",
+      "raw_document_wording": ["ALL PIPE WORK BOTH MILED STEEL AND STAINLESS PIPES", "PIPE WORK BOTH MILD & STAINLESS PIPES"],
+      "description_supported_by_documents": "Soap plant and Birarudi/Burundi brewery captions. Source spelling MILED STEEL is preserved.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [22]},
+        {"source_file": "COMPANY CONTEXT.pdf", "pages": [9, 18]}
+      ],
+      "associated_project_evidence": ["proj-mount-meru-soap-plant-lira", "proj-birarudi-breweries"],
+      "future_website_category": "Pipework",
+      "confidence": "high"
+    },
+    {
+      "id": "svc-stainless-pipework",
+      "canonical_name": "Stainless-steel pipework",
+      "raw_document_wording": ["STAINLESS PIPES", "STAINLESS PIPES"],
+      "description_supported_by_documents": "Same captions as mild-steel pipework; photographs show stainless process piping and valves.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [22, 26, 29]},
+        {"source_file": "COMPANY CONTEXT.pdf", "pages": [9, 18]}
+      ],
+      "associated_project_evidence": ["proj-mount-meru-soap-plant-lira", "proj-birarudi-breweries", "proj-rwanda-structure"],
+      "future_website_category": "Pipework",
+      "confidence": "high"
+    },
+    {
+      "id": "svc-plant-maintenance",
+      "canonical_name": "Plant maintenance",
+      "raw_document_wording": ["Plant Installation which include Machines, Pipe works and Maintenance."],
+      "description_supported_by_documents": "Maintenance is named inside the plant-installation bullet. No standalone maintenance case study.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [7]},
+        {"source_file": "COMPANY CONTEXT.pdf", "pages": [7]}
+      ],
+      "associated_project_evidence": [],
+      "future_website_category": "Plant maintenance",
+      "confidence": "medium"
+    },
+    {
+      "id": "svc-plant-commissioning",
+      "canonical_name": "Plant commissioning",
+      "raw_document_wording": ["The company also does commissioning after the work is done."],
+      "description_supported_by_documents": "Stated on the Products/Services page in both profiles.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [7]},
+        {"source_file": "COMPANY CONTEXT.pdf", "pages": [7]}
+      ],
+      "associated_project_evidence": [],
+      "future_website_category": "Commissioning",
+      "confidence": "high"
+    },
+    {
+      "id": "svc-industrial-storage-tanks",
+      "canonical_name": "Industrial storage tanks",
+      "raw_document_wording": ["FABRICATION OF STORAGE TANKS", "FABRICATION OF OIL TANKS", "COOLING TANK FOR TUBEMILL"],
+      "description_supported_by_documents": "Sunafric Lira storage tanks; Mount Meru Lira oil tanks; tubemill cooling tank; numerous photographs of cylindrical vessels.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [16, 23, 25, 30, 35]},
+        {"source_file": "COMPANY CONTEXT.pdf", "pages": [14, 19]}
+      ],
+      "associated_project_evidence": ["proj-sunafric-tanks-lira", "proj-mount-meru-oil-tanks-lira", "proj-tubemill-house"],
+      "future_website_category": "Tanks & vessels",
+      "confidence": "high"
+    },
+    {
+      "id": "svc-warehouses-steel-structures",
+      "canonical_name": "Warehouses and steel structures",
+      "raw_document_wording": ["ERECTION AND SHEETING OF AWARE HOUSE", "TUBEMILL WAREHOUSE FRONT VIEW", "Roofing sheets fixed over the warehouse"],
+      "description_supported_by_documents": "Uganda Police Namanve warehouse; Pepsi depot Lira; Burundi Breweries warehouse structure; tubemill warehouse; Musumba Steel buildings.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [13, 17, 24, 36]},
+        {"source_file": "COMPANY CONTEXT.pdf", "pages": [10, 13, 17, 20, 32]}
+      ],
+      "associated_project_evidence": ["proj-uganda-police-namanve", "proj-pepsi-depot-lira", "proj-burundi-breweries-warehouse", "proj-tubemill-house", "proj-musumba-steel-bujumbura"],
+      "future_website_category": "Warehouses & steel buildings",
+      "confidence": "high"
+    },
+    {
+      "id": "svc-machine-production-foundations",
+      "canonical_name": "Machine and production-line foundations",
+      "raw_document_wording": [
+        "Steel bending and fixing of machine foundation pits.",
+        "SLITTING LINE FOUNDATION AND INTERIOR OF TUBEMILL HOUSE.",
+        "CUT TO LENGTH FOUNDATION AND INTERIOR OF TUBEMILL HOUSE.",
+        "PRODUCTION LINE FOUNDATION AND INTERIOR OF TUBEMILL HOUSE WITH FLOOR COMPLETE.",
+        "Casted pits and surface foundation for CTL."
+      ],
+      "description_supported_by_documents": "Detailed 2025 civil pages show pits, bolts, slitting-line, cut-to-length (CTL) and production-line foundations inside a tubemill house.",
+      "source_pages": [
+        {"source_file": "active company profile new 2025 civil and construction-1.pdf", "pages": [14, 15, 16]}
+      ],
+      "associated_project_evidence": ["proj-tubemill-house"],
+      "future_website_category": "Civil & construction",
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,1241 @@
+{
+  "pricing_mode": "quote_only",
+  "collections": {
+    "projects": [
+      {
+        "id": "proj-mount-meru-soap-plant-lira",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              9
+            ]
+          },
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              22
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-uganda-police-namanve",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              10
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-seed-cleaner-lira",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              11
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-oil-libya-mukono",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              12,
+              31
+            ]
+          },
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              35
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-pepsi-depot-lira",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              13
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-mount-meru-oil-tanks-lira",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              14
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-mount-meru-seed-cleaner-singida",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              15
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-mount-meru-chimney-arusha",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              16
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-burundi-breweries-warehouse",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              17
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-birarudi-breweries",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              18
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-sunafric-tanks-lira",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              19
+            ]
+          },
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              23
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-musumba-steel-bujumbura",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              20,
+              32
+            ]
+          },
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              24,
+              36
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-lira-structure",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              21
+            ]
+          },
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              25
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-uganda-lira-structure",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              22
+            ]
+          },
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              26
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-rwanda-structure",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              23,
+              24
+            ]
+          },
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              27,
+              28,
+              29
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-kanjansi-airfield",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "pages": [
+              26
+            ]
+          },
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              30
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-civil-foundations-process",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-warehouse-steel-crane",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              13
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-tubemill-house",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              14,
+              15,
+              16,
+              17
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-factory-workshop-toilets",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              17
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "proj-multistorey-concrete-2023",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Publication review required before any project record may appear on the public site.",
+        "source_reference": [
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "pages": [
+              18,
+              19,
+              20,
+              21
+            ]
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      }
+    ],
+    "project_media": [
+      {
+        "id": "company_context-p09-img034",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p09-img034",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p09-img035",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p09-img035",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p10-img037",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p10-img037",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p10-img039",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p10-img039",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p10-img041",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p10-img041",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p10-img043",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p10-img043",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p10-img045",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p10-img045",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p11-img048",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p11-img048",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p11-img049",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p11-img049",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p11-img050",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p11-img050",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p12-img053",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p12-img053",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p12-img054",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p12-img054",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p12-img055",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p12-img055",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p13-img057",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p13-img057",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p13-img058",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p13-img058",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p14-img060",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p14-img060",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p14-img061",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p14-img061",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p15-img063",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p15-img063",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p16-img065",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p16-img065",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p17-img068",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p17-img068",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p17-img070",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p17-img070",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p18-img072",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p18-img072",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p18-img073",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p18-img073",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p18-img074",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p18-img074",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p19-img076",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p19-img076",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p19-img077",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p19-img077",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p20-img079",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p20-img079",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p20-img081",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p20-img081",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p21-img083",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p21-img083",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p22-img085",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p22-img085",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p22-img086",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p22-img086",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p23-img088",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p23-img088",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p24-img092",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p24-img092",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p26-img100",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p26-img100",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p26-img101",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p26-img101",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p31-img115",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p31-img115",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "company_context-p32-img116",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "company_context-p32-img116",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p09-img041",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p09-img041",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p09-img045",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p09-img045",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p10-img054",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p10-img054",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p11-img062",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p11-img062",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p12-img067",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p12-img067",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p12-img069",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p12-img069",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p13-img071",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p13-img071",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p13-img072",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p13-img072",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p13-img075",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p13-img075",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p13-img076",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p13-img076",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p14-img082",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p14-img082",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p15-img089",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p15-img089",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p16-img093",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p16-img093",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p16-img095",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p16-img095",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p16-img096",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p16-img096",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p17-img098",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p17-img098",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p17-img099",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p17-img099",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p17-img101",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p17-img101",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p18-img102",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p18-img102",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p19-img105",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p19-img105",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p20-img108",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p20-img108",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p21-img109",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p21-img109",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p22-img111",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p22-img111",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p22-img114",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p22-img114",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p23-img116",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p23-img116",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p23-img117",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p23-img117",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p24-img119",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p24-img119",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p24-img121",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p24-img121",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p25-img123",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p25-img123",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p26-img125",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p26-img125",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p26-img126",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p26-img126",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p27-img128",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p27-img128",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p27-img129",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p27-img129",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p28-img132",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p28-img132",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p29-img135",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p29-img135",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p29-img137",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p29-img137",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p30-img140",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p30-img140",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p30-img141",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p30-img141",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p35-img155",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p35-img155",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "profile_2025-p36-img156",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Project media remains draft until publication rights are confirmed.",
+        "source_reference": "profile_2025-p36-img156",
+        "reviewed_by": null,
+        "reviewed_at": null
+      }
+    ],
+    "identifiable_people": [
+      {
+        "id": "person-nyeko-francis",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Identifiable people are not public until consent and role confirmation exist.",
+        "source_reference": [
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "page": 2
+          },
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "page": 2
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "person-adolf-serete",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Identifiable people are not public until consent and role confirmation exist.",
+        "source_reference": [
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "page": 2
+          },
+          {
+            "source_file": "COMPANY CONTEXT.pdf",
+            "page": 2
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "person-ochan-tony",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Identifiable people are not public until consent and role confirmation exist.",
+        "source_reference": [
+          {
+            "source_file": "active company profile new 2025 civil and construction-1.pdf",
+            "page": 2
+          }
+        ],
+        "reviewed_by": null,
+        "reviewed_at": null
+      }
+    ],
+    "client_names": [
+      {
+        "id": "client:BIRARUDI BREWARIES",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Named clients are not public until permission is confirmed.",
+        "source_reference": "BIRARUDI BREWARIES",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "client:BURUNDI BREWARIES",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Named clients are not public until permission is confirmed.",
+        "source_reference": "BURUNDI BREWARIES",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "client:Mount Meru Millers",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Named clients are not public until permission is confirmed.",
+        "source_reference": "Mount Meru Millers",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "client:Mount Meru Millers Uganda Limited",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Named clients are not public until permission is confirmed.",
+        "source_reference": "Mount Meru Millers Uganda Limited",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "client:Musumba Steel",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Named clients are not public until permission is confirmed.",
+        "source_reference": "Musumba Steel",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "client:Oil Libya",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Named clients are not public until permission is confirmed.",
+        "source_reference": "Oil Libya",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "client:PEPSE DEPOT SITE",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Named clients are not public until permission is confirmed.",
+        "source_reference": "PEPSE DEPOT SITE",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "client:Sunafric Industries Uganda Limited",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Named clients are not public until permission is confirmed.",
+        "source_reference": "Sunafric Industries Uganda Limited",
+        "reviewed_by": null,
+        "reviewed_at": null
+      },
+      {
+        "id": "client:Uganda Police",
+        "state": "draft",
+        "public_allowed": false,
+        "reason": "Named clients are not public until permission is confirmed.",
+        "source_reference": "Uganda Police",
+        "reviewed_by": null,
+        "reviewed_at": null
+      }
+    ],
+    "client_logos": [],
+    "testimonials": [],
+    "social_links": [],
+    "map_coordinates": [],
+    "public_prices": []
+  }
+}

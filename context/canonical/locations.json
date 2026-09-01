@@ -1,0 +1,50 @@
+{
+  "locations": [
+    {
+      "id": "loc-jinja-primary",
+      "display_name": "Jinja, Uganda",
+      "organizational_role": "primary_operation_headquarters_provisional",
+      "country": "Uganda",
+      "postal_address": "P.O. Box 122, Jinja, Uganda",
+      "physical_address": "Plot 23A, Lubas Road, Jinja, Uganda",
+      "primary_phone": "+256 782 318 727",
+      "secondary_phone": "+256 755 318 727",
+      "whatsapp_number": "+256 782 318 727",
+      "whatsapp_status": "provisional_icon_evidence_not_user_confirmed",
+      "email": "activetechnicalservices@gmail.com",
+      "map_status": "no_coordinates_in_sources",
+      "provenance": {
+        "source_file": "active company profile new 2025 civil and construction-1.pdf",
+        "page": 37,
+        "raw_labels": ["MAIN BRACH", "BRANCH OFFICE", "MAIN OFFICES IS LOCATED IN JINJA"]
+      },
+      "unresolved_fields": [
+        "User has not separately confirmed that P.O. Box 122 and Plot 23A are one site; treated as one Jinja operation provisionally"
+      ]
+    },
+    {
+      "id": "loc-dodoma-branch",
+      "display_name": "Dodoma, Tanzania",
+      "organizational_role": "tanzania_branch",
+      "country": "Tanzania",
+      "postal_address": "P.O. Box 551, Dodoma, Tanzania",
+      "physical_address": null,
+      "primary_phone": "+255 764 306 184",
+      "secondary_phone": "+256 782 318 727",
+      "whatsapp_number": "+256 782 318 727",
+      "whatsapp_status": "provisional_icon_on_this_page_not_user_confirmed",
+      "email": "activetechnicalservices@gmail.com",
+      "map_status": "no_coordinates_in_sources",
+      "public_label": "Tanzania branch",
+      "evidence_only_label": "HEAD OFFICE (COMPANY CONTEXT.pdf page 33 — do not use as public HQ wording)",
+      "provenance": {
+        "source_file": "COMPANY CONTEXT.pdf",
+        "page": 33
+      },
+      "unresolved_fields": [
+        "No street or plot address for Dodoma",
+        "Whether the Uganda WhatsApp candidate should be shown on the Tanzania branch card"
+      ]
+    }
+  ]
+}

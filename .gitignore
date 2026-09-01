@@ -1,0 +1,52 @@
+# Dependencies and build output
+node_modules/
+.next/
+.tmp-web-build/
+out/
+dist/
+coverage/
+*.lcov
+.turbo/
+.vercel/
+*.tsbuildinfo
+
+# Environment and credentials — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials.json
+service-account.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Private extraction and preview artefacts
+context/assets/_raw_extract/
+context/assets/previews/
+
+# Private reference-site capture artefacts
+context/reference/screenshots/
+context/reference/_capture_raw.json
+context/reference/_extra_dom.json
+context/reference/_links.json
+context/reference/_page_structs.json
+
+# Large original source documents — kept local, not pushed to the remote.
+# Provenance is recorded in context/assets/inventory.json and the extracted
+# assets under context/assets/. See project/SOURCE-CONTROL-POLICY.md.
+# active logo.pdf is deliberately NOT ignored: it is 16 KB and is the canonical
+# logo master hashed by scripts/prepare-brand-assets.py.
+/COMPANY CONTEXT.pdf
+/active company profile new 2025 civil and construction-1.pdf

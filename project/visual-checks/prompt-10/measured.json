@@ -1,0 +1,71 @@
+{
+  "thank_you_desktop": {
+    "h1_box": {
+      "x": 180,
+      "y": 138,
+      "width": 1080,
+      "height": 64
+    },
+    "h1_css": {
+      "fontSize": "40px",
+      "lineHeight": "64px",
+      "fontWeight": "700",
+      "textAlign": "center",
+      "color": "rgb(255, 255, 255)"
+    },
+    "supporting_css": {
+      "textAlign": "center",
+      "fontSize": "14px",
+      "color": "rgb(255, 255, 255)"
+    },
+    "other_work_css": {
+      "textAlign": "center",
+      "fontSize": "14px"
+    },
+    "photo_count": 0,
+    "nav_items": [
+      "Services",
+      "Portfolio",
+      "Contact"
+    ],
+    "overflow_x": 1440,
+    "scroll_height": 900,
+    "call_bar_visible": false,
+    "whatsapp": false,
+    "walter": false,
+    "metalworks": false,
+    "title": "Thank you | Active Technical Services"
+  },
+  "thank_you_tablet": {
+    "h1_css": {
+      "fontSize": "40px",
+      "lineHeight": "64px",
+      "textAlign": "center"
+    },
+    "photo_count": 0,
+    "hamburger_visible": true,
+    "overflow_x": 768,
+    "scroll_height": 1024
+  },
+  "thank_you_mobile": {
+    "h1_css": {
+      "fontSize": "40px",
+      "lineHeight": "64px",
+      "textAlign": "center"
+    },
+    "photo_count": 0,
+    "call_bar_box": {
+      "x": 0,
+      "y": 784,
+      "width": 390,
+      "height": 60
+    },
+    "overflow_x": 390,
+    "scroll_height": 1145
+  },
+  "contact_desktop": {
+    "url_after_valid": "http://127.0.0.1:4173/contact/",
+    "unavailable_text": "Online inquiry submission is being prepared. Please contact us by telephone or email.\n\n+256 782 318 727 \u00b7 activetechnicalservices@gmail.com",
+    "fetch_to_inquiries": false
+  }
+}

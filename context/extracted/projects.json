@@ -1,0 +1,633 @@
+{
+  "citation_rule": "PDF page numbers, not printed footer numbers. 2025 profile printed n = PDF page n+1 except cover/back.",
+  "spelling_policy": "Source spellings are preserved in caption_raw. Normalized fields are editorial candidates only.",
+  "image_selection_rule": "Only RGB/CMYK JPEG and photographic JPEG2000 extracts. Excluded: grayscale masks (mode L / PNG), near-A4 decorative page backgrounds (~1650x2330), and tiny logo fragments. Mixed-caption pages are noted and not used as primary images.",
+  "projects": [
+    {
+      "id": "proj-mount-meru-soap-plant-lira",
+      "title": "Soap-plant machines, structure and pipework — Mount Meru Millers Uganda Limited, Lira",
+      "caption_raw": "INSTALLATION OF MACHINES, FABRICATION OF THE WHOLE STRUCTURE & ALL PIPE WORK BOTH MILED STEEL AND STAINLESS PIPES FOR SOAP PLANT IN MOUNT MERU MILLERS UGANDA LIMITED - LIRA.",
+      "client": "Mount Meru Millers Uganda Limited",
+      "location": "Lira",
+      "country": "Uganda",
+      "service_categories": ["machine-installation", "fabrication", "mild-steel-pipework", "stainless-pipework", "mechanical-engineering"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [9],
+      "also_in": [{"source_file": "active company profile new 2025 civil and construction-1.pdf", "page_numbers": [22]}],
+      "appears_in_both_pdfs": true,
+      "associated_extracted_image_ids": [
+        "company_context-p09-img034",
+        "company_context-p09-img035",
+        "profile_2025-p22-img111",
+        "profile_2025-p22-img114"
+      ],
+      "primary_image_asset_id": "profile_2025-p22-img114",
+      "gallery_image_asset_ids": [
+        "profile_2025-p22-img114",
+        "company_context-p09-img035",
+        "profile_2025-p22-img111",
+        "company_context-p09-img034"
+      ],
+      "image_selection_notes": "712x534 JPEG is the interior vessel-and-pipe photograph (same extract in both PDFs). 1649x896 JPEG2000 is the wider mechanical-plant photograph on the same captioned pages. Excluded profile_2025-p22-img113 (387x109 decorative fragment).",
+      "confidence": "high",
+      "spelling_notes": "MILED STEEL is source spelling (mild steel)."
+    },
+    {
+      "id": "proj-uganda-police-namanve",
+      "title": "Warehouse fabrication, erection and sheeting — Uganda Police, Namanve",
+      "caption_raw": "FABRICATION , ERECTION AND SHEETING OF AWARE HOUSE IN UGANDA POLICE - NAMANVE",
+      "client": "Uganda Police",
+      "location": "Namanve",
+      "country": "Uganda",
+      "service_categories": ["warehouses-steel-structures", "fabrication", "structural-works"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [10],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "company_context-p10-img037",
+        "company_context-p10-img039",
+        "company_context-p10-img041",
+        "company_context-p10-img043",
+        "company_context-p10-img045"
+      ],
+      "primary_image_asset_id": "company_context-p10-img037",
+      "gallery_image_asset_ids": [
+        "company_context-p10-img037",
+        "company_context-p10-img039",
+        "company_context-p10-img041",
+        "company_context-p10-img043",
+        "company_context-p10-img045"
+      ],
+      "image_selection_notes": "Page 10 is a dedicated Namanve warehouse spread. Photographic JPEG2000 objects retained; paired grayscale PNG masks excluded.",
+      "confidence": "high",
+      "spelling_notes": "AWARE HOUSE is source spelling (warehouse)."
+    },
+    {
+      "id": "proj-seed-cleaner-lira",
+      "title": "Seed-cleaner structure and machine installation — Lira",
+      "caption_raw": "FABRICATION OF THE SEED CLEANER STRUCTURE AND INSTALLATION OF MACHINE - LIRA",
+      "client": null,
+      "location": "Lira",
+      "country": "Uganda",
+      "service_categories": ["fabrication", "machine-installation", "structural-works"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [11],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "company_context-p11-img048",
+        "company_context-p11-img049",
+        "company_context-p11-img050"
+      ],
+      "primary_image_asset_id": "company_context-p11-img049",
+      "gallery_image_asset_ids": [
+        "company_context-p11-img049",
+        "company_context-p11-img048",
+        "company_context-p11-img050"
+      ],
+      "image_selection_notes": "Excluded company_context-p11-img047 (near-A4 JPEG2000 page background). img050 is a small inset photograph.",
+      "confidence": "high",
+      "spelling_notes": "Client not named on this caption. Do not merge with the Singida Mount Meru seed-cleaner job."
+    },
+    {
+      "id": "proj-oil-libya-mukono",
+      "title": "Structure and pipe work — Oil Libya gas factory, Mukono",
+      "caption_raw": "FABRICATION OF STRUCTURE AND PIPE WORK IN OIL LIBYA GAS FACTORY - MUKONO",
+      "client": "Oil Libya",
+      "location": "Mukono",
+      "country": "Uganda",
+      "service_categories": ["fabrication", "pipework", "structural-works"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [12, 31],
+      "also_in": [{"source_file": "active company profile new 2025 civil and construction-1.pdf", "page_numbers": [35]}],
+      "appears_in_both_pdfs": true,
+      "associated_extracted_image_ids": [
+        "company_context-p12-img053",
+        "company_context-p12-img054",
+        "company_context-p12-img055",
+        "company_context-p31-img115",
+        "profile_2025-p35-img155"
+      ],
+      "primary_image_asset_id": "profile_2025-p35-img155",
+      "gallery_image_asset_ids": [
+        "profile_2025-p35-img155",
+        "company_context-p31-img115",
+        "company_context-p12-img055",
+        "company_context-p12-img054",
+        "company_context-p12-img053"
+      ],
+      "image_selection_notes": "Excluded company_context-p12-img052 (A4 page background). 2025 page 35 and context page 31 are near-duplicate high-resolution catwalk/tank photographs.",
+      "confidence": "high",
+      "spelling_notes": "Later caption uses OIL LIBIA (COMPANY CONTEXT.pdf p.31) and OIL LIBYA (p.12 and 2025 p.35)."
+    },
+    {
+      "id": "proj-pepsi-depot-lira",
+      "title": "Warehouse erection and sheeting — PEPSE depot site, Lira",
+      "caption_raw": "ERECTION AND SHEETING OF AWARE HOUSE IN PEPSE DEPOT SITE - LIRA",
+      "client": "PEPSE DEPOT SITE",
+      "location": "Lira",
+      "country": "Uganda",
+      "service_categories": ["warehouses-steel-structures", "structural-works"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [13],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "company_context-p13-img057",
+        "company_context-p13-img058"
+      ],
+      "primary_image_asset_id": "company_context-p13-img058",
+      "gallery_image_asset_ids": [
+        "company_context-p13-img058",
+        "company_context-p13-img057"
+      ],
+      "image_selection_notes": "Excluded company_context-p13-img056 (grayscale/L mask-like JPEG). img058 is the 50-ton mobile crane on the captioned depot page; crane markings SWL 50 T are plant equipment, not a client logo.",
+      "confidence": "high",
+      "spelling_notes": "PEPSE is source spelling. Probable Pepsi is unresolved. Editorial title keeps PEPSE."
+    },
+    {
+      "id": "proj-mount-meru-oil-tanks-lira",
+      "title": "Oil tanks — Mount Meru Millers Uganda Limited, Lira",
+      "caption_raw": "FABRICATION OF OIL TANKS IN MOUNT MERU MILLERS UGANDA LIMITED - LIRA",
+      "client": "Mount Meru Millers Uganda Limited",
+      "location": "Lira",
+      "country": "Uganda",
+      "service_categories": ["industrial-storage-tanks", "fabrication"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [14],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "company_context-p14-img060",
+        "company_context-p14-img061"
+      ],
+      "primary_image_asset_id": "company_context-p14-img060",
+      "gallery_image_asset_ids": [
+        "company_context-p14-img060",
+        "company_context-p14-img061"
+      ],
+      "image_selection_notes": "Excluded company_context-p14-img059 (mode L). Remaining pair are modest-resolution tank-fabrication stills.",
+      "confidence": "high",
+      "spelling_notes": "Separate work package from the Lira soap-plant caption on page 9."
+    },
+    {
+      "id": "proj-mount-meru-seed-cleaner-singida",
+      "title": "Seed-cleaner structure — Mount Meru Millers, Singida",
+      "caption_raw": "FABRICATION AND INSTALLATION OF SEED CLEANER STRUCTURE IN MOUNT MERU MILLERS SINGIDA - TANZANIA",
+      "client": "Mount Meru Millers",
+      "location": "Singida",
+      "country": "Tanzania",
+      "service_categories": ["fabrication", "machine-installation", "structural-works"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [15],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "company_context-p15-img063"
+      ],
+      "primary_image_asset_id": "company_context-p15-img063",
+      "gallery_image_asset_ids": [
+        "company_context-p15-img063"
+      ],
+      "image_selection_notes": "Single high-resolution exterior of a mill/seed-cleaner tower and silos on the Singida caption page.",
+      "confidence": "high",
+      "spelling_notes": "Separate from the Lira seed-cleaner caption on page 11."
+    },
+    {
+      "id": "proj-mount-meru-chimney-arusha",
+      "title": "Chimney and structure — Mount Meru Millers, Arusha",
+      "caption_raw": "FABRICATION AND ERECTION OF CHIMNEY AND STRUCTURE IN MOUNT MERU MILLERS ARUSHA - TANZANIA",
+      "client": "Mount Meru Millers",
+      "location": "Arusha",
+      "country": "Tanzania",
+      "service_categories": ["fabrication", "structural-works"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [16],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "company_context-p16-img065"
+      ],
+      "primary_image_asset_id": "company_context-p16-img065",
+      "gallery_image_asset_ids": [
+        "company_context-p16-img065"
+      ],
+      "image_selection_notes": "Excluded company_context-p16-img064 (mode L). Remaining image is the upward chimney/stack photograph.",
+      "confidence": "high",
+      "spelling_notes": "Tanzania-branch job, distinct from Singida page 15."
+    },
+    {
+      "id": "proj-burundi-breweries-warehouse",
+      "title": "Warehouse structure, fabrication and pipe work — Burundi Breweries",
+      "caption_raw": "FABRICATION, PIPE WORK AND ERECTION OF AWARE HOUSE STRUCTURE IN BURUNDI BREWARIES - BURUNDI",
+      "client": "BURUNDI BREWARIES",
+      "location": null,
+      "country": "Burundi",
+      "service_categories": ["warehouses-steel-structures", "fabrication", "pipework"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [17],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "company_context-p17-img068",
+        "company_context-p17-img070"
+      ],
+      "primary_image_asset_id": "company_context-p17-img070",
+      "gallery_image_asset_ids": [
+        "company_context-p17-img070",
+        "company_context-p17-img068"
+      ],
+      "image_selection_notes": "Excluded mode-L JPEGs on the same page. JPEG2000 img070 is the higher-quality warehouse/pipework photograph.",
+      "confidence": "high",
+      "spelling_notes": "BREWARIES is source spelling. Relationship to BIRARUDI BREWARIES on page 18 is unresolved; not merged."
+    },
+    {
+      "id": "proj-birarudi-breweries",
+      "title": "Machine installation and mild/stainless pipework — Birarudi Breweries, Burundi",
+      "caption_raw": "INSTALLATION OF MACHINES, PIPE WORK BOTH MILD & STAINLESS PIPES IN BIRARUDI BREWARIES - BURUNDI",
+      "client": "BIRARUDI BREWARIES",
+      "location": null,
+      "country": "Burundi",
+      "service_categories": ["machine-installation", "mild-steel-pipework", "stainless-pipework"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [18],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "company_context-p18-img072",
+        "company_context-p18-img073",
+        "company_context-p18-img074"
+      ],
+      "primary_image_asset_id": "company_context-p18-img072",
+      "gallery_image_asset_ids": [
+        "company_context-p18-img072",
+        "company_context-p18-img073",
+        "company_context-p18-img074"
+      ],
+      "image_selection_notes": "Excluded company_context-p18-img071 (mode L). Three colour photographs remain on this dedicated caption page.",
+      "confidence": "high",
+      "spelling_notes": "BIRARUDI vs BURUNDI on the previous page. Keep both raw strings."
+    },
+    {
+      "id": "proj-sunafric-tanks-lira",
+      "title": "Storage tanks — Sunafric Industries Uganda Limited, Lira",
+      "caption_raw": "FABRICATION OF STORAGE TANKS IN SUNAFRIC INDUSTRIES UGANDA LIMITED - LIRA",
+      "client": "Sunafric Industries Uganda Limited",
+      "location": "Lira",
+      "country": "Uganda",
+      "service_categories": ["industrial-storage-tanks", "fabrication"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [19],
+      "also_in": [{"source_file": "active company profile new 2025 civil and construction-1.pdf", "page_numbers": [23]}],
+      "appears_in_both_pdfs": true,
+      "associated_extracted_image_ids": [
+        "company_context-p19-img076",
+        "company_context-p19-img077",
+        "profile_2025-p23-img116",
+        "profile_2025-p23-img117"
+      ],
+      "primary_image_asset_id": "profile_2025-p23-img117",
+      "gallery_image_asset_ids": [
+        "profile_2025-p23-img117",
+        "company_context-p19-img077",
+        "profile_2025-p23-img116",
+        "company_context-p19-img076"
+      ],
+      "image_selection_notes": "Excluded context p19 mode-L JPEG. 2025 and 2023 extracts are the same two photographs (tank assembly; plate-rolling crew in ATS (U) LTD overalls). Crew photo has identifiable faces.",
+      "confidence": "high",
+      "spelling_notes": "Client name taken from caption; publication of the name requires review."
+    },
+    {
+      "id": "proj-musumba-steel-bujumbura",
+      "title": "Structure erection — Musumba Steel, Bujumbura",
+      "caption_raw": "ERECTION OF THE STRUCTURE IN MUSUMBA STEEL BUJUMBURA - BURUNDI",
+      "client": "Musumba Steel",
+      "location": "Bujumbura",
+      "country": "Burundi",
+      "service_categories": ["structural-works", "warehouses-steel-structures"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [20, 32],
+      "also_in": [{"source_file": "active company profile new 2025 civil and construction-1.pdf", "page_numbers": [24, 36]}],
+      "appears_in_both_pdfs": true,
+      "associated_extracted_image_ids": [
+        "company_context-p20-img079",
+        "company_context-p20-img081",
+        "company_context-p32-img116",
+        "profile_2025-p24-img119",
+        "profile_2025-p24-img121",
+        "profile_2025-p36-img156"
+      ],
+      "primary_image_asset_id": "profile_2025-p36-img156",
+      "gallery_image_asset_ids": [
+        "profile_2025-p36-img156",
+        "company_context-p32-img116",
+        "profile_2025-p24-img119",
+        "profile_2025-p24-img121",
+        "company_context-p20-img079",
+        "company_context-p20-img081"
+      ],
+      "image_selection_notes": "Used only pages whose captions are solely Musumba Steel. COMPANY CONTEXT.pdf page 25 mixes Musumba and Rwanda captions; those images were not assigned here.",
+      "confidence": "high",
+      "spelling_notes": "COSCO container visible on some wide shots is third-party logistics branding, not an ATS client."
+    },
+    {
+      "id": "proj-lira-structure",
+      "title": "Structure erection — Lira (generic caption group)",
+      "caption_raw": "ERECTION OF THE STRUCTURE IN LIRA",
+      "client": null,
+      "location": "Lira",
+      "country": "Uganda",
+      "service_categories": ["structural-works", "machine-installation"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [21],
+      "also_in": [{"source_file": "active company profile new 2025 civil and construction-1.pdf", "page_numbers": [25]}],
+      "appears_in_both_pdfs": true,
+      "associated_extracted_image_ids": [
+        "company_context-p21-img083",
+        "profile_2025-p25-img123"
+      ],
+      "primary_image_asset_id": "profile_2025-p25-img123",
+      "gallery_image_asset_ids": [
+        "profile_2025-p25-img123",
+        "company_context-p21-img083"
+      ],
+      "image_selection_notes": "Only pages with a sole Lira caption were assigned. Mixed Lira/Rwanda/Kanjansi pages (context 27–30; 2025 31–34) were left unassigned to this id to avoid mixing jobs. Photographs may still belong to named Lira clients (Mount Meru, Sunafric, seed cleaner, PEPSE); client remains unnamed.",
+      "confidence": "medium",
+      "spelling_notes": "Repeated generic caption. Do not assign a single client."
+    },
+    {
+      "id": "proj-uganda-lira-structure",
+      "title": "Structure erection — Uganda Lira (caption as written)",
+      "caption_raw": "ERECTION OF THE STRUCTURE IN UGANDA LIRA",
+      "client": null,
+      "location": "Lira",
+      "country": "Uganda",
+      "service_categories": ["structural-works", "pipework", "machine-installation"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [22],
+      "also_in": [{"source_file": "active company profile new 2025 civil and construction-1.pdf", "page_numbers": [26]}],
+      "appears_in_both_pdfs": true,
+      "associated_extracted_image_ids": [
+        "company_context-p22-img085",
+        "company_context-p22-img086",
+        "profile_2025-p26-img125",
+        "profile_2025-p26-img126"
+      ],
+      "primary_image_asset_id": "profile_2025-p26-img125",
+      "gallery_image_asset_ids": [
+        "profile_2025-p26-img125",
+        "profile_2025-p26-img126",
+        "company_context-p22-img085",
+        "company_context-p22-img086"
+      ],
+      "image_selection_notes": "Dedicated 'UGANDA LIRA' caption pages. 2025 and 2023 extracts are the same two pipework/motor photographs. Kept separate from proj-lira-structure because the caption string differs.",
+      "confidence": "medium",
+      "spelling_notes": "May overlap other Lira jobs visually; not merged."
+    },
+    {
+      "id": "proj-rwanda-structure",
+      "title": "Structure erection — Rwanda",
+      "caption_raw": "ERECTION OF THE STRUCTURE IN RWANDA",
+      "client": null,
+      "location": null,
+      "country": "Rwanda",
+      "service_categories": ["structural-works", "pipework", "machine-installation", "industrial-storage-tanks"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [23, 24],
+      "also_in": [{"source_file": "active company profile new 2025 civil and construction-1.pdf", "page_numbers": [27, 28, 29]}],
+      "appears_in_both_pdfs": true,
+      "associated_extracted_image_ids": [
+        "company_context-p23-img088",
+        "company_context-p23-img089",
+        "company_context-p24-img091",
+        "company_context-p24-img092",
+        "company_context-p24-img093",
+        "profile_2025-p27-img128",
+        "profile_2025-p27-img129",
+        "profile_2025-p28-img131",
+        "profile_2025-p28-img132",
+        "profile_2025-p28-img133",
+        "profile_2025-p29-img135",
+        "profile_2025-p29-img136",
+        "profile_2025-p29-img137",
+        "profile_2025-p29-img138"
+      ],
+      "primary_image_asset_id": "profile_2025-p29-img137",
+      "gallery_image_asset_ids": [
+        "profile_2025-p29-img137",
+        "profile_2025-p29-img135",
+        "profile_2025-p28-img132",
+        "profile_2025-p27-img129",
+        "profile_2025-p27-img128",
+        "company_context-p23-img088",
+        "company_context-p24-img092"
+      ],
+      "image_selection_notes": "Assigned only pages whose captions are solely Rwanda. Mixed Rwanda/Musumba/Lira pages were not assigned. Crane lettered B.M.K. RWANDA LTD on 2025 page 27 is hired-plant branding, not a documented ATS client. Gallery lists a restrained subset; associated_extracted_image_ids holds the full exclusive-page set.",
+      "confidence": "high",
+      "spelling_notes": "Client not named."
+    },
+    {
+      "id": "proj-kanjansi-airfield",
+      "title": "Structure erection — Kanjansi Airfield",
+      "caption_raw": "ERECTION OF THE STRUCTURE IN KANJANSI AIRFILELD",
+      "client": null,
+      "location_raw": "KANJANSI AIRFILELD",
+      "location_normalized_candidate": "Kajjansi Airfield",
+      "country": "Uganda",
+      "service_categories": ["structural-works", "warehouses-steel-structures", "industrial-storage-tanks"],
+      "source_file": "COMPANY CONTEXT.pdf",
+      "page_numbers": [26],
+      "also_in": [{"source_file": "active company profile new 2025 civil and construction-1.pdf", "page_numbers": [30]}],
+      "appears_in_both_pdfs": true,
+      "associated_extracted_image_ids": [
+        "company_context-p26-img100",
+        "company_context-p26-img101",
+        "profile_2025-p30-img140",
+        "profile_2025-p30-img141"
+      ],
+      "primary_image_asset_id": "profile_2025-p30-img141",
+      "gallery_image_asset_ids": [
+        "profile_2025-p30-img141",
+        "profile_2025-p30-img140",
+        "company_context-p26-img100",
+        "company_context-p26-img101"
+      ],
+      "image_selection_notes": "Used only sole-caption Kanjansi pages (context p.26; 2025 p.30). Mixed Lira/Kanjansi pages (context 28/30; 2025 32/34) not assigned. 2025 p.30 top photo includes a close selfie of a worker in a hard hat — identifiable person.",
+      "confidence": "high",
+      "spelling_notes": "Do not silently correct KANJANSI to Kajjansi. Source variants: AIRFILELD, AIRFIELD, AIRFIELELD."
+    },
+    {
+      "id": "proj-civil-foundations-process",
+      "title": "Civil foundations sequence — column bases, ground beams, formwork (client not captioned)",
+      "caption_raw": "CIVIL AND CONSTRUCTION WORKS — Excavation of Foundation Bases / Casting concrete blinding to foundations / Re-bar fixing, formwork to sides of foundation bases / Casting concrete to column base / Concrete casted to form foundation base",
+      "client": null,
+      "location": null,
+      "country": "Uganda",
+      "service_categories": ["civil-construction", "machine-production-foundations"],
+      "source_file": "active company profile new 2025 civil and construction-1.pdf",
+      "page_numbers": [9, 10, 11, 12],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "profile_2025-p09-img041",
+        "profile_2025-p09-img042",
+        "profile_2025-p09-img043",
+        "profile_2025-p09-img044",
+        "profile_2025-p09-img045",
+        "profile_2025-p09-img046",
+        "profile_2025-p10-img049",
+        "profile_2025-p10-img050",
+        "profile_2025-p10-img051",
+        "profile_2025-p10-img052",
+        "profile_2025-p10-img053",
+        "profile_2025-p10-img054",
+        "profile_2025-p11-img057",
+        "profile_2025-p11-img058",
+        "profile_2025-p11-img059",
+        "profile_2025-p11-img060",
+        "profile_2025-p11-img061",
+        "profile_2025-p11-img062",
+        "profile_2025-p12-img064",
+        "profile_2025-p12-img065",
+        "profile_2025-p12-img066",
+        "profile_2025-p12-img067",
+        "profile_2025-p12-img068",
+        "profile_2025-p12-img069"
+      ],
+      "primary_image_asset_id": "profile_2025-p09-img045",
+      "gallery_image_asset_ids": [
+        "profile_2025-p09-img045",
+        "profile_2025-p09-img041",
+        "profile_2025-p10-img054",
+        "profile_2025-p11-img062",
+        "profile_2025-p12-img067",
+        "profile_2025-p12-img069"
+      ],
+      "image_selection_notes": "Six-up process grids. RGB JPEGs only. Excluded mode-L PNGs/JPEGs and A4 JPEG2000 backgrounds. These 103-candidate counts did not originally include this services-classified set; they are project evidence nonetheless. Workers in ATS overalls appear on several frames.",
+      "confidence": "high",
+      "spelling_notes": "Process captions, not a named client. Country inferred from the 2025 Uganda profile — inference, not a caption."
+    },
+    {
+      "id": "proj-warehouse-steel-crane",
+      "title": "Warehouse steel columns, overhead crane and roofing (client not captioned)",
+      "caption_raw": "Erection of steel columns and tie beams. / Assembly and erection of overhead crane. / During erection of overhead crane over gantry beams. / Roofing sheets fixed over the warehouse",
+      "client": null,
+      "location": null,
+      "country": "Uganda",
+      "service_categories": ["warehouses-steel-structures", "structural-works", "civil-construction"],
+      "source_file": "active company profile new 2025 civil and construction-1.pdf",
+      "page_numbers": [13],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "profile_2025-p13-img071",
+        "profile_2025-p13-img072",
+        "profile_2025-p13-img073",
+        "profile_2025-p13-img074",
+        "profile_2025-p13-img075",
+        "profile_2025-p13-img076"
+      ],
+      "primary_image_asset_id": "profile_2025-p13-img072",
+      "gallery_image_asset_ids": [
+        "profile_2025-p13-img072",
+        "profile_2025-p13-img071",
+        "profile_2025-p13-img075",
+        "profile_2025-p13-img076"
+      ],
+      "image_selection_notes": "Excluded profile_2025-p13-img070 (mode L). May be the same factory site as later tubemill pages; not captioned as such.",
+      "confidence": "high",
+      "spelling_notes": "Client unnamed."
+    },
+    {
+      "id": "proj-tubemill-house",
+      "title": "Factory / tubemill building, machine pits, CTL/slitting/production-line foundations",
+      "caption_raw": "SLITTING LINE FOUNDATION AND INTERIOR OF TUBEMILL HOUSE. / CUT TO LENGTH FOUNDATION AND INTERIOR OF TUBEMILL HOUSE. / PRODUCTION LINE FOUNDATION AND INTERIOR OF TUBEMILL HOUSE WITH FLOOR COMPLETE. / COOLING TANK FOR TUBEMILL. / TUBEMILL WAREHOUSE FRONT VIEW. / Casted pits and surface foundation for CTL.",
+      "client": null,
+      "location": null,
+      "country": "Uganda",
+      "service_categories": ["civil-construction", "machine-production-foundations", "warehouses-steel-structures", "industrial-storage-tanks"],
+      "source_file": "active company profile new 2025 civil and construction-1.pdf",
+      "page_numbers": [14, 15, 16, 17],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "profile_2025-p14-img078",
+        "profile_2025-p14-img079",
+        "profile_2025-p14-img080",
+        "profile_2025-p14-img081",
+        "profile_2025-p14-img082",
+        "profile_2025-p14-img083",
+        "profile_2025-p15-img085",
+        "profile_2025-p15-img086",
+        "profile_2025-p15-img087",
+        "profile_2025-p15-img088",
+        "profile_2025-p15-img089",
+        "profile_2025-p15-img090",
+        "profile_2025-p16-img093",
+        "profile_2025-p16-img094",
+        "profile_2025-p16-img095",
+        "profile_2025-p16-img096",
+        "profile_2025-p17-img099",
+        "profile_2025-p17-img100"
+      ],
+      "primary_image_asset_id": "profile_2025-p16-img093",
+      "gallery_image_asset_ids": [
+        "profile_2025-p16-img093",
+        "profile_2025-p16-img095",
+        "profile_2025-p16-img096",
+        "profile_2025-p17-img099",
+        "profile_2025-p15-img089",
+        "profile_2025-p14-img082"
+      ],
+      "image_selection_notes": "RGB process stills from civil pages 14–16 plus warehouse-front frames on page 17 (img099/img100). Page 17 workshop and toilets frames assigned to proj-factory-workshop-toilets. Mode-L JPEGs excluded.",
+      "confidence": "high",
+      "spelling_notes": "CTL is written as CTL and as CUT TO LENGTH. Client/site name not given."
+    },
+    {
+      "id": "proj-factory-workshop-toilets",
+      "title": "Factory workshop and factory toilets",
+      "caption_raw": "FACTORY WORKSHOP IN PROGRESS / FACTORY TOILETS IN PROGRESS",
+      "client": null,
+      "location": null,
+      "country": "Uganda",
+      "service_categories": ["civil-construction"],
+      "source_file": "active company profile new 2025 civil and construction-1.pdf",
+      "page_numbers": [17],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "profile_2025-p17-img098",
+        "profile_2025-p17-img101"
+      ],
+      "primary_image_asset_id": "profile_2025-p17-img098",
+      "gallery_image_asset_ids": [
+        "profile_2025-p17-img098",
+        "profile_2025-p17-img101"
+      ],
+      "image_selection_notes": "Page 17 also shows tubemill warehouse elevations assigned to proj-tubemill-house. Only the workshop-in-progress and toilets-in-progress frames are listed here.",
+      "confidence": "high",
+      "spelling_notes": "Likely the same blue-and-white striped factory site as the tubemill house; kept as a separate captioned work package."
+    },
+    {
+      "id": "proj-multistorey-concrete-2023",
+      "title": "Multi-storey concrete construction (uncaptioned; phone timestamps November 2023)",
+      "caption_raw": null,
+      "client": null,
+      "location": null,
+      "country": null,
+      "service_categories": ["civil-construction"],
+      "source_file": "active company profile new 2025 civil and construction-1.pdf",
+      "page_numbers": [18, 19, 20, 21],
+      "appears_in_both_pdfs": false,
+      "associated_extracted_image_ids": [
+        "profile_2025-p18-img102",
+        "profile_2025-p18-img103",
+        "profile_2025-p18-img104",
+        "profile_2025-p19-img105",
+        "profile_2025-p19-img106",
+        "profile_2025-p19-img107",
+        "profile_2025-p20-img108",
+        "profile_2025-p21-img109"
+      ],
+      "primary_image_asset_id": "profile_2025-p18-img102",
+      "gallery_image_asset_ids": [
+        "profile_2025-p18-img102",
+        "profile_2025-p19-img105",
+        "profile_2025-p20-img108",
+        "profile_2025-p21-img109"
+      ],
+      "image_selection_notes": "Uncaptioned. TECNO SPARK 10 watermarks/timestamps on pages 18–19 (2023.11.20 / 2023.11.23); Shot on Mi 10 Pro on page 21. Not suitable as polished hero frames without crop/watermark handling (not performed in this prompt).",
+      "confidence": "medium",
+      "spelling_notes": "No project title on the pages. Country/client unstated."
+    }
+  ]
+}

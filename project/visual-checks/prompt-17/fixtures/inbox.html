@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Management inbox fixture | Active Technical Services</title>
+    <link rel="stylesheet" href="/walter.css" />
+  </head>
+  <body>
+    <div class="walter-shell">
+      <a class="walter-skip-link" href="#main-content">Skip to management content</a>
+      <main id="main-content">
+        <div class="walter-page walter-page-wide">
+          <header class="walter-toolbar">
+            <div>
+              <h1>Management sign in</h1>
+              <p>Signed in as administrator.</p>
+            </div>
+            <button type="button">Sign out</button>
+          </header>
+          <nav class="walter-section-nav" aria-label="Management sections">
+            <button type="button" class="is-active" aria-current="page">Inquiries</button>
+            <button type="button">Website Content</button>
+            <button type="button">Publication</button>
+          </nav>
+          <section class="walter-inbox" aria-labelledby="walter-inbox-heading">
+            <h2 id="walter-inbox-heading">Inquiries</h2>
+            <div class="walter-filters" role="group" aria-label="Inquiry status filters">
+              <button type="button" class="is-active" aria-pressed="true">All</button>
+              <button type="button" aria-pressed="false">New</button>
+              <button type="button" aria-pressed="false">In progress</button>
+              <button type="button" aria-pressed="false">Closed</button>
+            </div>
+            <ul class="walter-inquiry-list">
+              <li>
+                <div class="walter-inquiry-row">
+                  <button type="button" class="walter-inquiry-open">
+                    <span class="walter-inquiry-name">Ada Okello</span>
+                  </button>
+                  <a class="walter-inquiry-meta" href="mailto:ada@example.com">ada@example.com</a>
+                  <a class="walter-inquiry-meta" href="tel:+256700000000">+256 700 000 000</a>
+                  <span class="walter-inquiry-status">New</span>
+                  <span class="walter-inquiry-meta">No attachment metadata</span>
+                  <time datetime="2026-09-01T06:00:00.000Z">1 Sept 2026, 06:00</time>
+                  <time datetime="2026-09-01T06:00:00.000Z">1 Sept 2026, 06:00</time>
+                </div>
+              </li>
+              <li>
+                <div class="walter-inquiry-row">
+                  <button type="button" class="walter-inquiry-open">
+                    <span class="walter-inquiry-name">Ben Okot</span>
+                  </button>
+                  <a class="walter-inquiry-meta" href="mailto:ben@example.com">ben@example.com</a>
+                  <a class="walter-inquiry-meta" href="tel:+256700000001">+256 700 000 001</a>
+                  <span class="walter-inquiry-status">In progress</span>
+                  <span class="walter-inquiry-meta">Has attachment metadata</span>
+                  <time datetime="2026-09-01T06:00:00.000Z">1 Sept 2026, 06:00</time>
+                  <time datetime="2026-09-01T07:00:00.000Z">1 Sept 2026, 07:00</time>
+                </div>
+              </li>
+            </ul>
+            <button type="button" class="walter-load-more">Load more inquiries</button>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

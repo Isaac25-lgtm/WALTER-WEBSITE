@@ -1,0 +1,44 @@
+{
+  "walter_1440x900": {
+    "title": "Management sign in | Active Technical Services",
+    "h1": "Management sign in",
+    "skip": 1
+  },
+  "inbox_1440x900": {
+    "h2": "Inquiries",
+    "phone": 1,
+    "load_more": 1
+  },
+  "content_1440x900": {
+    "h2": "Website Content",
+    "preview": 1
+  },
+  "walter_768x1024": {
+    "title": "Management sign in | Active Technical Services",
+    "h1": "Management sign in",
+    "skip": 1
+  },
+  "inbox_768x1024": {
+    "h2": "Inquiries",
+    "phone": 1,
+    "load_more": 1
+  },
+  "content_768x1024": {
+    "h2": "Website Content",
+    "preview": 1
+  },
+  "walter_390x844": {
+    "title": "Management sign in | Active Technical Services",
+    "h1": "Management sign in",
+    "skip": 1
+  },
+  "inbox_390x844": {
+    "h2": "Inquiries",
+    "phone": 1,
+    "load_more": 1
+  },
+  "content_390x844": {
+    "h2": "Website Content",
+    "preview": 1
+  }
+}

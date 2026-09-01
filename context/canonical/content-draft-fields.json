@@ -1,0 +1,160 @@
+{
+  "notes": "Controlled public-copy fields that /walter/ may overlay locally. Canonical text is resolved from public-copy.json via canonical_selector. Values remain plain text; HTML is rejected.",
+  "plain_text_policy": "plain_text_no_html",
+  "fields": [
+    {
+      "key": "homepage.heroHeading",
+      "page": "homepage",
+      "section": "hero",
+      "label": "Homepage hero heading",
+      "description": "Primary homepage headline. Keep it factual and short.",
+      "min_length": 1,
+      "max_length": 120,
+      "multiline": false,
+      "canonical_selector": "homepage.heroHeading"
+    },
+    {
+      "key": "homepage.heroSupporting",
+      "page": "homepage",
+      "section": "hero",
+      "label": "Homepage hero supporting line",
+      "description": "Supporting line under the homepage headline.",
+      "min_length": 1,
+      "max_length": 280,
+      "multiline": true,
+      "canonical_selector": "homepage.heroSupporting"
+    },
+    {
+      "key": "homepage.servicesHeading",
+      "page": "homepage",
+      "section": "services",
+      "label": "Services heading",
+      "description": "Heading for the nine-service grid.",
+      "min_length": 1,
+      "max_length": 80,
+      "multiline": false,
+      "canonical_selector": "homepage.servicesHeading"
+    },
+    {
+      "key": "homepage.servicesIntroduction",
+      "page": "homepage",
+      "section": "services",
+      "label": "Services introduction",
+      "description": "Short introduction above the nine documented services.",
+      "min_length": 1,
+      "max_length": 280,
+      "multiline": true,
+      "canonical_selector": "homepage.servicesIntroduction"
+    },
+    {
+      "key": "homepage.aboutEyebrow",
+      "page": "homepage",
+      "section": "about",
+      "label": "About eyebrow",
+      "description": "Small label above the about heading. Public abbreviation and mark only.",
+      "min_length": 1,
+      "max_length": 80,
+      "multiline": false,
+      "canonical_selector": "homepage.aboutEyebrow"
+    },
+    {
+      "key": "homepage.aboutHeading",
+      "page": "homepage",
+      "section": "about",
+      "label": "About heading",
+      "description": "About-section heading. Use the public trading name.",
+      "min_length": 1,
+      "max_length": 80,
+      "multiline": false,
+      "canonical_selector": "homepage.aboutHeading"
+    },
+    {
+      "key": "homepage.aboutParagraph1",
+      "page": "homepage",
+      "section": "about",
+      "label": "About paragraph 1",
+      "description": "First about paragraph. Keep Jinja primary and Dodoma a branch.",
+      "min_length": 1,
+      "max_length": 600,
+      "multiline": true,
+      "canonical_selector": "homepage.aboutParagraphs.0"
+    },
+    {
+      "key": "homepage.aboutParagraph2",
+      "page": "homepage",
+      "section": "about",
+      "label": "About paragraph 2",
+      "description": "Second about paragraph. Documented services only.",
+      "min_length": 1,
+      "max_length": 800,
+      "multiline": true,
+      "canonical_selector": "homepage.aboutParagraphs.1"
+    },
+    {
+      "key": "homepage.closingCtaHeading",
+      "page": "homepage",
+      "section": "closing",
+      "label": "Closing CTA heading",
+      "description": "Closing call-to-action heading. Quote-only; no prices.",
+      "min_length": 1,
+      "max_length": 80,
+      "multiline": false,
+      "canonical_selector": "homepage.closingCtaHeading"
+    },
+    {
+      "key": "homepage.closingCtaSupporting",
+      "page": "homepage",
+      "section": "closing",
+      "label": "Closing CTA supporting line",
+      "description": "Supporting line for the closing quotation request.",
+      "min_length": 1,
+      "max_length": 280,
+      "multiline": true,
+      "canonical_selector": "homepage.closingCtaSupporting"
+    },
+    {
+      "key": "contact.heading",
+      "page": "contact",
+      "section": "introduction",
+      "label": "Contact heading",
+      "description": "Contact page heading.",
+      "min_length": 1,
+      "max_length": 80,
+      "multiline": false,
+      "canonical_selector": "contact.heading"
+    },
+    {
+      "key": "contact.introduction",
+      "page": "contact",
+      "section": "introduction",
+      "label": "Contact introduction",
+      "description": "Contact page introduction. No response-time claims.",
+      "min_length": 1,
+      "max_length": 400,
+      "multiline": true,
+      "canonical_selector": "contact.introduction"
+    },
+    {
+      "key": "thankYou.heading",
+      "page": "thankYou",
+      "section": "message",
+      "label": "Thank-you heading",
+      "description": "Thank-you page heading.",
+      "min_length": 1,
+      "max_length": 80,
+      "multiline": false,
+      "canonical_selector": "thankYou.heading"
+    },
+    {
+      "key": "thankYou.supporting",
+      "page": "thankYou",
+      "section": "message",
+      "label": "Thank-you supporting line",
+      "description": "Thank-you supporting line. No availability promises.",
+      "min_length": 1,
+      "max_length": 160,
+      "multiline": false,
+      "canonical_selector": "thankYou.supporting"
+    }
+  ]
+}
