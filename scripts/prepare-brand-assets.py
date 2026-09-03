@@ -1,4 +1,12 @@
-"""Crop ATS logo derivatives from the canonical PDF raster without recolouring or redrawing."""
+"""Crop ATS logo derivatives from the committed 200 dpi brand raster without recolouring or redrawing.
+
+The original `active logo.pdf` is no longer part of this repository. The 200 dpi raster
+committed at `context/assets/brand/active-logo-pdf-render-200dpi.png` is the retained
+canonical input, so this script reproduces the existing logo derivatives byte for byte.
+`active logo.jpg` is retained as the raster fallback and is hashed for provenance only;
+it is deliberately not used as the crop input, because its JPEG compression noise shifts
+the non-white bounding box and would change the published logo crop.
+"""
 
 from __future__ import annotations
 
@@ -9,9 +17,8 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-PDF_SOURCE = ROOT / "active logo.pdf"
 JPG_SOURCE = ROOT / "active logo.jpg"
-PDF_RENDER = ROOT / "context" / "assets" / "brand" / "active-logo-pdf-render-200dpi.png"
+LOGO_RASTER = ROOT / "context" / "assets" / "brand" / "active-logo-pdf-render-200dpi.png"
 OUT_DIR = ROOT / "apps" / "web" / "public" / "media" / "brand"
 REPORT = ROOT / "project" / "BRAND-ASSET-REPORT.md"
 
@@ -54,10 +61,10 @@ def resize_to_height(image: Image.Image, target_height: int) -> Image.Image:
 
 
 def main() -> None:
-    if not PDF_RENDER.exists():
-        raise SystemExit("PDF 200dpi render is missing; refusing to invent a logo.")
+    if not LOGO_RASTER.exists():
+        raise SystemExit("The 200 dpi brand raster is missing; refusing to invent a logo.")
 
-    source_image = Image.open(PDF_RENDER)
+    source_image = Image.open(LOGO_RASTER)
     cropped, box = crop_white_canvas(source_image)
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -71,24 +78,29 @@ def main() -> None:
     header.save(header_path, format="PNG", optimize=True)
     footer.save(footer_path, format="PNG", optimize=True)
 
-    pdf_hash = sha256(PDF_SOURCE)
+    raster_hash = sha256(LOGO_RASTER)
     jpg_hash = sha256(JPG_SOURCE)
     report = f"""# Brand asset report
 
-Prompt 6. Derivatives are cropped rasters of the canonical ATS mark. Colours, lettering, green border, and proportions were not redrawn or recolored.
+Derivatives are cropped rasters of the canonical ATS mark. Colours, lettering, green border, and proportions were not redrawn or recolored.
 
 ## Source used
 
-- Canonical source: `active logo.pdf`
-- Production raster: `context/assets/brand/active-logo-pdf-render-200dpi.png` (200 dpi render of that PDF from Prompt 1)
+- Canonical input: `context/assets/brand/active-logo-pdf-render-200dpi.png` (200 dpi raster of the original logo artwork, committed to this repository)
 - Raster fallback inspected but not used for output: `active logo.jpg`
+
+The original `active logo.pdf` is no longer part of this repository. It was the upstream
+origin of the 200 dpi raster above, which is retained as the canonical input so these
+derivatives remain reproducible without it. `active logo.jpg` is not used as the crop
+input: its JPEG compression noise widens the non-white bounding box and would change the
+published logo crop.
 
 ## Source hashes (SHA-256)
 
-- `active logo.pdf`: `{pdf_hash}`
+- `context/assets/brand/active-logo-pdf-render-200dpi.png`: `{raster_hash}`
 - `active logo.jpg`: `{jpg_hash}`
 
-Original files were read only. They were not renamed, moved, overwritten, or re-exported.
+Source files were read only. They were not renamed, moved, overwritten, or re-exported.
 
 ## Crop performed
 
@@ -101,15 +113,15 @@ Original files were read only. They were not renamed, moved, overwritten, or re-
 
 | File | Dimensions | Format | Produced from |
 | --- | --- | --- | --- |
-| `apps/web/public/media/brand/ats-logo-master.png` | {cropped.size[0]} × {cropped.size[1]} | PNG | PDF 200 dpi render |
-| `apps/web/public/media/brand/ats-logo-header.png` | {header.size[0]} × {header.size[1]} | PNG | same cropped PDF render, height 130px (2× of measured 65px header logo height) |
-| `apps/web/public/media/brand/ats-logo-footer.png` | {footer.size[0]} × {footer.size[1]} | PNG | same cropped PDF render, height 160px |
+| `apps/web/public/media/brand/ats-logo-master.png` | {cropped.size[0]} × {cropped.size[1]} | PNG | 200 dpi brand raster |
+| `apps/web/public/media/brand/ats-logo-header.png` | {header.size[0]} × {header.size[1]} | PNG | same cropped raster, height 130px (2× of measured 65px header logo height) |
+| `apps/web/public/media/brand/ats-logo-footer.png` | {footer.size[0]} × {footer.size[1]} | PNG | same cropped raster, height 160px |
 
 Aspect ratio was preserved with LANCZOS resampling. No transparency was forced; the yellow badge remains opaque.
 
 ## Colour and proportion confirmation
 
-Colours and proportions were not intentionally modified. No AI generation, recolour, simplification, or redraw was used. The original PDF was not copied into `public/`.
+Colours and proportions were not intentionally modified. No AI generation, recolour, simplification, or redraw was used. No source document was copied into `public/`.
 """
     REPORT.write_text(report, encoding="utf-8")
     print(json.dumps({"master": str(master_path), "box": box, "master_size": cropped.size}, indent=2))

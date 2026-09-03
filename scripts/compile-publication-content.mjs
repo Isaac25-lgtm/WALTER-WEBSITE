@@ -142,7 +142,8 @@ export function runCompilePublicationTest() {
   assert(overlayCompiled.homepage.heroHeading === "Local compiled heading", "selected draft was not applied");
   assert(overlayCompiled.contact.heading === canonical.contact.heading, "omitted contact heading must stay canonical");
   assert(overlayCompiled.services.length === 9, "locked services were rewritten");
-  assert(overlayCompiled.projects.length === 0, "withheld projects leaked");
+  assert(overlayCompiled.projects.length === canonical.projects.length, "locked featured work was rewritten");
+  assert(overlayCompiled.clientNames.length === 0, "withheld client names leaked");
 
   const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "ats-compile-publication-"));
   const tempFile = path.join(tempDir, "compiled-public-content.json");

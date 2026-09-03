@@ -43,6 +43,7 @@ describe("public source and export safety", () => {
         !file.endsWith("export-safety.test.ts") &&
         !file.endsWith("chrome.test.tsx") &&
         !file.endsWith("home.test.tsx") &&
+        !file.endsWith("portfolio.test.tsx") &&
         !file.endsWith("contact.test.tsx") &&
         !file.endsWith("thank-you.test.tsx") &&
         !file.endsWith("walter.test.tsx") &&

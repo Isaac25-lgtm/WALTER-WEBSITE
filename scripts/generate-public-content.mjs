@@ -95,6 +95,7 @@ export function buildPublicContent() {
   const projectsFile = readCanonical("projects.json");
   const controls = readCanonical("publication-controls.json");
   const publicCopy = readCanonical("public-copy.json");
+  const companyMedia = readCanonical("company-media.json");
 
   assert(controls, "canonical publication controls are missing");
   assert(controls.pricing_mode === "quote_only" || settings.pricing_mode?.startsWith("quote_only"), "pricing must be quote only");
@@ -158,14 +159,79 @@ export function buildPublicContent() {
   }
 
   const publicProjects = projectsFile.projects.filter((project) => isPublic(projectControls.get(project.id)));
-  assert(publicProjects.length === 0, "unapproved projects must not be emitted in this baseline");
+  assert(publicProjects.length === 0, "unapproved named projects must not be emitted");
+
+  assert(Array.isArray(companyMedia.assets) && companyMedia.assets.length >= 18, "company media shortlist is incomplete");
+  const mediaById = new Map();
+  for (const asset of companyMedia.assets) {
+    assert(typeof asset.id === "string" && asset.id.startsWith("media-"), "company media id is invalid");
+    assert(!mediaById.has(asset.id), `duplicate company media id: ${asset.id}`);
+    assert(typeof asset.file === "string" && /^[a-z0-9-]+\.jpg$/.test(asset.file), `${asset.id} has an invalid public file`);
+    assert(typeof asset.source_file === "string" && /^IMG-[0-9A-Z-]+\.jpg$/.test(asset.source_file), `${asset.id} has an invalid source file`);
+    assert(Number.isInteger(asset.width) && asset.width > 0, `${asset.id} width is invalid`);
+    assert(Number.isInteger(asset.height) && asset.height > 0, `${asset.id} height is invalid`);
+    assert(typeof asset.alt === "string" && asset.alt.trim().length >= 12, `${asset.id} alt text is missing`);
+    assert(typeof asset.object_position === "string" && asset.object_position.trim(), `${asset.id} object position is missing`);
+    assert(fs.existsSync(path.join(root, "compan images", asset.source_file)), `${asset.id} source image is missing`);
+    assert(
+      fs.existsSync(path.join(root, "apps", "web", "public", "media", "company", asset.file)),
+      `${asset.id} public image is missing`,
+    );
+    mediaById.set(asset.id, asset);
+  }
+
+  function publicMedia(assetId) {
+    const asset = mediaById.get(assetId);
+    assert(asset, `unknown company media id: ${assetId}`);
+    return {
+      id: asset.id,
+      src: `${companyMedia.public_asset_root}${asset.file}`,
+      alt: asset.alt,
+      width: asset.width,
+      height: asset.height,
+      objectPosition: asset.object_position,
+    };
+  }
+
+  const serviceMediaEntries = Object.entries(companyMedia.service_media ?? {});
+  assert(serviceMediaEntries.length === servicesFile.services.length, "every service must have one selected image");
 
   const publicServices = servicesFile.services.map((service) => ({
     id: service.id,
     slug: service.slug,
     name: service.name,
     shortDescription: service.short_description,
+    image: publicMedia(companyMedia.service_media[service.id]),
   }));
+
+  const featuredWork = companyMedia.featured_work.map((item) => ({
+    id: item.id,
+    title: item.title,
+    href: `/portfolio/#${item.portfolio_anchor}`,
+    image: publicMedia(item.asset_id),
+  }));
+  assert(featuredWork.length === 6, "homepage must contain exactly six featured-work tiles");
+
+  const portfolioGroups = companyMedia.portfolio_groups.map((group) => ({
+    id: group.id,
+    title: group.title,
+    items: group.items.map((item) => ({
+      id: item.id,
+      title: item.title,
+      image: publicMedia(item.asset_id),
+    })),
+  }));
+  const portfolioMedia = portfolioGroups.flatMap((group) =>
+    group.items.map((item) => ({ ...item, groupId: group.id, groupTitle: group.title })),
+  );
+  assert(portfolioGroups.length === 5, "portfolio capability grouping is incomplete");
+  assert(portfolioMedia.length >= 18, "portfolio image selection is too small");
+
+  const siteMedia = {
+    hero: publicMedia(companyMedia.site_media.hero),
+    about: publicMedia(companyMedia.site_media.about),
+    closingCta: publicMedia(companyMedia.site_media.closing_cta),
+  };
 
   const homepageCopy = publicCopy.homepage;
   assert(homepageCopy, "canonical homepage copy is missing");
@@ -217,8 +283,14 @@ export function buildPublicContent() {
       email: settings.email,
     },
     services: publicServices,
-    projects: [],
-    projectMedia: [],
+    projects: featuredWork,
+    projectMedia: portfolioMedia,
+    siteMedia,
+    portfolio: {
+      heading: "Our work",
+      introduction: "Explore a selection of fabrication, construction and industrial installation work delivered by Active Technical Services.",
+      groups: portfolioGroups,
+    },
     people: [],
     latestWork: [],
     clientNames: [],
@@ -297,7 +369,8 @@ export function buildPublicContent() {
     "contact and thank-you copy must not promise availability",
   );
   assert(content.navigation.every((item) => item.href !== "/thank-you/"), "thank-you must not be a visible nav item");
-  assert(content.projects.length === 0, "unapproved projects must not be emitted in this baseline");
+  assert(content.projects.length === 6, "homepage featured-work selection is incomplete");
+  assert(content.projectMedia.length >= 18, "portfolio media selection is incomplete");
   assert(content.latestWork.length === 0, "unapproved latest-work items must not be emitted");
   assert(content.navigation.length === 3, "visible primary navigation must have exactly three items");
   assert(content.navigation[0].label === "Services", "first nav item must be Services");
@@ -405,6 +478,7 @@ Generated at ${now}
 - context/canonical/projects.json
 - context/canonical/publication-controls.json
 - context/canonical/public-copy.json
+- context/canonical/company-media.json
 - context/canonical/content-draft-fields.json
 
 ## Public records emitted
@@ -414,6 +488,7 @@ Generated at ${now}
 - Contacts: canonical phones and email
 - Services: ${result.content.services.length}
 - Homepage copy slots: hero, services, about, portfolio CTA, closing CTA
+- Curated company photography: hero, about, closing CTA, nine service cards, six featured-work tiles, and grouped portfolio gallery
 - Contact copy slots: heading, introduction, alternatives, unavailable/rate-limit/attachment/invalid/internal/timeout/network/submitting messages, location labels
 - Thank-you copy slots: heading, supporting, other work, return-home, return-contact
 - Projects: ${result.content.projects.length}
@@ -429,8 +504,7 @@ Generated at ${now}
 
 ## Records withheld
 
-- All 21 canonical projects
-- All project media
+- All 21 named canonical project records and their extracted PDF media
 - Identifiable people
 - Named clients
 - Client logos
@@ -441,7 +515,7 @@ Generated at ${now}
 
 ## Withholding reasons
 
-Publication controls mark these collections as draft with public_allowed=false. No reviewer, consent, or client permission has been recorded.
+Publication controls mark the named project collections as draft with public_allowed=false. No reviewer, consent, or client permission has been recorded for those records. The separately supplied company-image folder is curated through context/canonical/company-media.json using generic capability labels and no client names.
 
 ## Generated output paths
 

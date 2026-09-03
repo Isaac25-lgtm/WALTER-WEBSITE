@@ -890,3 +890,17 @@ Final `npm.cmd run verify` passed after these corrections: **155 tests / 33 file
 
 ---
 
+## Post-Prompt 18 — company photography curation and Portfolio completion
+
+- Reviewed all **86** files under `compan images/` using contact sheets and full-resolution inspection of shortlisted candidates.
+- Selected **21** public photographs and left **65** out of the public build because they were repetitive, weaker, ceremonial, close identifiable portraits, duplicate branding, or visually distracting.
+- Added `context/canonical/company-media.json` as the deterministic selection and placement registry. Original filenames remain canonical provenance only and are not emitted into browser content.
+- Added a photographic hero, images for all **9** service cards, a six-tile featured-work mosaic, an illustrated about section, and a photographic closing CTA.
+- Replaced the Portfolio scaffold with **5** capability groups and **21** generic work entries. No client names, prices, project locations, certifications, or other unsupported claims were added.
+- Added one curated company photograph to the Thank You page.
+- Added public-media existence checks, content-pipeline regression coverage, Portfolio component tests, and Chrome visual checks under `project/visual-checks/company-media/`.
+- Chrome at **1440×900**, **768×1024**, and **390×844** found no broken images and no horizontal overflow on Home or Portfolio.
+- Final `npm.cmd run verify` passed: content and publication-compiler checks, lint, typecheck, **157 tests / 34 files**, Drizzle check, API build, and static web export.
+
+---
+

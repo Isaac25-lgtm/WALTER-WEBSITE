@@ -31,13 +31,14 @@ Exact original CSS breakpoints were not dumped.
 - Privacy / Terms / Blog omitted; those destinations are unknown on the reference and are not ATS public routes.
 - Legal line uses `legalFooterName` only. Dual legal-name presentation remains an editorial question in `content-gaps.md`. Organisation structure (Jinja headquarters, Dodoma branch) is settled.
 
-## Homepage (Prompt 7)
+## Homepage (Prompt 7, updated with owner-supplied company media)
 
-- Hero min-heights **538 / 507 / 507** use `box-sizing: border-box` so padding is inside the recorded height. No approved photograph; black field only. No rating badge.
-- Services: nine canonical cards, three columns from the inferred **981px** desktop cut, one column at 768 and 390. Optional `imageSrc` on `ServiceCard` is unused while media is unpublished — no empty image boxes.
-- Project mosaic, latest work, and client brands are implemented and render nothing while generated collections are empty.
-- Closing CTA band uses recorded `rgb(71,71,71)` and 100px padding without a stock or project photo.
+- Hero min-heights **538 / 507 / 507** use `box-sizing: border-box` so padding is inside the recorded height. A selected crane-and-erection photograph now sits behind a controlled dark overlay. No rating badge.
+- Services: nine canonical cards with nine capability-matched company photographs, three columns from the inferred **981px** desktop cut, one column at 768 and 390.
+- The project mosaic now shows six generic featured-work categories. Latest work and client brands still render nothing while those generated collections are empty.
+- The about split includes a storage-systems photograph. The closing CTA uses an industrial-process photograph behind a controlled dark overlay.
 - Homepage copy lives in `context/canonical/public-copy.json`. Provenance is stripped before the public snapshot.
+- The full selection lives in `context/canonical/company-media.json`; 21 images appear in five Portfolio groups, while 65 weaker, repetitive, ceremonial, close-portrait, or distracting images remain out of the public build.
 
 ## Call bar
 
@@ -74,7 +75,7 @@ Prompt 9 re-measured the centred heading and 1051px card under `project/visual-c
 
 - Black page, centred H1 **40/64/700/white**, matching Contact.
 - Two support lines from `public-copy.json`: “We will be in touch.” and the other-work invitation.
-- Reference photograph is **972×648** with ~30px radius. ATS does not copy the dental-clinic still. `ThankYouPhotoSlot` returns null while `projectMedia` is empty, so the page is shorter than the reference ~1051px main section. That is a content-driven delta, not a copied placeholder image.
+- Reference photograph is **972×648** with ~30px radius. ATS does not copy the dental-clinic still. `ThankYouPhotoSlot` now uses one owner-supplied company photograph from the curated public-media snapshot.
 - `/thank-you/` is not in the header or footer. Direct visits still render because the export is static.
 
 Prompt 10 captures live under `project/visual-checks/prompt-10/`.

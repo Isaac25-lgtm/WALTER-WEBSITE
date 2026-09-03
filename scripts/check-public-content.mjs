@@ -64,10 +64,25 @@ for (const needle of FORBIDDEN) {
 
 const parsed = JSON.parse(actualJson);
 if (parsed.services.length !== 9) fail("Service count is not exactly nine.");
-if (parsed.projects.length !== 0) fail("Unapproved projects leaked into public content.");
+if (parsed.projects.length !== 6) fail("Featured-work selection is incomplete.");
 if (parsed.clientNames.length !== 0) fail("Unapproved client names leaked.");
-if (parsed.projectMedia.length !== 0) fail("Unapproved media leaked.");
+if (parsed.projectMedia.length < 18) fail("Portfolio media selection is incomplete.");
 if (parsed.prices.length !== 0) fail("Public prices leaked.");
+for (const asset of [
+  parsed.siteMedia.hero,
+  parsed.siteMedia.about,
+  parsed.siteMedia.closingCta,
+  ...parsed.services.map((service) => service.image),
+  ...parsed.projects.map((project) => project.image),
+  ...parsed.projectMedia.map((item) => item.image),
+]) {
+  if (!asset.src.startsWith("/media/company/") || !asset.alt || !asset.width || !asset.height) {
+    fail(`Invalid public company media record: ${asset.id ?? "unknown"}`);
+  }
+  if (!fs.existsSync(path.join(root, "apps", "web", "public", asset.src))) {
+    fail(`Public company media file is missing: ${asset.src}`);
+  }
+}
 if (!parsed.homepage || parsed.homepage.heroHeading !== "Engineering, fabrication and construction solutions") {
   fail("Homepage copy is missing from the public snapshot.");
 }

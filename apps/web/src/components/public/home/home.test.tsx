@@ -42,12 +42,14 @@ describe("homepage", () => {
     }
   });
 
-  it("keeps unpublished mosaic, latest-work, and client-brand sections out of the page", () => {
+  it("renders curated company photography while withholding unrelated publication-controlled collections", () => {
     const { container } = render(<HomePage />);
-    expect(container.querySelector(".project-mosaic")).toBeNull();
+    expect(container.querySelector(".project-mosaic")).toBeInTheDocument();
     expect(container.querySelector(".latest-work")).toBeNull();
     expect(container.querySelector(".client-brands")).toBeNull();
-    expect(publicContent.projects).toEqual([]);
+    expect(publicContent.projects).toHaveLength(6);
+    expect(container.querySelectorAll(".service-card__media")).toHaveLength(9);
+    expect(container.querySelectorAll(".project-mosaic__tile img")).toHaveLength(6);
     expect(publicContent.latestWork).toEqual([]);
     expect(publicContent.clientLogos).toEqual([]);
     expect(publicContent.testimonials).toEqual([]);

@@ -2,6 +2,7 @@
 @import "../src/styles/home.css";
 @import "../src/styles/contact.css";
 @import "../src/styles/thank-you.css";
+@import "../src/styles/portfolio.css";
 
 html {
   font-family: var(--ats-font-body);

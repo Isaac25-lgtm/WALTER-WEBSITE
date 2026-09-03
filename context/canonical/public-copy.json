@@ -179,7 +179,7 @@
       "text": "In the meantime, please take a look at some of our other work.",
       "source_file": "context/canonical/site-settings.json",
       "canonical_field": "thank_you_other_work",
-      "editorial_note": "Reference structure only. The photograph slot stays empty while project media is unpublished."
+      "editorial_note": "Reference structure only. The page may show one photograph from the owner-approved generic company-media shortlist."
     },
     "returnHomeLabel": {
       "text": "Return home",

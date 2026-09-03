@@ -11,7 +11,12 @@ export function ServicesSection() {
         <p className="services-section__intro">{homepage.servicesIntroduction}</p>
         <div className="service-grid">
           {services.map((service) => (
-            <ServiceCard key={service.id} name={service.name} shortDescription={service.shortDescription} />
+            <ServiceCard
+              key={service.id}
+              name={service.name}
+              shortDescription={service.shortDescription}
+              image={service.image}
+            />
           ))}
         </div>
       </Container>

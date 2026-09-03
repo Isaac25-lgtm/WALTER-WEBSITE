@@ -1,0 +1,62 @@
+{
+  "home-1440x900": {
+    "title": "Active Technical Services",
+    "h1": "Engineering, fabrication and construction solutions",
+    "images": 19,
+    "brokenImages": [],
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "horizontalOverflow": false,
+    "scrollHeight": 4274
+  },
+  "portfolio-1440x900": {
+    "title": "Portfolio | Active Technical Services",
+    "h1": "Our work",
+    "images": 21,
+    "brokenImages": [],
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "horizontalOverflow": false,
+    "scrollHeight": 5903
+  },
+  "home-768x1024": {
+    "title": "Active Technical Services",
+    "h1": "Engineering, fabrication and construction solutions",
+    "images": 19,
+    "brokenImages": [],
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "horizontalOverflow": false,
+    "scrollHeight": 6772
+  },
+  "portfolio-768x1024": {
+    "title": "Portfolio | Active Technical Services",
+    "h1": "Our work",
+    "images": 21,
+    "brokenImages": [],
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "horizontalOverflow": false,
+    "scrollHeight": 6291
+  },
+  "home-390x844": {
+    "title": "Active Technical Services",
+    "h1": "Engineering, fabrication and construction solutions",
+    "images": 19,
+    "brokenImages": [],
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "horizontalOverflow": false,
+    "scrollHeight": 7987
+  },
+  "portfolio-390x844": {
+    "title": "Portfolio | Active Technical Services",
+    "h1": "Our work",
+    "images": 21,
+    "brokenImages": [],
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "horizontalOverflow": false,
+    "scrollHeight": 9380
+  }
+}

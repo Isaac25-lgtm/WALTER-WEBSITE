@@ -1,0 +1,104 @@
+{
+  "selection_note": "Public company photographs supplied by the owner on 3 September 2026. The shortlist favours clear industrial work, avoids close identifiable portraits, ceremonies, duplicate logo files and distracting third-party branding, and uses generic capability labels rather than unverified client or project claims.",
+  "public_asset_root": "/media/company/",
+  "assets": [
+    { "id": "media-hero-lifting", "source_file": "IMG-20260829-WA0073.jpg", "file": "hero-lifting-operations.jpg", "width": 1280, "height": 720, "alt": "Crane supporting the erection of an industrial tower", "object_position": "center 48%" },
+    { "id": "media-about-storage", "source_file": "IMG-20260829-WA0064.jpg", "file": "about-storage-systems.jpg", "width": 960, "height": 432, "alt": "Installed industrial storage silos", "object_position": "center" },
+    { "id": "media-closing-plant", "source_file": "IMG-20260829-WA0048.jpg", "file": "closing-process-plant.jpg", "width": 1000, "height": 750, "alt": "Industrial process equipment and pipework", "object_position": "center 55%" },
+    { "id": "media-civil", "source_file": "IMG-20260829-WA0082.jpg", "file": "civil-construction.jpg", "width": 1280, "height": 720, "alt": "Civil works and structural steel under construction", "object_position": "center" },
+    { "id": "media-mechanical", "source_file": "IMG-20260829-WA0052.jpg", "file": "mechanical-plant-installation.jpg", "width": 1280, "height": 960, "alt": "Multi-level industrial plant installation", "object_position": "center 48%" },
+    { "id": "media-welding", "source_file": "IMG-20260829-WA0029.jpg", "file": "welding-fabrication.jpg", "width": 960, "height": 432, "alt": "Fabricated steel tank shell in a workshop", "object_position": "center" },
+    { "id": "media-structural", "source_file": "IMG-20260829-WA0085.jpg", "file": "structural-steel.jpg", "width": 1280, "height": 720, "alt": "Structural steel frame for industrial equipment", "object_position": "center" },
+    { "id": "media-pipework", "source_file": "IMG-20260829-WA0043.jpg", "file": "process-pipework.jpg", "width": 960, "height": 432, "alt": "Industrial pumps connected by process pipework", "object_position": "center" },
+    { "id": "media-storage", "source_file": "IMG-20260829-WA0034.jpg", "file": "industrial-storage.jpg", "width": 960, "height": 432, "alt": "Completed industrial storage silos", "object_position": "center" },
+    { "id": "media-labour", "source_file": "IMG-20260829-WA0068.jpg", "file": "industrial-labour.jpg", "width": 960, "height": 432, "alt": "Industrial installation team working on silo cladding", "object_position": "center 42%" },
+    { "id": "media-insulation", "source_file": "IMG-20260829-WA0024.jpg", "file": "insulation-lagging.jpg", "width": 513, "height": 912, "alt": "Lagged industrial stacks and process structures", "object_position": "center 38%" },
+    { "id": "media-maintenance", "source_file": "IMG-20260829-WA0036.jpg", "file": "maintenance-commissioning.jpg", "width": 960, "height": 432, "alt": "Industrial pump and pipe system prepared for operation", "object_position": "center" },
+    { "id": "media-tank-fabrication", "source_file": "IMG-20260829-WA0050.jpg", "file": "tank-fabrication.jpg", "width": 1280, "height": 960, "alt": "Large steel tank during fabrication", "object_position": "center" },
+    { "id": "media-tower-erection", "source_file": "IMG-20260829-WA0053.jpg", "file": "tower-erection.jpg", "width": 1280, "height": 960, "alt": "Crane lifting sections for an industrial tower", "object_position": "center" },
+    { "id": "media-silo-installation", "source_file": "IMG-20260829-WA0022.jpg", "file": "silo-installation.jpg", "width": 960, "height": 432, "alt": "Three industrial silos installed at a processing site", "object_position": "center" },
+    { "id": "media-process-structure", "source_file": "IMG-20260829-WA0059.jpg", "file": "process-plant-structure.jpg", "width": 1280, "height": 960, "alt": "Industrial process plant within a steel structure", "object_position": "center" },
+    { "id": "media-tank-construction", "source_file": "IMG-20260829-WA0091.jpg", "file": "storage-tank-construction.jpg", "width": 1280, "height": 720, "alt": "Steel storage tanks and connecting structure under construction", "object_position": "center" },
+    { "id": "media-stainless-systems", "source_file": "IMG-20260829-WA0094.jpg", "file": "stainless-process-systems.jpg", "width": 1280, "height": 960, "alt": "Stainless steel process vessels, pumps and pipework", "object_position": "center" },
+    { "id": "media-industrial-vessels", "source_file": "IMG-20260829-WA0096.jpg", "file": "industrial-vessels.jpg", "width": 1280, "height": 960, "alt": "Industrial vessels installed within structural steelwork", "object_position": "center" },
+    { "id": "media-plant-overview", "source_file": "IMG-20260829-WA0100.jpg", "file": "plant-construction-overview.jpg", "width": 1280, "height": 960, "alt": "Industrial plant construction viewed across the work site", "object_position": "center" },
+    { "id": "media-plant-steelwork", "source_file": "IMG-20260829-WA0101.jpg", "file": "plant-steelwork.jpg", "width": 1280, "height": 960, "alt": "Plant equipment installed within a structural steel frame", "object_position": "center" }
+  ],
+  "site_media": {
+    "hero": "media-hero-lifting",
+    "about": "media-about-storage",
+    "closing_cta": "media-closing-plant"
+  },
+  "service_media": {
+    "svc-civil-construction": "media-civil",
+    "svc-mechanical-plant": "media-mechanical",
+    "svc-welding-fabrication": "media-welding",
+    "svc-structural-warehouses": "media-structural",
+    "svc-pipework": "media-pipework",
+    "svc-tanks": "media-storage",
+    "svc-labour-supply": "media-labour",
+    "svc-insulation": "media-insulation",
+    "svc-maintenance-commissioning": "media-maintenance"
+  },
+  "featured_work": [
+    { "id": "featured-structural-steel", "title": "Structural steel installation", "asset_id": "media-structural", "portfolio_anchor": "structural-steel" },
+    { "id": "featured-process-plant", "title": "Industrial plant systems", "asset_id": "media-mechanical", "portfolio_anchor": "plant-installation" },
+    { "id": "featured-tower-erection", "title": "Lifting and erection", "asset_id": "media-tower-erection", "portfolio_anchor": "lifting-erection" },
+    { "id": "featured-process-pipework", "title": "Process pipework", "asset_id": "media-closing-plant", "portfolio_anchor": "pipework" },
+    { "id": "featured-storage", "title": "Industrial storage systems", "asset_id": "media-storage", "portfolio_anchor": "storage-systems" },
+    { "id": "featured-tank-fabrication", "title": "Tank fabrication", "asset_id": "media-tank-fabrication", "portfolio_anchor": "fabrication" }
+  ],
+  "portfolio_groups": [
+    {
+      "id": "structural-steel",
+      "title": "Structural steel and civil works",
+      "items": [
+        { "id": "portfolio-structural-frame", "title": "Structural steel installation", "asset_id": "media-structural" },
+        { "id": "portfolio-civil-works", "title": "Civil and structural works", "asset_id": "media-civil" },
+        { "id": "portfolio-plant-overview", "title": "Plant construction overview", "asset_id": "media-plant-overview" },
+        { "id": "portfolio-plant-steelwork", "title": "Industrial plant steelwork", "asset_id": "media-plant-steelwork" }
+      ]
+    },
+    {
+      "id": "plant-installation",
+      "title": "Mechanical and plant installation",
+      "items": [
+        { "id": "portfolio-mechanical-plant", "title": "Mechanical plant assembly", "asset_id": "media-mechanical" },
+        { "id": "portfolio-process-structure", "title": "Process plant structure", "asset_id": "media-process-structure" },
+        { "id": "portfolio-industrial-vessels", "title": "Industrial vessel installation", "asset_id": "media-industrial-vessels" },
+        { "id": "portfolio-stainless-systems", "title": "Stainless process systems", "asset_id": "media-stainless-systems" },
+        { "id": "portfolio-maintenance", "title": "Pump system preparation", "asset_id": "media-maintenance" }
+      ]
+    },
+    {
+      "id": "storage-systems",
+      "title": "Storage systems and fabrication",
+      "items": [
+        { "id": "portfolio-storage-silos", "title": "Industrial storage silos", "asset_id": "media-about-storage" },
+        { "id": "portfolio-silo-installation", "title": "Silo installation", "asset_id": "media-silo-installation" },
+        { "id": "portfolio-completed-storage", "title": "Completed storage systems", "asset_id": "media-storage" },
+        { "id": "portfolio-tank-construction", "title": "Storage tank construction", "asset_id": "media-tank-construction" },
+        { "id": "portfolio-tank-fabrication", "title": "Tank fabrication", "asset_id": "media-tank-fabrication" },
+        { "id": "portfolio-workshop-fabrication", "title": "Workshop fabrication", "asset_id": "media-welding" }
+      ]
+    },
+    {
+      "id": "pipework",
+      "title": "Pipework and industrial systems",
+      "items": [
+        { "id": "portfolio-process-pipework", "title": "Process pipework installation", "asset_id": "media-pipework" },
+        { "id": "portfolio-process-equipment", "title": "Industrial process equipment", "asset_id": "media-closing-plant" },
+        { "id": "portfolio-insulated-stacks", "title": "Insulated industrial stacks", "asset_id": "media-insulation" }
+      ]
+    },
+    {
+      "id": "lifting-erection",
+      "title": "Lifting, erection and site support",
+      "items": [
+        { "id": "portfolio-tower-lift", "title": "Industrial tower erection", "asset_id": "media-tower-erection" },
+        { "id": "portfolio-crane-erection", "title": "Heavy lifting operations", "asset_id": "media-hero-lifting" },
+        { "id": "portfolio-site-team", "title": "Industrial installation team", "asset_id": "media-labour" }
+      ]
+    }
+  ]
+}

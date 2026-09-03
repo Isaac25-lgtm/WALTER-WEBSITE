@@ -20,7 +20,7 @@ afterEach(() => {
 });
 
 describe("thank-you page", () => {
-  it("renders the generated thank-you copy without unpublished photographs", () => {
+  it("renders the generated thank-you copy with one curated company photograph", () => {
     render(<ThankYouPage />);
     const headings = screen.getAllByRole("heading", { level: 1 });
     expect(headings).toHaveLength(1);
@@ -40,10 +40,13 @@ describe("thank-you page", () => {
       "href",
       "/contact/",
     );
-    expect(document.querySelector(".thank-you-photo")).toBeNull();
-    expect(document.querySelector("img")).toBeNull();
+    expect(document.querySelector(".thank-you-photo")).toBeInTheDocument();
+    expect(document.querySelector(".thank-you-photo img")).toHaveAttribute(
+      "src",
+      publicContent.projectMedia[0].image.src,
+    );
     expect(document.body.textContent).not.toMatch(/WhatsApp|whatsapp|\/walter|Metalworks|24-hour/i);
-    expect(publicContent.projectMedia).toEqual([]);
+    expect(publicContent.projectMedia.length).toBeGreaterThanOrEqual(18);
     expect(publicContent.navigation.some((item) => item.href.includes("thank-you"))).toBe(false);
   });
 });

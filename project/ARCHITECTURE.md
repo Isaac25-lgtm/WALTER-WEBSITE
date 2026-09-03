@@ -14,11 +14,11 @@ Prompt 5 repaired the Prompt 4 foundation and added the canonical public-content
 | Database | Neon PostgreSQL (not provisioned) |
 | Auth | Neon Auth (not provisioned) |
 | ORM / migrations | Drizzle ORM (`inquiries`, `content_drafts`, `content_publications`, `content_publication_entries`; local migrations generated, not applied remotely) |
-| Media | Cloudflare R2 (not provisioned) |
+| Media | Curated static company photography in `apps/web/public/media/company/`; Cloudflare R2 remains unprovisioned for future management uploads |
 | Email | Resend (not provisioned) |
 | Package manager | npm workspaces (array form) |
 | Language | TypeScript, `strict` |
-| Source control | Git not initialised |
+| Source control | Git repository initialised; `origin` points to `Isaac25-lgtm/WALTER-WEBSITE` |
 
 ## Why the public site is static
 
@@ -36,7 +36,7 @@ The Render free API may sleep. Visitors must still receive HTML, CSS, and images
 2. `context/canonical/publication-controls.json` is a separate editorial layer (draft / published / archived).
 3. `scripts/generate-public-content.mjs` validates inputs and emits a public-safe snapshot.
 4. `npm run content:check` regenerates in memory and compares with the saved snapshot, then scans for leaks.
-5. Unpublished projects, media, people, client names, logos, testimonials, social links, maps, and prices are omitted.
+5. The 21 named canonical project records and their extracted PDF media remain omitted. Owner-supplied company photography is separately curated through `context/canonical/company-media.json`, emitted with generic capability labels, and contains no client names or prices.
 
 ## Data flow (later)
 
@@ -85,11 +85,11 @@ Root workspace commands that need npm workspace discovery run through `scripts/r
 
 Prompt 6 implements shared public chrome from recorded reference geometry with ATS content. Prompt 7 corrects the desktop header row (922px / 259px) and footer height (401px), and implements the public homepage section order:
 
-- Hero, nine-service grid, portfolio CTA, about split, closing CTA
-- `ProjectMosaic`, `LatestWorkSection`, and `ClientBrandsSection` exist but render nothing while publication controls withhold data
+- Photographic hero, nine illustrated service cards, a six-tile featured-work mosaic, portfolio CTA, illustrated about split, and photographic closing CTA
+- `LatestWorkSection` and `ClientBrandsSection` remain conditional and hidden while their generated collections are empty
 - Canonical homepage copy in `context/canonical/public-copy.json` (provenance stripped from the public snapshot)
 
-Portfolio gallery remains unpublished. Contact-form API integration is Prompt 10 (repaired in Prompt 11). `/walter/` is a static management sign-in route; see `project/AUTHENTICATION.md`. Metalworks assets and copy are forbidden.
+The Portfolio route displays 21 selected company photographs in five generic capability groups. Named clients and the 21 older canonical project records remain unpublished. Contact-form API integration is Prompt 10 (repaired in Prompt 11). `/walter/` is a static management sign-in route; see `project/AUTHENTICATION.md`. Metalworks assets and copy are forbidden.
 
 ## Contact page (Prompt 8)
 
@@ -103,7 +103,7 @@ Prompt 9 centres the Contact heading and introduction, sets the desktop form car
 
 ## Thank you page (Prompt 10)
 
-Black page, centred H1 **Thank you** (40px / 64px), two canonical support lines, telephone and email actions, return-home and return-contact links, and a photograph slot that renders nothing while project media is unpublished. Shared public chrome only; not a nav item.
+Black page, centred H1 **Thank you** (40px / 64px), two canonical support lines, telephone and email actions, return-home and return-contact links, and one photograph from the curated company-media shortlist. Shared public chrome only; not a nav item.
 
 ## Private `/walter/` (Prompt 15)
 

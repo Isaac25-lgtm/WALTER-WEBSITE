@@ -11,10 +11,12 @@ describe("public content rules", () => {
   const files = renderPublicContentFiles(content);
   const combined = `${files.json}\n${files.ts}`;
 
-  it("emits nine services and withholds projects", () => {
+  it("emits nine illustrated services and owner-supplied generic work imagery", () => {
     expect(content.services).toHaveLength(9);
-    expect(content.projects).toEqual([]);
-    expect(content.projectMedia).toEqual([]);
+    expect(content.services.every((service) => service.image.src.startsWith("/media/company/"))).toBe(true);
+    expect(content.projects).toHaveLength(6);
+    expect(content.projectMedia.length).toBeGreaterThanOrEqual(18);
+    expect(content.portfolio.groups).toHaveLength(5);
     expect(content.clientNames).toEqual([]);
     expect(content.prices).toEqual([]);
     expect(content.pricingMode).toBe("quote_only");
@@ -62,6 +64,7 @@ describe("public content rules", () => {
     expect(content.homepage.heroHeading).toBe("Engineering, fabrication and construction solutions");
     expect(content.homepage.contactCtaLabel).toBe("Contact us");
     expect(content.latestWork).toEqual([]);
+    expect(content.siteMedia.hero.src).toBe("/media/company/hero-lifting-operations.jpg");
     expect(combined).not.toContain("canonical_field");
     expect(combined).not.toContain("editorial_note");
   });
