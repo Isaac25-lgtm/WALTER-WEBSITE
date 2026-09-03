@@ -83,6 +83,12 @@ describe("public content rules", () => {
     ).toBeGreaterThan(10);
   });
 
+  it("does not require the ignored raw company-image archive during a deployment build", () => {
+    const generator = readFileSync(path.join(root, "scripts", "generate-public-content.mjs"), "utf8");
+    expect(generator).not.toContain('path.join(root, "compan images"');
+    expect(content.siteMedia.hero.src).toMatch(/^\/media\/company\//);
+  });
+
   it("inspects the saved JSON and TypeScript snapshots", () => {
     const json = readFileSync(path.join(root, "apps", "web", "src", "generated", "public-content.json"), "utf8");
     const ts = readFileSync(path.join(root, "apps", "web", "src", "generated", "public-content.ts"), "utf8");

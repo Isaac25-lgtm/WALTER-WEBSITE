@@ -172,7 +172,8 @@ export function buildPublicContent() {
     assert(Number.isInteger(asset.height) && asset.height > 0, `${asset.id} height is invalid`);
     assert(typeof asset.alt === "string" && asset.alt.trim().length >= 12, `${asset.id} alt text is missing`);
     assert(typeof asset.object_position === "string" && asset.object_position.trim(), `${asset.id} object position is missing`);
-    assert(fs.existsSync(path.join(root, "compan images", asset.source_file)), `${asset.id} source image is missing`);
+    // source_file is provenance for the locally archived raw photograph. Runtime
+    // builds must depend only on the curated copy committed under public/.
     assert(
       fs.existsSync(path.join(root, "apps", "web", "public", "media", "company", asset.file)),
       `${asset.id} public image is missing`,

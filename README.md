@@ -96,7 +96,7 @@ A `404` page is exported as well. The site is responsive across desktop, tablet 
 | Shared contracts | Zod schemas in `@ats/contracts`, used by browser and server alike |
 | Tests | Vitest |
 
-**The public site never contacts the API at render time.** It has no API routes, no server actions, no middleware, and reads no cookies. This is deliberate: Render's free web service sleeps when idle, and the website must stay fast and complete regardless.
+**The public site never contacts the API at render time.** It has no API routes, no server actions, no middleware, and reads no cookies. This keeps the website fast and complete while the separate API is restarting, redeploying, under maintenance, or temporarily unreachable.
 
 ---
 
