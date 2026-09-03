@@ -48,7 +48,8 @@ services:
   - type: web
     name: ats-api
     runtime: node
-    plan: free
+    # 0.5 CPU / 512 MB paid web-service plan (legacy name: starter).
+    plan: 0.5c-512mb
     buildCommand: npm ci && npm run build --workspace=@ats/api
     startCommand: node apps/api/dist/server.js
     healthCheckPath: /health

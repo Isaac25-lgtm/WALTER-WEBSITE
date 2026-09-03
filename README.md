@@ -88,7 +88,7 @@ A `404` page is exported as well. The site is responsive across desktop, tablet 
 | Public site | **Next.js 16** App Router, **static export** (`output: 'export'`, `trailingSlash: true`), React 19 |
 | Public hosting | **Render Static Site**, publishing `apps/web/out` |
 | API | **Fastify 5**, bundled with tsup to `apps/api/dist` |
-| API hosting | **Render Web Service** (free plan) |
+| API hosting | **Render Web Service** (`0.5c-512mb`: 0.5 CPU / 512 MB) |
 | Language | **TypeScript 5.9**, `strict` throughout |
 | Database | **Neon PostgreSQL** via `drizzle-orm/neon-serverless` |
 | Schema / migrations | **Drizzle ORM** — `inquiries`, `content_drafts`, `content_publications`, `content_publication_entries` |
@@ -262,7 +262,7 @@ Templates: [`apps/web/.env.example`](apps/web/.env.example), [`apps/api/.env.exa
 | Service | Type | Build | Serves |
 | --- | --- | --- | --- |
 | `ats-public-web` | Static Site | `npm ci && npm run content:check && npm run build --workspace=@ats/web` | `apps/web/out` |
-| `ats-api` | Web Service (Node, free) | `npm ci && npm run build --workspace=@ats/api` | `node apps/api/dist/server.js`, health check `/health` |
+| `ats-api` | Web Service (Node, `0.5c-512mb`) | `npm ci && npm run build --workspace=@ats/api` | `node apps/api/dist/server.js`, health check `/health` |
 
 Content validation runs **before** the static build, so a stale or leaking public snapshot fails the deploy rather than shipping.
 
