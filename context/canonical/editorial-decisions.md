@@ -32,7 +32,7 @@ Provisional public defaults:
 
 | Role | Value | Status |
 | --- | --- | --- |
-| Primary call / WhatsApp candidate | +256 782 318 727 | Provisional. WhatsApp is inferred from an icon on COMPANY CONTEXT.pdf page 33, not from explicit user confirmation |
+| Primary call / WhatsApp | +256 782 318 727 | **Confirmed by the owner for the public site.** The owner requested the public WhatsApp floater on this number; the icon on COMPANY CONTEXT.pdf page 33 is corroborating evidence only |
 | Secondary Uganda telephone | +256 755 318 727 | Documented on the 2025 Uganda location page |
 | Tanzania local telephone | +255 764 306 184 | Documented on the Tanzania location page |
 | Email | activetechnicalservices@gmail.com | Same address on both location pages |

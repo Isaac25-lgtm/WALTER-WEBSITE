@@ -1,82 +1,85 @@
-# Visual implementation notes (Prompt 6–8)
+# Visual implementation notes
 
-Recorded computed values are used where Prompt 3 captured them. Inferences are labelled.
+Current state of the public pages. The site is a static export with no form, no
+upload, no API and no `/thank-you/` route.
 
-## Breakpoints (inferred)
+## Shared chrome
 
-Exact original CSS breakpoints were not dumped.
+Every public page is wrapped by `SiteFrame`:
 
-- **Navigation collapse: `max-width: 980px`.** Desktop inline nav is proven at 1440. Hamburger chrome is proven at 768 and 390. 980px is the smallest common Divi-like cut that reproduces those three captured layouts. Not a measured stylesheet value.
-- **Mobile call bar: `max-width: 480px`.** The bar is proven at 390 (`390×60`, `top: 784`). It was **not** a measurable fixed box at 768 or 1440. 480px keeps the bar off tablet and desktop.
+- Skip link
+- Header: logo, `Services` / `Portfolio` / `Contact`, primary telephone
+- Footer: logo, footer navigation, telephone, email, Jinja address, Tanzania
+  branch postal address, legal name
+- Mobile **Call Us Now** bar, fixed to the bottom below 480px
+  (`--ats-call-bar-height: 60px`)
+- Floating **WhatsApp** action, fixed bottom-right, 56×56
+  (`--ats-whatsapp-size`), stacked `60px + 16px` above the call bar on mobile
 
-## Header
+## Homepage `/`
 
-- Height **84px** desktop and **80px** compact: measured.
-- Non-sticky: after `scrollTo(400)` the reference `position` remained `static`. No pin or shrink behaviour was added.
-- Three visible links only: Services, Portfolio, Contact. Logo provides Home.
-- Header content uses a **header-specific 922px row** at 1440 (left 259px, right 1181px). Body content stays on the shared **1080px / 180px** container. Prompt 6 used the 1080 container in the header (logo x 180); Prompt 7 corrected it. Measured logo x **259px** (reference 259.19).
-- ATS logo at 65px height is **wider** than the reference ~97×65 wordmark because the Gift of God badge is a ~3.6:1 yellow rectangle. It was not squashed.
-- Compact logo height **52px** at the hamburger breakpoint is inferred so the wide ATS badge does not collide with the 32px control on 390px screens.
-- Mobile menu panel height **320px** matches the recorded **320.375px** within 0.4px after rebuild.
-- Nav gap **28px** and phone gap **28px** are inferred; reference hover colour was unknown, so no extra hover geometry was added.
-- Phone indicator is a small red handset SVG. The reference SVG was unknown; this is an inferred indicator, not a copied asset. No WhatsApp label or URL.
+Section order:
 
-## Footer
+1. Photographic hero
+2. Nine illustrated service cards
+3. Six featured-work tiles linking to Portfolio group anchors
+4. Portfolio CTA
+5. About split, cream band
+6. **Where to find us** location band, white — the shared map
+7. Closing quotation CTA, dark band over a photograph
 
-- Black, three columns desktop, stack on compact viewports: recorded.
-- Padding **54px** desktop / **50px** compact: measured.
-- Desktop footer height **401px** after Prompt 7 (`min-height` + brand-column space where social icons would sit). Prompt 6 measured 349px.
-- Social icons omitted because the generated social collection is empty. No fake social buttons.
-- Address lines: `Plot 23A, Lubas Road, Jinja, Uganda` and `Tanzania branch: P.O. Box 551, Dodoma, Tanzania`. The duplicated “Jinja, Uganda headquarters” clause from Prompt 6 was removed.
-- Privacy / Terms / Blog omitted; those destinations are unknown on the reference and are not ATS public routes.
-- Legal line uses `legalFooterName` only. Dual legal-name presentation remains an editorial question in `content-gaps.md`. Organisation structure (Jinja headquarters, Dodoma branch) is settled.
+The location band sits between the cream About block and the dark closing CTA,
+so the white map band separates them rather than butting two dark bands
+together.
 
-## Homepage (Prompt 7, updated with owner-supplied company media)
+## Portfolio `/portfolio/`
 
-- Hero min-heights **538 / 507 / 507** use `box-sizing: border-box` so padding is inside the recorded height. A selected crane-and-erection photograph now sits behind a controlled dark overlay. No rating badge.
-- Services: nine canonical cards with nine capability-matched company photographs, three columns from the inferred **981px** desktop cut, one column at 768 and 390.
-- The project mosaic now shows six generic featured-work categories. Latest work and client brands still render nothing while those generated collections are empty.
-- The about split includes a storage-systems photograph. The closing CTA uses an industrial-process photograph behind a controlled dark overlay.
-- Homepage copy lives in `context/canonical/public-copy.json`. Provenance is stripped before the public snapshot.
-- The full selection lives in `context/canonical/company-media.json`; 21 images appear in five Portfolio groups, while 65 weaker, repetitive, ceremonial, close-portrait, or distracting images remain out of the public build.
+21 curated photographs in five capability groups, each with a heading anchor
+targeted by the homepage featured-work tiles.
 
-## Call bar
+## Contact `/contact/`
 
-- **60px** tall, full width, fixed bottom, red `rgb(224,43,32)`, label “Call Us Now”: measured at 390.
-- z-index **10000** (controlled). Reference used `2147483647`; that max-int value was not copied.
-- Body padding-bottom **76px** on the call-bar breakpoint so the bar does not cover footer copy.
+Black page, centred `Contact Us` heading (40px / 64px) and a short enquiry
+introduction. There is **no form**: nothing on this page submits anywhere.
 
-## Typography
+Three cards in a responsive grid:
 
-- Open Sans 400/500/700/800 and Inter 700, self-hosted via `@fontsource/*` latin files.
-- Body 14/23.8, nav 15/500, H2 35/800, contact H1 40/64, home H1 50→40→30: recorded.
-- System fallbacks: Helvetica, Arial, Lucida, sans-serif.
+| Card | Contents |
+| --- | --- |
+| Chat on WhatsApp | Supporting line and a green WhatsApp action button |
+| Telephone | Uganda primary, Uganda alternative and Tanzania numbers, each a `tel:` link |
+| Email | Supporting line and a `mailto:` link |
 
-## Motion
+Below the cards:
 
-- Recorded heading transition was **0s**. No invented easing. `prefers-reduced-motion` forces animation/transition none.
+- **Where we work** — two cards: Jinja, Uganda (street and postal address) and
+  the Tanzania branch (Dodoma, postal address)
+- **Tanzania branch location** — the shared map
 
-## Contact page (Prompt 8)
+The grid is three columns on desktop, two below 980px and one below 767px.
 
-- Black page, white H1 **40/64** at every captured width, **centred** in the 1080px container (Prompt 9 corrected Prompt 8 left-alignment).
-- Intro and `mailto:` / `tel:` links are centred. The extra Jinja/Dodoma line was removed from the introduction; those labels remain in generated content and the footer.
-- Card max width is **1051px**, centred in the 1080px container (equal ~14.5px side offsets). Radius **10px**, padding **24px**.
-- Desktop first four fields: two columns from the inferred **981px** cut. Tablet/mobile: one column.
-- Inputs use `rgb(238,238,238)`, ~42px tall, visible labels, `focus-visible` ring. Textarea resizes vertically only.
-- Submit **100×41.375**, radius **5px**, Open Sans 700 18/30.6, lower right.
-- Visible labels and file-policy copy make the card ~82px taller than the placeholder-only reference card (512px). Accessibility, not a defect.
-- Map slot returns null. Missing **450px** map is a content-driven height delta. Desktop scrollHeight **1413** vs reference **1848**.
-- Mobile call bar remains **390×60**. Extra contact-page bottom padding and `scroll-margin-bottom` keep Submit, file hint, and the unavailable notice clear of the bar.
-- Native file control is not the reference Divi “Choose Files” widget. Accepted types are JPG, PNG, WebP, PDF; max 1 MB; bytes are not uploaded.
+## Shared map
 
-Prompt 9 re-measured the centred heading and 1051px card under `project/visual-checks/prompt-09/`.
+`apps/web/src/components/public/LocationMap.tsx` renders the map on **both** the
+homepage and the Contact page. It is a keyless Google Maps embed, lazily loaded,
+with a meaningful iframe title, a caption and an **Open in Google Maps** external
+link opening in a new tab with `rel="noopener noreferrer"`.
 
-## Thank you page (Prompt 10)
+Coordinates come from the owner-supplied record on `loc-dodoma-branch` in
+`context/canonical/locations.json`. The map is labelled as the **Tanzania
+branch** and never as a headquarters or head office.
 
-- Black page, centred H1 **40/64/700/white**, matching Contact.
-- Two support lines from `public-copy.json`: “We will be in touch.” and the other-work invitation.
-- Reference photograph is **972×648** with ~30px radius. ATS does not copy the dental-clinic still. `ThankYouPhotoSlot` now uses one owner-supplied company photograph from the curated public-media snapshot.
-- `/thank-you/` is not in the header or footer. Direct visits still render because the export is static.
+Measured frame size:
 
-Prompt 10 captures live under `project/visual-checks/prompt-10/`.
+| Viewport | Map frame |
+| --- | --- |
+| 1440×900 | 1080×450 |
+| 768×1024 | 614×450 |
+| 390×844 | 312×320 |
 
+## Removed
+
+The contact form, its validation and notice states, file-attachment metadata
+handling, the `/thank-you/` route and its photograph slot, and the `/walter/`
+management interface no longer exist. Their styles and design tokens have been
+deleted with them.

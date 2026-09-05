@@ -48,6 +48,8 @@
   "map": {
     "latitude": -6.1683199,
     "longitude": 35.7260943,
+    "zoom": 17,
+    "language": "en",
     "title": "Active Technical Services Tanzania branch location",
     "label": "Tanzania branch location",
     "linkUrl": "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en",
@@ -880,7 +882,6 @@
   "clientLogos": [],
   "testimonials": [],
   "socialLinks": [],
-  "mapCoordinates": [],
   "prices": [],
   "pricingMode": "quote_only",
   "homepage": {

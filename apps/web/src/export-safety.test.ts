@@ -326,6 +326,33 @@ describe("retired backend stays retired", () => {
     }
   });
 
+  it("renders the map through one shared component on both pages", () => {
+    const shared = path.join(webDir, "src", "components", "public", "LocationMap.tsx");
+    expect(existsSync(shared), "the shared LocationMap component must exist").toBe(true);
+    expect(
+      existsSync(path.join(webDir, "src", "components", "public", "contact", "ContactMap.tsx")),
+      "the contact-only map copy must be gone",
+    ).toBe(false);
+
+    const contactPage = readFileSync(
+      path.join(webDir, "src", "components", "public", "contact", "ContactPage.tsx"),
+      "utf8",
+    );
+    const homeSection = readFileSync(
+      path.join(webDir, "src", "components", "public", "home", "LocationSection.tsx"),
+      "utf8",
+    );
+    for (const [name, text] of [["ContactPage", contactPage], ["LocationSection", homeSection]] as const) {
+      expect(text, `${name} must import the shared LocationMap`).toContain("LocationMap");
+      expect(text, `${name} must render <LocationMap />`).toContain("<LocationMap />");
+    }
+
+    // The embed URL is built once, in the generator, from canonical data.
+    const map = readFileSync(shared, "utf8");
+    expect(map).toContain("map.embedUrl");
+    expect(map).not.toContain("google.com/maps");
+  });
+
   it("declares exactly one static Render service with no operator-supplied value", () => {
     const blueprint = readFileSync(path.join(root, "render.yaml"), "utf8");
     expect(blueprint.match(/^\s*- type: /gm) ?? []).toHaveLength(1);

@@ -16,13 +16,12 @@ Questions already provisionally resolved in `editorial-decisions.md` are **not**
 1. **Publication rights** for identifiable people in project, crew, group and Administration photographs.
 2. **Permission to name clients** on the public site (including Uganda Police, Mount Meru Millers, Oil Libya / Oil Libia, Sunafric Industries, Musumba Steel, BURUNDI BREWARIES, BIRARUDI BREWARIES, PEPSE DEPOT SITE).
 3. **Permission to show third-party marks** that appear in photographs (hired-plant liveries such as RICHFLO / ZOOMLION and B.M.K. RWANDA LTD; DAZHONG formwork; SUNOLA gate lettering; Dell laptop on an uncaptioned portrait; COSCO containers if used).
-4. **WhatsApp confirmation** for +256 782 318 727 (evidence is an icon, not an explicit instruction).
-5. **Which client-named projects may go live** if some names must stay internal.
-6. **KANJANSI / Kajjansi** spelling if that project is published.
-7. **PEPSE / Pepsi** confirmation if that warehouse page is published.
-8. **Whether Burundi Breweries and Birarudi Breweries are one client or two.**
-9. **Footer legal-name treatment:** Uganda only, or Uganda plus Tanzania branch name.
-10. **Ochan Tony current role** if the public About page lists directors.
+4. **Which client-named projects may go live** if some names must stay internal.
+5. **KANJANSI / Kajjansi** spelling if that project is published.
+6. **PEPSE / Pepsi** confirmation if that warehouse page is published.
+7. **Whether Burundi Breweries and Birarudi Breweries are one client or two.**
+8. **Footer legal-name treatment:** Uganda only, or Uganda plus Tanzania branch name.
+9. **Ochan Tony current role** if the public About page lists directors.
 
 ## Resolved: there is no backend
 
@@ -68,8 +67,12 @@ Until then the public model is **quote only**, and no price is published.
 
 ## Maps and social profiles
 
-- No map coordinates appear in the source documents. The Tanzania branch map on
-  the contact page uses coordinates supplied directly by the owner, and is
-  labelled as the branch location, never as a headquarters.
-- No Facebook, LinkedIn, X, Instagram, YouTube or website URLs in the four source files.
-- Both remain `null` in site settings until supplied.
+- **Resolved.** No map coordinates appear in the source documents, but the owner
+  supplied Dodoma coordinates directly for public website use. They are recorded
+  on `loc-dodoma-branch` in `context/canonical/locations.json` and published on
+  **both the homepage and the Contact page**, labelled as the Tanzania branch and
+  never as a headquarters.
+- Jinja still has no coordinates; no evidence supports any, so no Jinja map is
+  published.
+- **Still absent:** no Facebook, LinkedIn, X, Instagram, YouTube or website URLs
+  appear in the source files, so `social_links` remains `null` until supplied.

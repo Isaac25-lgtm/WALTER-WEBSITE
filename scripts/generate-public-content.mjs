@@ -7,11 +7,18 @@ const root = fs.realpathSync.native(declaredRoot);
 const canonicalDir = path.join(root, "context", "canonical");
 const generatedDir = path.join(root, "apps", "web", "src", "generated");
 
-// Developer-managed constants. Edit here, then run `npm run content:generate`.
-const WHATSAPP_NUMBER = "256782318727";
+// The only presentation literal left here. Everything else - the WhatsApp
+// number, the map coordinates and all map copy - is compiled from
+// context/canonical/. Edit those files, then run `npm run content:generate`.
 const WHATSAPP_MESSAGE = "Hello Active Technical Services, I would like to make an enquiry about your services.";
-const MAP_LATITUDE = -6.1683199;
-const MAP_LONGITUDE = 35.7260943;
+
+/** `+256 782 318 727` -> `256782318727` for wa.me. Rejects anything else. */
+function waNumber(display) {
+  assert(typeof display === "string" && display.trim(), "canonical WhatsApp number is missing");
+  const digits = display.replace(/[\s()-]/g, "");
+  assert(/^\+[1-9][0-9]{6,14}$/.test(digits), `canonical WhatsApp number is not E.164: ${display}`);
+  return digits.slice(1);
+}
 
 const FORBIDDEN_SUBSTRINGS = [
   "Walter",
@@ -223,6 +230,29 @@ export function buildPublicContent() {
   assert(homepageCopy, "canonical homepage copy is missing");
   const contactCopy = publicCopy.contact;
   assert(contactCopy, "canonical contact copy is missing");
+  const homeCopy = publicCopy.home;
+  assert(homeCopy, "canonical homepage copy block is missing");
+
+  // WhatsApp is compiled from canonical settings, and only when the owner has
+  // approved it for the public site.
+  assert(
+    settings.whatsapp_confirmation_state === "confirmed_by_owner_for_public_site",
+    "WhatsApp must be confirmed by the owner before it is published",
+  );
+  const whatsappNumber = waNumber(settings.whatsapp_number);
+
+  // The map is compiled from the canonical Dodoma branch record.
+  const dodomaMap = dodoma.map;
+  assert(dodomaMap, "canonical Dodoma branch map coordinates are missing");
+  assert(typeof dodomaMap.latitude === "number" && typeof dodomaMap.longitude === "number", "Dodoma coordinates must be numeric");
+  assert(Number.isInteger(dodomaMap.zoom) && dodomaMap.zoom > 0, "Dodoma map zoom is invalid");
+  assert(typeof dodomaMap.language === "string" && dodomaMap.language.trim(), "Dodoma map language is missing");
+  assert(
+    dodoma.map_status === "owner_supplied_coordinates_approved_for_public_site",
+    "Dodoma map_status must record owner-supplied public approval",
+  );
+  assert(dodomaMap.provenance?.source === "owner_supplied", "Dodoma coordinates must be recorded as owner-supplied");
+  const mapQueryUrl = `https://www.google.com/maps?q=${dodomaMap.latitude},${dodomaMap.longitude}&z=${dodomaMap.zoom}&hl=${dodomaMap.language}`;
   const aboutParagraphs = Array.isArray(homepageCopy.aboutParagraphs) ? homepageCopy.aboutParagraphs.map((block, index) => assertPublicText(block, `aboutParagraphs[${index}]`)) : null;
   assert(aboutParagraphs && aboutParagraphs.length >= 1, "about paragraphs are required");
 
@@ -269,24 +299,25 @@ export function buildPublicContent() {
       email: settings.email,
       emailHref: `mailto:${settings.email}`,
       whatsapp: {
-        number: WHATSAPP_NUMBER,
-        url: `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`,
+        number: whatsappNumber,
+        url: `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`,
         message: WHATSAPP_MESSAGE,
         label: "WhatsApp",
         ariaLabel: "Chat with Active Technical Services on WhatsApp",
       },
     },
     map: {
-      latitude: MAP_LATITUDE,
-      longitude: MAP_LONGITUDE,
-      title: "Active Technical Services Tanzania branch location",
-      label: "Tanzania branch location",
-      linkUrl: `https://www.google.com/maps?q=${MAP_LATITUDE},${MAP_LONGITUDE}&z=17&hl=en`,
-      embedUrl: `https://www.google.com/maps?q=${MAP_LATITUDE},${MAP_LONGITUDE}&z=17&hl=en&output=embed`,
-      linkLabel: "Open in Google Maps",
-      homeHeading: "Where to find us",
-      homeSupporting:
-        "The primary operation is in Jinja, Uganda. The Tanzania branch is in Dodoma.",
+      latitude: dodomaMap.latitude,
+      longitude: dodomaMap.longitude,
+      zoom: dodomaMap.zoom,
+      language: dodomaMap.language,
+      title: assertPublicText(contactCopy.mapEmbedTitle, "contact.mapEmbedTitle"),
+      label: assertPublicText(contactCopy.mapCaption, "contact.mapCaption"),
+      linkUrl: mapQueryUrl,
+      embedUrl: `${mapQueryUrl}&output=embed`,
+      linkLabel: assertPublicText(contactCopy.mapLinkLabel, "contact.mapLinkLabel"),
+      homeHeading: assertPublicText(homeCopy.locationHeading, "home.locationHeading"),
+      homeSupporting: assertPublicText(homeCopy.locationSupporting, "home.locationSupporting"),
     },
     services: publicServices,
     projects: featuredWork,
@@ -303,7 +334,6 @@ export function buildPublicContent() {
     clientLogos: [],
     testimonials: [],
     socialLinks: [],
-    mapCoordinates: [],
     prices: [],
     pricingMode: "quote_only",
     homepage: {
@@ -331,7 +361,7 @@ export function buildPublicContent() {
       telephoneHeading: "Telephone",
       emailHeading: "Email",
       locationsHeading: "Where we work",
-      mapHeading: "Tanzania branch location",
+      mapHeading: assertPublicText(contactCopy.mapHeading, "contact.mapHeading"),
     },
     navigation: [
       { label: "Services", href: "/#what-we-do" },

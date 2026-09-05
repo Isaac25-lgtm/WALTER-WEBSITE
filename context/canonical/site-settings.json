@@ -8,7 +8,7 @@
   "secondary_phone": "+256 755 318 727",
   "tanzania_local_phone": "+255 764 306 184",
   "whatsapp_number": "+256 782 318 727",
-  "whatsapp_confirmation_state": "provisional_icon_evidence_not_user_confirmed",
+  "whatsapp_confirmation_state": "confirmed_by_owner_for_public_site",
   "email": "activetechnicalservices@gmail.com",
   "uganda_location_id": "loc-jinja-primary",
   "tanzania_branch_location_id": "loc-dodoma-branch",
@@ -16,35 +16,25 @@
   "opening_hours": null,
   "default_currency": "UGX",
   "prices": [],
-  "pricing_mode": "quote_only_provisional",
-  "thank_you_heading": "Thank you",
-  "thank_you_supporting": "We will be in touch.",
-  "thank_you_other_work": "In the meantime, please take a look at some of our other work.",
-  "thank_you_return_home": "Return home",
-  "thank_you_return_contact": "Return to contact",
-  "form_internal_error_message": "The inquiry could not be sent. Please try again, or contact us by telephone or email.",
-  "form_timeout_message": "The request timed out. Please try again, or contact us by telephone or email.",
-  "form_network_error_message": "A network error occurred. Please try again, or contact us by telephone or email.",
-  "form_submitting_message": "Submitting…",
-  "logo_source_path": "active logo.pdf",
+  "pricing_mode": "quote_only",
+  "logo_source_path": "context/assets/brand/active-logo-pdf-render-200dpi.png",
   "logo_canonical_asset_id": "logo-pdf-render-200dpi",
   "logo_raster_fallback_asset_id": "logo-jpg-source",
-  "favicon_status": "not_generated_pending_production_conversion_of_logo_pdf",
-  "map_status": "no_coordinates_in_sources",
-  "publication_status": "canonical_draft_for_private_build",
+  "favicon_status": "not_generated",
+  "map_status": "owner_supplied_dodoma_coordinates_published",
+  "publication_status": "published_static_site",
   "notes": [
     "Do not place the full legal name in every public heading.",
     "Do not publicly label Dodoma as headquarters.",
     "Do not invent retail products, prices, certifications or social profiles.",
-    "The private owner/administrator identity is omitted from this public settings object."
+    "There is no contact form: enquiries arrive by WhatsApp, telephone and email."
   ],
   "unresolved_settings": [
-    "WhatsApp confirmation for +256 782 318 727",
     "Whether both legal names appear in the public footer",
     "Opening hours",
     "Social-profile URLs",
-    "Map coordinates for Jinja and Dodoma",
-    "Favicon and production SVG/PNG conversion of active logo.pdf"
+    "Map coordinates for Jinja",
+    "Favicon derivative from the brand raster"
   ],
   "provenance": {
     "uganda_contacts": {
@@ -59,5 +49,6 @@
       "source_file": "active logo.pdf",
       "page": 1
     }
-  }
+  },
+  "whatsapp_public_url_number": "256782318727"
 }

@@ -38,24 +38,48 @@
   "geographic_coverage": {
     "primary_operation": "Jinja, Uganda",
     "branch": "Dodoma, Tanzania",
-    "documented_project_countries": ["Uganda", "Tanzania", "Burundi", "Rwanda"]
+    "documented_project_countries": [
+      "Uganda",
+      "Tanzania",
+      "Burundi",
+      "Rwanda"
+    ]
   },
   "business_classification": "Engineering, civil construction, welding and fabrication, structural steel, industrial plant installation, pipework, labour supply, insulation/lagging, maintenance and commissioning. Not documented as a retail hardware store.",
   "provenance": {
     "uganda_profile": {
       "source_file": "active company profile new 2025 civil and construction-1.pdf",
-      "pages": [1, 2, 3, 4, 5, 6, 7, 8, 37]
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        37
+      ]
     },
     "tanzania_pages": {
       "source_file": "COMPANY CONTEXT.pdf",
-      "pages": [2, 3, 4, 5, 6, 7, 8, 33]
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        33
+      ]
     },
     "logo": {
       "source_file": "active logo.pdf",
       "page": 1
     }
   },
-  "publication_status": "canonical_draft_for_private_build",
+  "publication_status": "published_static_site",
   "unresolved_fields": [
     "Whether both legal names should appear in the public footer",
     "Whether project countries beyond Uganda and Tanzania should appear on the public homepage",

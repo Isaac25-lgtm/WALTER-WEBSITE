@@ -26,5 +26,7 @@ npm.cmd run content:check
 Commit the regenerated snapshot together with the canonical edit — `content:check`
 fails the build if they drift apart.
 
-The WhatsApp number, its prefilled message and the map coordinates are constants
-at the top of `generate-public-content.mjs`.
+The WhatsApp number comes from `context/canonical/site-settings.json` and the map
+coordinates from the `map` block on `loc-dodoma-branch` in
+`context/canonical/locations.json`. The only presentation literal left in
+`generate-public-content.mjs` is `WHATSAPP_MESSAGE`.

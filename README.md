@@ -140,7 +140,10 @@ commit, push — Render redeploys automatically.
 | The nine services and their descriptions | `context/canonical/services.json` |
 | Headings and paragraphs on the pages | `context/canonical/public-copy.json` |
 | Which photograph appears where | `context/canonical/company-media.json` |
-| WhatsApp number, prefilled message, map coordinates | `scripts/generate-public-content.mjs` (the constants at the top) |
+| WhatsApp number | `context/canonical/site-settings.json` (`whatsapp_number`) |
+| Map coordinates and zoom | `context/canonical/locations.json` (`loc-dodoma-branch.map`) |
+| Map headings, caption and link label | `context/canonical/public-copy.json` (`contact.map*`, `home.location*`) |
+| WhatsApp prefilled message | `scripts/generate-public-content.mjs` (`WHATSAPP_MESSAGE`) |
 
 Never edit `apps/web/src/generated/public-content.ts` or `.json` by hand — they
 are overwritten by the generator.
@@ -184,8 +187,12 @@ The five capability groups are `structural-steel`, `plant-installation`,
   `primary_phone`, `secondary_phone`, `tanzania_local_phone`, `email`. The
   `tel:` and `mailto:` links are derived automatically.
 - **Addresses:** `context/canonical/locations.json`.
-- **WhatsApp number, prefilled message, map coordinates:** the constants at the
-  top of `scripts/generate-public-content.mjs`.
+- **WhatsApp number:** `context/canonical/site-settings.json` (`whatsapp_number`).
+  It is published only while `whatsapp_confirmation_state` records owner approval.
+- **Map coordinates, zoom and language:** the `map` block on `loc-dodoma-branch`
+  in `context/canonical/locations.json`.
+- **WhatsApp prefilled message:** `WHATSAPP_MESSAGE` in
+  `scripts/generate-public-content.mjs`.
 
 ### 6. Regenerating and checking content
 
