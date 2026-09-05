@@ -21,6 +21,8 @@
       "mailto:activetechnicalservices@gmail.com",
       "mailto:activetechnicalservices@gmail.com"
     ],
+    "mapEmbedLazy": "lazy",
+    "mapEmbedSrc": "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en&output=embed",
     "mapFrame": {
       "bottom": 1333,
       "display": "block",
@@ -81,6 +83,8 @@
       "mailto:activetechnicalservices@gmail.com",
       "mailto:activetechnicalservices@gmail.com"
     ],
+    "mapEmbedLazy": "lazy",
+    "mapEmbedSrc": "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en&output=embed",
     "mapFrame": {
       "bottom": 1806,
       "display": "block",
@@ -140,6 +144,8 @@
       "mailto:activetechnicalservices@gmail.com",
       "mailto:activetechnicalservices@gmail.com"
     ],
+    "mapEmbedLazy": "lazy",
+    "mapEmbedSrc": "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en&output=embed",
     "mapFrame": {
       "bottom": 1582,
       "display": "block",
@@ -198,7 +204,19 @@
     "mailLinks": [
       "mailto:activetechnicalservices@gmail.com"
     ],
-    "mapFrame": null,
+    "mapEmbedLazy": "lazy",
+    "mapEmbedSrc": "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en&output=embed",
+    "mapFrame": {
+      "bottom": 4122,
+      "display": "block",
+      "height": 450,
+      "left": 180,
+      "opacity": "1",
+      "right": 1260,
+      "top": 3672,
+      "visibility": "visible",
+      "width": 1080
+    },
     "removedRouteLinks": [],
     "scrollWidth": 1440,
     "telLinks": [
@@ -244,7 +262,19 @@
     "mailLinks": [
       "mailto:activetechnicalservices@gmail.com"
     ],
-    "mapFrame": null,
+    "mapEmbedLazy": "lazy",
+    "mapEmbedSrc": "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en&output=embed",
+    "mapFrame": {
+      "bottom": 7364,
+      "display": "block",
+      "height": 320,
+      "left": 39,
+      "opacity": "1",
+      "right": 351,
+      "top": 7044,
+      "visibility": "visible",
+      "width": 312
+    },
     "removedRouteLinks": [],
     "scrollWidth": 390,
     "telLinks": [
@@ -289,7 +319,19 @@
     "mailLinks": [
       "mailto:activetechnicalservices@gmail.com"
     ],
-    "mapFrame": null,
+    "mapEmbedLazy": "lazy",
+    "mapEmbedSrc": "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en&output=embed",
+    "mapFrame": {
+      "bottom": 6432,
+      "display": "block",
+      "height": 450,
+      "left": 77,
+      "opacity": "1",
+      "right": 691,
+      "top": 5982,
+      "visibility": "visible",
+      "width": 614
+    },
     "removedRouteLinks": [],
     "scrollWidth": 768,
     "telLinks": [
@@ -334,6 +376,8 @@
     "mailLinks": [
       "mailto:activetechnicalservices@gmail.com"
     ],
+    "mapEmbedLazy": null,
+    "mapEmbedSrc": null,
     "mapFrame": null,
     "removedRouteLinks": [],
     "scrollWidth": 1440,
@@ -380,6 +424,8 @@
     "mailLinks": [
       "mailto:activetechnicalservices@gmail.com"
     ],
+    "mapEmbedLazy": null,
+    "mapEmbedSrc": null,
     "mapFrame": null,
     "removedRouteLinks": [],
     "scrollWidth": 390,
@@ -425,6 +471,8 @@
     "mailLinks": [
       "mailto:activetechnicalservices@gmail.com"
     ],
+    "mapEmbedLazy": null,
+    "mapEmbedSrc": null,
     "mapFrame": null,
     "removedRouteLinks": [],
     "scrollWidth": 768,

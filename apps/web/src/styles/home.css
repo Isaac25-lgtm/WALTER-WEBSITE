@@ -404,3 +404,64 @@
 .closing-cta .cta {
   margin-top: 12px;
 }
+
+/* ------------------------------------------------------------------ */
+/* Homepage location band. Sits between the cream About section and    */
+/* the dark closing CTA, so the map reads as its own light band.       */
+/* ------------------------------------------------------------------ */
+
+.home-location {
+  background: var(--ats-white);
+  padding: 50px 0;
+}
+
+.home-location h2 {
+  margin: 0 0 12px;
+  color: var(--ats-heading);
+  font-size: var(--ats-h2-size);
+  line-height: var(--ats-h2-line);
+  font-weight: var(--ats-h2-weight);
+  text-align: center;
+}
+
+.home-location h2::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 3px;
+  margin: 12px auto 0;
+  background: var(--ats-heading);
+}
+
+.home-location__intro {
+  margin: 0 auto 24px;
+  max-width: 720px;
+  text-align: center;
+  color: var(--ats-body);
+}
+
+/* The shared map renders contact-page classes; on the light homepage band
+   the caption and link need the dark treatment instead of the white one. */
+.home-location .contact-map__caption {
+  color: var(--ats-body);
+}
+
+.home-location .contact-map__link {
+  color: var(--ats-heading);
+}
+
+.home-location a:focus-visible {
+  outline: 3px solid var(--ats-focus);
+  outline-offset: 3px;
+}
+
+@media (max-width: 767px) {
+  .home-location {
+    padding: 36px 0;
+  }
+
+  .home-location h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}

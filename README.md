@@ -66,7 +66,7 @@ The site presents nine documented service lines:
 
 | Route | Contents |
 | --- | --- |
-| `/` | Photographic hero, nine illustrated service cards, six featured-work tiles, illustrated About section, photographic closing CTA |
+| `/` | Photographic hero, nine illustrated service cards, six featured-work tiles, illustrated About section, *Where to find us* location map, photographic closing CTA |
 | `/portfolio/` | 21 curated photographs in five capability groups |
 | `/contact/` | WhatsApp action, three telephone numbers, email, Jinja and Tanzania locations, Google Maps embed |
 | 404 | Static not-found page |
@@ -291,10 +291,14 @@ clears the mobile Call Us Now bar. It opens in a new tab with
 `rel="noopener noreferrer"` and carries the accessible name
 *Chat with Active Technical Services on WhatsApp*.
 
-The Contact page embeds the **Tanzania branch location** at
-`-6.1683199, 35.7260943` using a keyless Google Maps embed, lazily loaded and
-titled, with an *Open in Google Maps* link beside it. It is labelled as the
-Tanzania branch, never as a headquarters.
+The **Tanzania branch location** at `-6.1683199, 35.7260943` is embedded on
+**both the homepage and the Contact page**, using a keyless Google Maps embed,
+lazily loaded and titled, with an *Open in Google Maps* link beside it. On the
+homepage it sits in a *Where to find us* band between the About section and the
+closing CTA. It is labelled as the Tanzania branch, never as a headquarters.
+
+Both pages render the same shared `LocationMap` component, so the coordinates
+and URLs are defined once in `scripts/generate-public-content.mjs`.
 
 ---
 

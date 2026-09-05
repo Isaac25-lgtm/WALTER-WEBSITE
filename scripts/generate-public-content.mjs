@@ -284,6 +284,9 @@ export function buildPublicContent() {
       linkUrl: `https://www.google.com/maps?q=${MAP_LATITUDE},${MAP_LONGITUDE}&z=17&hl=en`,
       embedUrl: `https://www.google.com/maps?q=${MAP_LATITUDE},${MAP_LONGITUDE}&z=17&hl=en&output=embed`,
       linkLabel: "Open in Google Maps",
+      homeHeading: "Where to find us",
+      homeSupporting:
+        "The primary operation is in Jinja, Uganda. The Tanzania branch is in Dodoma.",
     },
     services: publicServices,
     projects: featuredWork,
@@ -360,6 +363,11 @@ export function buildPublicContent() {
   assert(content.map.latitude === -6.1683199 && content.map.longitude === 35.7260943, "map coordinates must match the supplied location");
   assert(content.map.embedUrl.endsWith("&output=embed"), "map embed URL must request the embed output");
   assert(!/head office|headquarters/i.test(content.map.label), "map must not be labelled as headquarters");
+  assert(
+    !/head office|headquarters/i.test(`${content.map.homeHeading} ${content.map.homeSupporting}`),
+    "homepage map copy must not imply a headquarters",
+  );
+  assert(/Jinja/.test(content.map.homeSupporting) && /Dodoma/.test(content.map.homeSupporting), "homepage map copy must name both sites");
   assert(!content.routes.includes("/thank-you/"), "thank-you route must not be emitted");
   assert(!content.routes.some((route) => route.includes("walter")), "management routes must not be emitted");
   assert(content.projects.length === 6, "homepage featured-work selection is incomplete");

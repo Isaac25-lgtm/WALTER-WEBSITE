@@ -70,4 +70,39 @@ describe("homepage", () => {
     expect(container.textContent).not.toMatch(/\/walter|Metalworks|testimonial|Google rating|★/i);
     expect(container.textContent).not.toContain("100+ years");
   });
+  it("shows the Tanzania branch location map near the bottom of the page", () => {
+    const { container } = render(<HomePage />);
+    const section = container.querySelector(".home-location");
+    expect(section).not.toBeNull();
+
+    const iframe = section?.querySelector("iframe");
+    expect(iframe).toHaveAttribute(
+      "src",
+      "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en&output=embed",
+    );
+    expect(iframe).toHaveAttribute("loading", "lazy");
+    expect(iframe).toHaveAttribute("title", "Active Technical Services Tanzania branch location");
+
+    const link = screen.getByRole("link", { name: publicContent.map.linkLabel });
+    expect(link).toHaveAttribute("href", "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en");
+    expect(link).toHaveAttribute("target", "_blank");
+    expect(link).toHaveAttribute("rel", "noopener noreferrer");
+  });
+
+  it("keeps the homepage map after the About section and before the closing CTA", () => {
+    const { container } = render(<HomePage />);
+    const about = container.querySelector(".about-section");
+    const location = container.querySelector(".home-location");
+    const closing = container.querySelector(".closing-cta");
+    if (!about || !location || !closing) throw new Error("homepage sections must all render");
+    expect(about.compareDocumentPosition(location) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(location.compareDocumentPosition(closing) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  });
+
+  it("does not present the Tanzania branch as a headquarters", () => {
+    const { container } = render(<HomePage />);
+    expect(container.querySelector(".home-location")?.textContent).toMatch(/Jinja/);
+    expect(container.querySelector(".home-location")?.textContent).toMatch(/Dodoma/);
+    expect(container.textContent).not.toMatch(/head office|headquarters/i);
+  });
 });

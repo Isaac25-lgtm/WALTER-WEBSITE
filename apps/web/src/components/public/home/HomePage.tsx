@@ -4,6 +4,7 @@ import { AboutSection } from "./AboutSection";
 import { ClientBrandsSection } from "./ClientBrandsSection";
 import { ClosingCtaSection } from "./ClosingCtaSection";
 import { HeroSection } from "./HeroSection";
+import { LocationSection } from "./LocationSection";
 import { LatestWorkSection } from "./LatestWorkSection";
 import { ProjectMosaic, type MosaicProject } from "./ProjectMosaic";
 import { ServicesSection } from "./ServicesSection";
@@ -26,6 +27,7 @@ export function HomePage() {
       <AboutSection />
       <LatestWorkSection items={latestWork as readonly LatestWorkItem[]} socialLinks={socialLinks} />
       <ClientBrandsSection logos={clientLogos as readonly ClientBrand[]} />
+      <LocationSection />
       <ClosingCtaSection />
     </>
   );

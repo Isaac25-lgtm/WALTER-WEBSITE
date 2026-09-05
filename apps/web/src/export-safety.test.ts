@@ -158,6 +158,21 @@ describe("public source and export safety", () => {
       }
     });
 
+    it("exports the Tanzania branch map on both the homepage and the contact page", () => {
+      if (!exportExists) return;
+      for (const page of ["index.html", "contact/index.html"]) {
+        const text = readFileSync(path.join(outDir, page), "utf8");
+        expect(text, `${page} is missing the map embed`).toContain(
+          "https://www.google.com/maps?q=-6.1683199,35.7260943&amp;z=17&amp;hl=en&amp;output=embed",
+        );
+        expect(text, `${page} map is missing a title`).toContain(
+          "Active Technical Services Tanzania branch location",
+        );
+        expect(text, `${page} map is not lazily loaded`).toContain('loading="lazy"');
+        expect(text, `${page} is missing the Open in Google Maps link`).toContain("Open in Google Maps");
+      }
+    });
+
     it("keeps the floater clear of the mobile call bar in the shipped stylesheet", () => {
       const css = readFileSync(path.join(webDir, "app", "globals.css"), "utf8");
       expect(css).toContain(".whatsapp-float");

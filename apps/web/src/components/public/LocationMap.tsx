@@ -1,6 +1,7 @@
-import { publicContent } from "../../../generated/public-content";
+/** Shared Tanzania branch map. Used by the contact page and the homepage. */
+import { publicContent } from "../../generated/public-content";
 
-export function ContactMap() {
+export function LocationMap() {
   const { map, contact } = publicContent;
 
   return (

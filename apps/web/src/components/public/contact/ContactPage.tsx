@@ -1,7 +1,7 @@
 import { publicContent } from "../../../generated/public-content";
 import { Container } from "../Container";
 import { ContactIntroduction } from "./ContactIntroduction";
-import { ContactMap } from "./ContactMap";
+import { LocationMap } from "../LocationMap";
 import { ContactMethods } from "./ContactMethods";
 import { ContactLocations } from "./ContactLocations";
 
@@ -16,7 +16,7 @@ export function ContactPage() {
         <ContactLocations />
         <section className="contact-map-section" aria-labelledby="contact-map-heading">
           <h2 id="contact-map-heading">{contact.mapHeading}</h2>
-          <ContactMap />
+          <LocationMap />
         </section>
       </Container>
     </div>

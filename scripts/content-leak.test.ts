@@ -89,6 +89,14 @@ describe("public content rules", () => {
     expect(map.label).not.toMatch(/head office|headquarters/i);
   });
 
+  it("emits homepage map copy that names both sites without implying a headquarters", () => {
+    const { map } = content;
+    expect(map.homeHeading).toBe("Where to find us");
+    expect(map.homeSupporting).toMatch(/Jinja/);
+    expect(map.homeSupporting).toMatch(/Dodoma/);
+    expect(`${map.homeHeading} ${map.homeSupporting}`).not.toMatch(/head office|headquarters/i);
+  });
+
   it("emits homepage copy without provenance", () => {
     expect(content.homepage.heroHeading).toBe("Engineering, fabrication and construction solutions");
     expect(content.homepage.contactCtaLabel).toBe("Contact us");

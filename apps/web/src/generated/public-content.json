@@ -52,7 +52,9 @@
     "label": "Tanzania branch location",
     "linkUrl": "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en",
     "embedUrl": "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en&output=embed",
-    "linkLabel": "Open in Google Maps"
+    "linkLabel": "Open in Google Maps",
+    "homeHeading": "Where to find us",
+    "homeSupporting": "The primary operation is in Jinja, Uganda. The Tanzania branch is in Dodoma."
   },
   "services": [
     {

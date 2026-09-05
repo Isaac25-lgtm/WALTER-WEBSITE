@@ -57,6 +57,8 @@ PROBE = """
     callBar: rect(bar),
     callBarVisible: bar ? getComputedStyle(bar).display !== 'none' : false,
     mapFrame: rect(document.querySelector('.contact-map__frame')),
+    mapEmbedSrc: (document.querySelector('.contact-map__frame iframe') || {}).src || null,
+    mapEmbedLazy: (() => { const f = document.querySelector('.contact-map__frame iframe'); return f ? f.getAttribute('loading') : null; })(),
     telLinks: [...document.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href')),
     mailLinks: [...document.querySelectorAll('a[href^="mailto:"]')].map((a) => a.getAttribute('href')),
     removedRouteLinks: [...document.querySelectorAll('a[href]')]
@@ -148,6 +150,21 @@ def main() -> int:
                             if gap < 8:
                                 fail(f"WhatsApp floater clears the call bar by only {gap}px")
 
+                    # The Tanzania branch map now appears on the homepage too.
+                    if name in ("contact", "home"):
+                        mf = data["mapFrame"]
+                        if not mf:
+                            fail("map frame missing")
+                        else:
+                            if mf["width"] > width:
+                                fail("map overflows the viewport")
+                            if width == 1440 and abs(mf["height"] - 450) > 2:
+                                fail(f"desktop map height {mf['height']} is not ~450px")
+                            if not data["mapEmbedSrc"] or "-6.1683199,35.7260943" not in data["mapEmbedSrc"]:
+                                fail(f"map embed src unexpected: {data['mapEmbedSrc']}")
+                            if data["mapEmbedLazy"] != "lazy":
+                                fail("map embed is not lazily loaded")
+
                     if name == "contact":
                         # Site chrome (header, footer, call bar) repeats the primary
                         # number and the email, so assert on the distinct set.
@@ -159,14 +176,6 @@ def main() -> int:
                             fail(f"unexpected telephone links: {sorted(tel - required)}")
                         if set(data["mailLinks"]) != {"mailto:activetechnicalservices@gmail.com"}:
                             fail(f"contact email link wrong: {sorted(set(data['mailLinks']))}")
-                        mf = data["mapFrame"]
-                        if not mf:
-                            fail("map frame missing")
-                        else:
-                            if mf["width"] > width:
-                                fail("map overflows the viewport")
-                            if width == 1440 and abs(mf["height"] - 450) > 2:
-                                fail(f"desktop map height {mf['height']} is not ~450px")
             browser.close()
     finally:
         server.shutdown()
