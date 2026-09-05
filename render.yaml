@@ -1,129 +1,27 @@
 # Render Blueprint — Active Technical Services
 # https://render.com/docs/blueprint-spec
 #
-# This file contains NO secrets. Every value marked `sync: false` must be entered
-# by hand in the Render dashboard when the Blueprint is first applied.
+# One Render Static Site. No API, no database, no authentication, no secrets.
+# Applying this Blueprint asks for nothing: no value is left for the operator to
+# supply, so deployment needs no manual input at all.
 #
-# Deploy order: create the static site first, then the API, then set CORS_ORIGINS
-# on the API to the static site URL and NEXT_PUBLIC_API_BASE_URL on the static
-# site to the API URL, and redeploy the static site so the origin is inlined.
+# The build runs from the repository root:
+#   1. npm ci                 install from the committed lockfile
+#   2. npm run content:check  regenerate the public snapshot in memory, compare
+#                             it with the committed one, run the leak scan, and
+#                             verify every curated photograph under
+#                             apps/web/public/media/ actually exists
+#   3. next build             produce the static export
+#
+# `next build` is called directly. scripts/build-web.mjs is a Windows-only local
+# helper (cmd.exe / mklink) and must never run on Render.
 
 services:
-  # ---------------------------------------------------------------------------
-  # Public website — Next.js static export.
-  # Deploys and serves correctly with no database and no API.
-  # ---------------------------------------------------------------------------
   - type: web
     name: ats-public-web
     runtime: static
-    # Runs from the repository root. `content:check` regenerates the public
-    # snapshot in memory, compares it with the committed one and runs the leak
-    # scan, so a stale or leaking snapshot fails the build before `next build`.
-    # `next build` is invoked directly: scripts/build-web.mjs is a Windows-only
-    # local helper (cmd.exe / mklink) and must not be used on Render.
     buildCommand: npm ci && npm run content:check && npm run build --workspace=@ats/web
     staticPublishPath: apps/web/out
     envVars:
       - key: NODE_VERSION
         value: "24.11.1"
-      # Browser-safe origins only. Both are inlined into the client bundle at
-      # BUILD time, so changing either requires a redeploy of this service.
-      # Never put a database URL, JWT signing key, R2 key, Resend key or deploy
-      # hook here — everything in this service is public.
-      #
-      # Origin only, no path, e.g. https://ats-api.onrender.com
-      # Leave empty to ship the site with the inquiry form in its honest
-      # "unavailable" state.
-      - key: NEXT_PUBLIC_API_BASE_URL
-        sync: false
-      # Neon Auth browser base URL, e.g. https://<project>.neon.tech/neondb/auth
-      # Required for /walter/ sign-in. Leave empty to disable sign-in.
-      - key: NEXT_PUBLIC_NEON_AUTH_BASE_URL
-        sync: false
-
-  # ---------------------------------------------------------------------------
-  # Protected API — compiled Fastify service.
-  # Starts and serves GET /health with no database configured.
-  # ---------------------------------------------------------------------------
-  - type: web
-    name: ats-api
-    runtime: node
-    # 0.5 CPU / 512 MB paid web-service plan (legacy name: starter).
-    plan: 0.5c-512mb
-    buildCommand: npm ci && npm run build --workspace=@ats/api
-    startCommand: node apps/api/dist/server.js
-    healthCheckPath: /health
-    envVars:
-      - key: NODE_VERSION
-        value: "24.11.1"
-      - key: NODE_ENV
-        value: production
-      # Render routes external traffic to the port it injects as PORT.
-      # Do not set PORT here — Render supplies it and the server reads it.
-      - key: HOST
-        value: "0.0.0.0"
-      # Comma-separated exact origins allowed to call this API.
-      # Set to the ats-public-web URL, e.g. https://ats-public-web.onrender.com
-      # A wildcard is rejected when NODE_ENV=production.
-      - key: CORS_ORIGINS
-        sync: false
-      # Neon PostgreSQL pooled connection string.
-      # Until this is set, POST /inquiries returns 503 and no data is persisted.
-      - key: DATABASE_URL
-        sync: false
-      - key: INQUIRY_RATE_LIMIT_MAX
-        value: "5"
-      - key: INQUIRY_RATE_LIMIT_WINDOW
-        value: "900000"
-      # Correct behind Render's proxy: rate limits key on the forwarded client IP.
-      - key: TRUST_RENDER_CLIENT_IP
-        value: "true"
-
-      # --- Management authentication (gates /walter/) --------------------------
-      # Leave "false" until every NEON_AUTH_* value and WALTER_ADMIN_USER_IDS
-      # below are set. Flipping this to "true" with incomplete configuration
-      # fails environment validation and the service will not start.
-      # While "false", GET /management/session returns 503 and /walter/ cannot
-      # be signed into. Public inquiry submission is unaffected.
-      - key: MANAGEMENT_AUTH_ENABLED
-        value: "false"
-      # Neon Auth JWKS endpoint. Must be https in production.
-      - key: NEON_AUTH_JWKS_URL
-        sync: false
-      # Expected JWT `iss`. Must be https in production.
-      - key: NEON_AUTH_ISSUER
-        sync: false
-      # Expected JWT `aud`.
-      - key: NEON_AUTH_AUDIENCE
-        sync: false
-      # Comma-separated asymmetric algorithms. Allowed values:
-      # ES256 ES384 ES512 RS256 RS384 RS512 PS256 PS384 PS512 EdDSA
-      # HS* and "none" are rejected. Example: ES256
-      - key: NEON_AUTH_JWT_ALGORITHMS
-        sync: false
-      # Comma-separated allowlist of Neon Auth user IDs (the JWT `sub` claim).
-      # These are opaque subject IDs, not email addresses; a value containing
-      # "@" is rejected. Only these subjects receive the administrator role.
-      - key: WALTER_ADMIN_USER_IDS
-        sync: false
-
-      # --- Not yet implemented in the application -----------------------------
-      # Declared so the Blueprint stays complete and the names are stable.
-      # Setting them has no effect today: there is no R2 upload path, no Resend
-      # notification, and no publication deploy-hook call in the codebase.
-      - key: R2_ACCOUNT_ID
-        sync: false
-      - key: R2_ACCESS_KEY_ID
-        sync: false
-      - key: R2_SECRET_ACCESS_KEY
-        sync: false
-      - key: R2_BUCKET
-        sync: false
-      - key: R2_PUBLIC_BASE_URL
-        sync: false
-      - key: RESEND_API_KEY
-        sync: false
-      - key: INQUIRY_NOTIFICATION_TO
-        sync: false
-      - key: STATIC_SITE_DEPLOY_HOOK_URL
-        sync: false

@@ -29,8 +29,6 @@ const eslintConfig = [
   },
   {
     files: [
-      "apps/api/**/*.ts",
-      "packages/**/*.ts",
       "scripts/**/*.{js,mjs,ts}",
       "vitest.config.ts",
     ],

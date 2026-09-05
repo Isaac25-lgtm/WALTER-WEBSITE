@@ -35,7 +35,7 @@ describe("portfolio", () => {
     const { container } = render(<PortfolioPage />);
     expect(publicContent.clientNames).toEqual([]);
     expect(publicContent.prices).toEqual([]);
-    expect(container.textContent).not.toMatch(/WhatsApp|\/walter|Metalworks/i);
+    expect(container.textContent).not.toMatch(/\/walter|Metalworks/i);
     expect(screen.getByRole("link", { name: publicContent.homepage.contactCtaLabel })).toHaveAttribute(
       "href",
       "/contact/",

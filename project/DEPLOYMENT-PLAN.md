@@ -1,51 +1,44 @@
 # Deployment plan
 
-This is a **blueprint**. Prompt 5 does not deploy, create cloud accounts, or store secrets.
+One Render Static Site. Nothing else.
 
-## Target topology
+## Blueprint
 
-1. **Render Static Site** — `ats-public-web`
-   - Build from the workspace root: `npm ci && npm run content:check && npm run build --workspace=@ats/web`
-   - Publish: `apps/web/out`
-   - Node version: 24.11.1
-   - Browser-safe env only: `NEXT_PUBLIC_API_BASE_URL`, `NEXT_PUBLIC_NEON_AUTH_BASE_URL` (`sync: false`)
+`render.yaml` defines a single service:
 
-2. **Render Web Service** — `ats-api`
-   - Plan: **free**
-   - Build: `npm ci && npm run build --workspace=@ats/api`
-   - Start: `node apps/api/dist/server.js` (compiled JavaScript; not `tsx`)
-   - Health: `GET /health`
-   - `HOST=0.0.0.0`, `NODE_ENV=production`
-   - Do not manually require `PORT`; Render supplies it
-   - Future server-only names with `sync: false`: `CORS_ORIGINS`, `DATABASE_URL`, Neon Auth, R2, Resend, deploy-hook URL
-   - Inquiry rate-limit defaults may be set as non-secret values: `INQUIRY_RATE_LIMIT_MAX`, `INQUIRY_RATE_LIMIT_WINDOW`, `TRUST_RENDER_CLIENT_IP=true`
-   - Fastify does **not** enable global `trustProxy`. When `TRUST_RENDER_CLIENT_IP=true`, inquiry rate limits use a single validated `CF-Connecting-IP` and ignore `X-Forwarded-For`. The in-memory limiter is for one free instance only.
-   - Management auth stays off until provisioned: `MANAGEMENT_AUTH_ENABLED=false`. JWKS, issuer, audience, algorithms, and `WALTER_ADMIN_USER_IDS` remain `sync: false`. Do not put a public JWK, cookie secret, or administrator email in the blueprint.
+| Field | Value |
+| --- | --- |
+| Name | `ats-public-web` |
+| Runtime | `static` |
+| Build | `npm ci && npm run content:check && npm run build --workspace=@ats/web` |
+| Publish directory | `apps/web/out` |
+| Environment variables | `NODE_VERSION` only |
 
-3. **Neon PostgreSQL + Neon Auth** — not provisioned in this prompt. Local Drizzle schema and migration SQL exist under `apps/api/drizzle/` and have **not** been applied remotely.
+There is no `sync: false` value anywhere, so applying the Blueprint asks for no
+input. There is no start command, no health check and no plan line, because a
+static site needs none of them.
 
-4. **Cloudflare R2** — public project media vs private inquiry attachments, later.
+`next build` is invoked directly. `scripts/build-web.mjs` is a Windows-only
+local helper that shells out to `cmd.exe` and `mklink`; it must never run on
+Render.
 
-5. **Resend** — inquiry notifications, later.
+## First deployment
 
-`render.yaml` at the repo root describes this split. Applying the Blueprint in the Render dashboard is **out of scope**.
+1. In Render choose **New → Blueprint** and select this repository.
+2. Render reads `render.yaml` and creates `ats-public-web`.
+3. Deploy. The site is live; there is nothing to configure afterwards.
 
-## Publish workflow (later)
+## Subsequent deployments
 
-Draft in Neon → local `/walter/` preview → later publish snapshot → API calls the Render **deploy hook** (server-side) → static site rebuilds. A saved content draft must **not** silently alter the public static export. The public site never holds the hook URL.
+Push to `main`. Render rebuilds and republishes automatically.
 
-## Free-tier constraints
+## Removing the old API service
 
-- The API may sleep. Static HTML must still load.
-- Do not store media in Neon or on Render’s ephemeral disk.
-- Recheck free-tier limits before production.
+Deleting `ats-api` from `render.yaml` does **not** delete a service that Render
+has already created. If `ats-api` was ever deployed, open the Render dashboard
+and delete or suspend it by hand, otherwise its paid plan keeps billing.
 
-## Checklist before first production deploy (not this prompt)
+## Rollback
 
-- [ ] Git remote and source-control decisions in `SOURCE-CONTROL-POLICY.md`
-- [ ] Secrets only on the API service
-- [ ] `NEXT_PUBLIC_API_BASE_URL` points at the API origin
-- [ ] Visual pages implemented against `context/reference/`
-- [ ] Publication-review assets only in `apps/web/public/` or the static export
-- [ ] No Metalworks identity
-- [ ] `/walter` not linked from the public site (the static route may exist; it is not a nav item and is not access control)
+Redeploy any previous commit from the Render dashboard, or revert the commit on
+`main` and push.

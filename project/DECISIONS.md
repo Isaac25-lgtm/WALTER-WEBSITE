@@ -57,3 +57,26 @@ Do not add public sections merely because the ATS documents contain extra materi
 ## Implementation freeze for this prompt
 
 No Next.js scaffold, package install, database, auth, `/walter` UI, deploy, or Git init in Prompt 2.
+
+---
+
+## Superseded decisions — conversion to a pure static website
+
+The locked hosting and backend decisions above no longer describe this project.
+They are kept as a record of what was built and why it was removed.
+
+| Original decision | Current state |
+| --- | --- |
+| Render Web Service for a Fastify API | **Removed.** No API, no server process |
+| Neon PostgreSQL | **Removed.** No database |
+| Neon Auth | **Removed.** No authentication, no administrator accounts |
+| Drizzle ORM and migrations | **Removed** |
+| `/walter` private management route | **Removed** |
+| Cloudflare R2 for media | **Removed.** Curated photographs are committed to the repository |
+| Resend email notifications | **Removed** |
+| Draft → publish → deploy-hook publishing | **Removed.** Developers edit content in the repository, commit, and push |
+| Inquiry form posting to the API | **Removed.** Contact is by WhatsApp, telephone and email |
+
+What still holds: the public visual specification, ATS ownership of content,
+Uganda and Tanzania as one company with Jinja primary and Dodoma a branch, and
+the rule against inventing clients, prices, certifications or claims.

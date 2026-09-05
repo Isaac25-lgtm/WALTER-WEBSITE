@@ -1,6 +1,6 @@
 # Content build report
 
-Generated at 2026-09-03T05:29:05.707Z
+Generated at 2026-09-05T08:49:20.653Z
 
 ## Canonical inputs read
 
@@ -12,50 +12,47 @@ Generated at 2026-09-03T05:29:05.707Z
 - context/canonical/publication-controls.json
 - context/canonical/public-copy.json
 - context/canonical/company-media.json
-- context/canonical/content-draft-fields.json
+
+All inputs are committed developer-managed files. The build reads nothing outside
+the repository and requires no environment variable, database or network access.
 
 ## Public records emitted
 
 - Identity: Active Technical Services / ATS / Gift of God
 - Locations: Jinja primary operation; Dodoma branch
-- Contacts: canonical phones and email
+- Contacts: two Uganda telephones, one Tanzania telephone, one email, one WhatsApp action
 - Services: 9
 - Homepage copy slots: hero, services, about, portfolio CTA, closing CTA
 - Curated company photography: hero, about, closing CTA, nine service cards, six featured-work tiles, and grouped portfolio gallery
-- Contact copy slots: heading, introduction, alternatives, unavailable/rate-limit/attachment/invalid/internal/timeout/network/submitting messages, location labels
-- Thank-you copy slots: heading, supporting, other work, return-home, return-contact
-- Projects: 6
-- Project media: 21
-- People: 0
-- Client names: 0
-- Client logos: 0
-- Testimonials: 0
-- Social links: 0
-- Map coordinates: 0
-- Prices: 0
-- Pricing mode: quote_only
+- Contact copy slots: heading, introduction, alternatives, location labels, section headings
+- Map: Tanzania branch location embed and external link
+- Featured work: 6
+- Portfolio media: 21
+- Routes: /, /contact/, /portfolio/
 
 ## Records withheld
 
-- All 21 named canonical project records and their extracted PDF media
+- All 21 named canonical project records and their extracted source media
 - Identifiable people
 - Named clients
 - Client logos
 - Testimonials
 - Social links
-- Map coordinates
 - Public prices
 
 ## Withholding reasons
 
-Publication controls mark the named project collections as draft with public_allowed=false. No reviewer, consent, or client permission has been recorded for those records. The separately supplied company-image folder is curated through context/canonical/company-media.json using generic capability labels and no client names.
+Publication controls mark the named project collections as draft with
+public_allowed=false. No reviewer, consent, or client permission has been
+recorded for those records. The separately supplied company-image folder is
+curated through context/canonical/company-media.json using generic capability
+labels and no client names. Only the curated photographs committed under
+apps/web/public/media/company/ are validated and published.
 
 ## Generated output paths
 
 - apps/web/src/generated/public-content.json
 - apps/web/src/generated/public-content.ts
-- apps/web/src/generated/content-draft-fields.ts
-- apps/api/src/generated/content-draft-fields.ts
 
 ## Validation result
 

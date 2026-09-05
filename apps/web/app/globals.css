@@ -1,7 +1,6 @@
 @import "../src/styles/tokens.css";
 @import "../src/styles/home.css";
 @import "../src/styles/contact.css";
-@import "../src/styles/thank-you.css";
 @import "../src/styles/portfolio.css";
 
 html {
@@ -473,5 +472,75 @@ button[type="submit"] {
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Floating WhatsApp action, present on every public page.            */
+/* Sits above page content and, on mobile, above the Call Us Now bar. */
+/* ------------------------------------------------------------------ */
+
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: var(--ats-z-whatsapp);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: var(--ats-whatsapp-size);
+  height: var(--ats-whatsapp-size);
+  border-radius: 50%;
+  background: rgb(37, 211, 102);
+  color: var(--ats-white);
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+}
+
+.whatsapp-float:hover {
+  background: rgb(30, 184, 88);
+}
+
+.whatsapp-float:focus-visible {
+  outline: 3px solid var(--ats-white);
+  outline-offset: 3px;
+}
+
+.whatsapp-float__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.whatsapp-float__label {
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: var(--ats-near-black);
+  color: var(--ats-white);
+  font-family: var(--ats-font-button);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.whatsapp-float:hover .whatsapp-float__label,
+.whatsapp-float:focus-visible .whatsapp-float__label {
+  opacity: 1;
+}
+
+/* Clear the fixed Call Us Now bar on mobile. */
+@media (max-width: 480px) {
+  .whatsapp-float {
+    right: 16px;
+    bottom: calc(var(--ats-call-bar-height) + 16px);
   }
 }

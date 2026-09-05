@@ -38,26 +38,55 @@ describe("public content rules", () => {
       "COMPANY CONTEXT.pdf",
       "context/assets",
       "/walter",
-      "WhatsApp",
     ]) {
       expect(combined).not.toContain(needle);
     }
   });
 
-  it("emits thank-you copy without a photograph or nav link", () => {
-    expect(content.thankYou.heading).toBe("Thank you");
-    expect(content.thankYou.supporting).toBe("We will be in touch.");
-    expect(content.thankYou.returnHomeLabel).toBe("Return home");
-    expect(content.thankYou.returnContactLabel).toBe("Return to contact");
+  it("publishes only the three static public routes", () => {
+    expect(content.routes).toEqual(["/", "/contact/", "/portfolio/"]);
     expect(content.navigation.every((item) => item.href !== "/thank-you/")).toBe(true);
-    expect(JSON.stringify(content.thankYou)).not.toMatch(/WhatsApp|24-hour|Metalworks/i);
+    expect(JSON.stringify(content)).not.toContain("thankYou");
   });
 
-  it("emits contact copy without provenance or WhatsApp claims", () => {
+  it("emits contact copy without provenance or a head-office claim", () => {
     expect(content.contact.heading).toBe("Contact Us");
-    expect(content.contact.formUnavailableMessage).toContain("being prepared");
     expect(content.contact.tanzaniaBranchLabel).toContain("Dodoma");
-    expect(JSON.stringify(content.contact)).not.toMatch(/WhatsApp|head office/i);
+    expect(JSON.stringify(content.contact)).not.toMatch(/head office|headquarters/i);
+    expect(JSON.stringify(content.contact)).not.toMatch(/24-hour|response time/i);
+  });
+
+  it("emits every approved contact channel with a usable link", () => {
+    const { contacts } = content;
+    expect(contacts.primaryPhone).toBe("+256 782 318 727");
+    expect(contacts.primaryPhoneHref).toBe("tel:+256782318727");
+    expect(contacts.secondaryPhone).toBe("+256 755 318 727");
+    expect(contacts.secondaryPhoneHref).toBe("tel:+256755318727");
+    expect(contacts.tanzaniaLocalPhone).toBe("+255 764 306 184");
+    expect(contacts.tanzaniaLocalPhoneHref).toBe("tel:+255764306184");
+    expect(contacts.email).toBe("activetechnicalservices@gmail.com");
+    expect(contacts.emailHref).toBe("mailto:activetechnicalservices@gmail.com");
+  });
+
+  it("emits the approved WhatsApp destination and prefilled message", () => {
+    const { whatsapp } = content.contacts;
+    expect(whatsapp.number).toBe("256782318727");
+    expect(whatsapp.url).toBe(
+      `https://wa.me/256782318727?text=${encodeURIComponent(
+        "Hello Active Technical Services, I would like to make an enquiry about your services.",
+      )}`,
+    );
+    expect(whatsapp.ariaLabel).toBe("Chat with Active Technical Services on WhatsApp");
+  });
+
+  it("emits the supplied Tanzania branch map location", () => {
+    const { map } = content;
+    expect(map.latitude).toBe(-6.1683199);
+    expect(map.longitude).toBe(35.7260943);
+    expect(map.linkUrl).toBe("https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en");
+    expect(map.embedUrl).toBe("https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en&output=embed");
+    expect(map.title).toBe("Active Technical Services Tanzania branch location");
+    expect(map.label).not.toMatch(/head office|headquarters/i);
   });
 
   it("emits homepage copy without provenance", () => {

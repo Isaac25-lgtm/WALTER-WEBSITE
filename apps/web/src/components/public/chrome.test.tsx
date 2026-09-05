@@ -36,7 +36,7 @@ describe("public site chrome", () => {
     const desktopLinks = [...document.querySelectorAll(".desktop-nav a")].map((node) => node.textContent);
     expect(desktopLinks).toEqual(["Services", "Portfolio", "Contact"]);
     expect(screen.getByRole("link", { name: `${publicContent.logo.alt} home` })).toHaveAttribute("href", "/");
-    expect(document.body.textContent).not.toMatch(/\/walter|WhatsApp|whatsapp|Thank you/i);
+    expect(document.body.textContent).not.toMatch(/\/walter|Thank you/i);
   });
 
   it("uses a tel: header action and no social icons", () => {

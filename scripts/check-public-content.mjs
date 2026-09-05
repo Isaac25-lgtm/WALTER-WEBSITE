@@ -1,11 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import {
-  buildPublicContent,
-  renderContentDraftFieldFiles,
-  renderPublicContentFiles,
-} from "./generate-public-content.mjs";
+import { buildPublicContent, renderPublicContentFiles } from "./generate-public-content.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const generatedDir = path.join(root, "apps", "web", "src", "generated");
@@ -24,8 +20,6 @@ const FORBIDDEN = [
   "context\\assets",
   "F:\\",
   "W:\\",
-  "WhatsApp",
-  "whatsapp",
 ];
 
 function fail(message) {
@@ -33,29 +27,18 @@ function fail(message) {
 }
 
 const expected = renderPublicContentFiles(buildPublicContent());
-const expectedDraftFields = renderContentDraftFieldFiles();
 const jsonPath = path.join(generatedDir, "public-content.json");
 const tsPath = path.join(generatedDir, "public-content.ts");
-const webDraftFieldsPath = path.join(generatedDir, "content-draft-fields.ts");
-const apiDraftFieldsPath = path.join(root, "apps", "api", "src", "generated", "content-draft-fields.ts");
 
 if (!fs.existsSync(jsonPath) || !fs.existsSync(tsPath)) {
-  fail("Generated public content is missing. Run npm.cmd run content:generate.");
-}
-if (!fs.existsSync(webDraftFieldsPath) || !fs.existsSync(apiDraftFieldsPath)) {
-  fail("Generated content-draft fields are missing. Run npm.cmd run content:generate.");
+  fail("Generated public content is missing. Run npm run content:generate.");
 }
 
 const actualJson = fs.readFileSync(jsonPath, "utf8");
 const actualTs = fs.readFileSync(tsPath, "utf8");
-const actualWebFields = fs.readFileSync(webDraftFieldsPath, "utf8");
-const actualApiFields = fs.readFileSync(apiDraftFieldsPath, "utf8");
 
 if (actualJson !== expected.json) fail("Generated public-content.json is stale.");
 if (actualTs !== expected.ts) fail("Generated public-content.ts is stale.");
-if (actualWebFields !== expectedDraftFields.ts) fail("Generated web content-draft-fields.ts is stale.");
-if (actualApiFields !== expectedDraftFields.ts) fail("Generated API content-draft-fields.ts is stale.");
-if (actualWebFields !== actualApiFields) fail("Generated content-draft field artifacts have diverged.");
 
 const combined = `${actualJson}\n${actualTs}`;
 for (const needle of FORBIDDEN) {
@@ -89,9 +72,15 @@ if (!parsed.homepage || parsed.homepage.heroHeading !== "Engineering, fabricatio
 if (!parsed.contact || parsed.contact.heading !== "Contact Us") {
   fail("Contact copy is missing from the public snapshot.");
 }
-if (/whatsapp/i.test(parsed.contact.formUnavailableMessage) || /head office/i.test(parsed.contact.tanzaniaBranchLabel)) {
-  fail("Contact copy contains forbidden claims.");
+if (/head office|headquarters/i.test(`${parsed.contact.tanzaniaBranchLabel} ${parsed.map.label}`)) {
+  fail("Tanzania must not be presented as the head office.");
 }
+if (parsed.contacts.whatsapp.number !== "256782318727") fail("WhatsApp number is not the approved Uganda primary line.");
+if (!parsed.contacts.whatsapp.url.startsWith("https://wa.me/256782318727?text=")) fail("WhatsApp URL is malformed.");
+if (parsed.map.latitude !== -6.1683199 || parsed.map.longitude !== 35.7260943) fail("Map coordinates do not match the supplied location.");
+if (!parsed.map.embedUrl.endsWith("&output=embed")) fail("Map embed URL must request the embed output.");
+if (parsed.routes.includes("/thank-you/")) fail("The thank-you route must not be published.");
+if (parsed.routes.some((route) => route.includes("walter"))) fail("Management routes must not be published.");
 if (JSON.stringify(parsed).includes("canonical_field") || JSON.stringify(parsed).includes("editorial_note")) {
   fail("Homepage provenance leaked into the public snapshot.");
 }

@@ -67,7 +67,7 @@ describe("homepage", () => {
       "/portfolio/",
     );
     expect(container.innerHTML).not.toMatch(/context\/assets|context\\assets|\.pdf/i);
-    expect(container.textContent).not.toMatch(/WhatsApp|whatsapp|\/walter|Metalworks|testimonial|Google rating|★/i);
+    expect(container.textContent).not.toMatch(/\/walter|Metalworks|testimonial|Google rating|★/i);
     expect(container.textContent).not.toContain("100+ years");
   });
 });

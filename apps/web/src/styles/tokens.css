@@ -80,6 +80,8 @@
   --ats-z-header: 200;
   --ats-z-menu: 300;
   --ats-z-call-bar: 10000;
+  --ats-z-whatsapp: 9990;
+  --ats-whatsapp-size: 56px;
 
   --ats-nav-collapse: 980px;
   --ats-call-bar-max: 480px;

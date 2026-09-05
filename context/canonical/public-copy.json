@@ -84,16 +84,16 @@
       "editorial_note": "Recorded Contact-page H1. Not a Metalworks sentence."
     },
     "introduction": {
-      "text": "For project enquiries and quotation requests, complete the form below or contact Active Technical Services by email or telephone.",
+      "text": "For project enquiries and quotation requests, contact Active Technical Services on WhatsApp, by telephone or by email.",
       "source_file": "context/canonical/site-settings.json",
       "canonical_field": "email",
-      "editorial_note": "Quote-only enquiry path. No response-time, 24-hour, or WhatsApp claims."
+      "editorial_note": "Quote-only enquiry path. Direct contact channels only; there is no contact form. No response-time or availability claims."
     },
     "telephoneAlternativeText": {
       "text": "Call Active Technical Services",
       "source_file": "context/canonical/site-settings.json",
       "canonical_field": "primary_phone",
-      "editorial_note": "Accessible name for the public tel link. The number is not labelled WhatsApp."
+      "editorial_note": "Accessible name for the public tel link."
     },
     "emailAlternativeText": {
       "text": "Email Active Technical Services",
@@ -160,6 +160,12 @@
       "source_file": "context/canonical/locations.json",
       "canonical_field": "public_label",
       "editorial_note": "Dodoma is a branch, not the public head office."
+    },
+    "whatsappAlternativeText": {
+      "text": "Send Active Technical Services a message on WhatsApp",
+      "source_file": "context/canonical/site-settings.json",
+      "canonical_field": "primary_phone",
+      "editorial_note": "WhatsApp uses the Uganda primary line. No response-time claim."
     }
   },
   "thankYou": {

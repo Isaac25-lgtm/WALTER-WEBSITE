@@ -1,15 +1,30 @@
-# scripts/
+# Scripts
 
-- `prepare-brand-assets.py` — crop ATS logo derivatives from the PDF 200 dpi render
-- `capture-prompt-06-chrome.py` — local chrome screenshots for Prompt 6
-- `capture-prompt-11-chrome.py` — Thank You actions and `/walter/` captures for Prompt 11
-- `capture-prompt-12-chrome.py` — `/walter/` at 1440/768/390 and Prompt 11 viewport gaps
-- `prove-public-api-inlining.mjs` — temporary static-export proof that `NEXT_PUBLIC_API_BASE_URL` is inlined; deletes only the temp copy
-- `prove-public-api-inlining-chrome.py` — Chrome intercept for that temporary export
-- `build-web.mjs` — static Next.js export; uses a temporary copy if `apps/web/.next` is locked
-- `run-in-workspace.mjs` — run npm against the real F: workspace root
-- `seed-publication-controls.mjs` — rebuild conservative publication-control defaults from canonical data
-- `generate-public-content.mjs` — deterministic public snapshot for the static site
-- `check-public-content.mjs` — freshness and leakage check
+Everything here runs against committed files only. Nothing reads an environment
+variable, a database or the network.
 
-Do not put secrets here. Do not upload, migrate, or deploy from these scripts.
+| Script | Purpose |
+| --- | --- |
+| `generate-public-content.mjs` | Validates `context/canonical/*.json` and writes the browser-safe snapshot to `apps/web/src/generated/public-content.{ts,json}`. Run via `npm run content:generate`. |
+| `check-public-content.mjs` | Regenerates the snapshot in memory, compares it with the committed one, runs the leak scan and confirms every referenced photograph exists under `apps/web/public/media/`. Run via `npm run content:check`. |
+| `content-leak.test.ts` | Vitest coverage for the generator: contact channels, WhatsApp destination, map coordinates, published routes and withheld records. |
+| `build-web.mjs` | **Windows-only** local static-export helper. Falls back to building from a temporary copy when the editor holds `apps/web/.next`. Render calls `next build` directly and must never run this. |
+| `run-in-workspace.mjs` | Runs npm commands from the real workspace path on Windows. |
+| `clean-generated.mjs` | Removes regenerable artefacts: `node_modules/`, `.next/`, `out/`, `*.tsbuildinfo` and `package-lock.json`. |
+| `prepare-brand-assets.py` | Regenerates the logo derivatives in `apps/web/public/media/brand/` from the committed 200 dpi brand raster. Requires Pillow. |
+| `inspect-static-site.py` | Serves `apps/web/out` and inspects `/`, `/portfolio/` and `/contact/` at 1440×900, 768×1024 and 390×844: horizontal overflow, broken images, WhatsApp floater size and clearance above the mobile call bar, contact links and map size. Writes screenshots and `project/visual-checks/static-site/measurements.json`. Requires Playwright with Chrome. |
+
+## Editing content
+
+Edit `context/canonical/*.json`, then:
+
+```bash
+npm.cmd run content:generate
+npm.cmd run content:check
+```
+
+Commit the regenerated snapshot together with the canonical edit — `content:check`
+fails the build if they drift apart.
+
+The WhatsApp number, its prefilled message and the map coordinates are constants
+at the top of `generate-public-content.mjs`.

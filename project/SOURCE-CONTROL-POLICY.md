@@ -70,3 +70,27 @@ external archive — they are not recoverable from the Git remote.
 
 `.gitattributes` retains `*.pdf filter=lfs diff=lfs merge=lfs -text`, so any
 PDF that is committed in future is stored in Git LFS automatically.
+
+## Superseded: the site is now a pure static website
+
+The backend was removed. There is no API, database, authentication or `/walter/`
+management area, so the source-control questions about server code, migrations
+and secrets no longer apply.
+
+What this repository tracks:
+
+- `apps/web/` — the whole application
+- `context/canonical/` — the developer-managed content source of truth
+- `apps/web/public/media/` — the 21 curated company photographs and the logo derivatives
+- `project/`, `scripts/`, `render.yaml`, `package-lock.json`
+
+What stays out:
+
+- **No PDF.** The original ATS profile documents are archived outside the workspace.
+- `compan images/` — the raw set of 86 source photographs. Only the 21 curated,
+  committed copies under `apps/web/public/media/company/` are used or validated.
+- Build output (`apps/web/out/`, `.next/`), `node_modules/`, diagnostic
+  screenshots, and any `.env` file.
+
+There are no secrets to protect any more: the site reads no environment
+variable at build or run time.

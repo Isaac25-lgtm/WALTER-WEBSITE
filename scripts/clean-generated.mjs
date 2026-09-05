@@ -45,9 +45,6 @@ function unlinkAtsJunctions(nodeModulesDir) {
 const workspaceNodeModules = [
   path.join(root, "node_modules"),
   path.join(root, "apps", "web", "node_modules"),
-  path.join(root, "apps", "api", "node_modules"),
-  path.join(root, "packages", "contracts", "node_modules"),
-  path.join(root, "packages", "config", "node_modules"),
 ];
 
 for (const dir of workspaceNodeModules) {
@@ -67,9 +64,6 @@ for (const dir of workspaceNodeModules) {
 removeDir(path.join(root, "apps", "web", ".next"));
 removeDir(path.join(root, "apps", "web", ".next-build"));
 removeDir(path.join(root, "apps", "web", "out"));
-removeDir(path.join(root, "apps", "api", "dist"));
-removeDir(path.join(root, "packages", "contracts", "dist"));
-removeDir(path.join(root, "packages", "config", "dist"));
 
 function removeTsbuildinfo(dir) {
   if (!fs.existsSync(dir)) return;

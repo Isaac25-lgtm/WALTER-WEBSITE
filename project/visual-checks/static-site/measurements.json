@@ -1,0 +1,452 @@
+{
+  "contact-1440x900": {
+    "callBar": {
+      "bottom": 0,
+      "display": "none",
+      "height": 0,
+      "left": 0,
+      "opacity": "1",
+      "right": 0,
+      "top": 0,
+      "visibility": "visible",
+      "width": 0
+    },
+    "callBarVisible": false,
+    "clientWidth": 1440,
+    "forms": 0,
+    "horizontalOverflow": false,
+    "imagesBroken": [],
+    "imagesTotal": 2,
+    "mailLinks": [
+      "mailto:activetechnicalservices@gmail.com",
+      "mailto:activetechnicalservices@gmail.com"
+    ],
+    "mapFrame": {
+      "bottom": 1333,
+      "display": "block",
+      "height": 450,
+      "left": 180,
+      "opacity": "1",
+      "right": 1260,
+      "top": 883,
+      "visibility": "visible",
+      "width": 1080
+    },
+    "removedRouteLinks": [],
+    "scrollWidth": 1440,
+    "telLinks": [
+      "tel:+256782318727",
+      "tel:+256782318727",
+      "tel:+256755318727",
+      "tel:+255764306184",
+      "tel:+256782318727",
+      "tel:+256782318727"
+    ],
+    "whatsapp": {
+      "bottom": 876,
+      "display": "flex",
+      "height": 56,
+      "left": 1360,
+      "opacity": "1",
+      "right": 1416,
+      "top": 820,
+      "visibility": "visible",
+      "width": 56
+    },
+    "whatsappAria": "Chat with Active Technical Services on WhatsApp",
+    "whatsappHref": "https://wa.me/256782318727?text=Hello%20Active%20Technical%20Services%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services.",
+    "whatsappRel": "noopener noreferrer",
+    "whatsappTarget": "_blank"
+  },
+  "contact-390x844": {
+    "callBar": {
+      "bottom": 844,
+      "display": "flex",
+      "height": 60,
+      "left": 0,
+      "opacity": "1",
+      "right": 390,
+      "top": 784,
+      "visibility": "visible",
+      "width": 390
+    },
+    "callBarVisible": true,
+    "clientWidth": 390,
+    "floaterClearanceAboveCallBar": 16,
+    "forms": 0,
+    "horizontalOverflow": false,
+    "imagesBroken": [],
+    "imagesTotal": 2,
+    "mailLinks": [
+      "mailto:activetechnicalservices@gmail.com",
+      "mailto:activetechnicalservices@gmail.com"
+    ],
+    "mapFrame": {
+      "bottom": 1806,
+      "display": "block",
+      "height": 320,
+      "left": 39,
+      "opacity": "1",
+      "right": 351,
+      "top": 1486,
+      "visibility": "visible",
+      "width": 312
+    },
+    "removedRouteLinks": [],
+    "scrollWidth": 390,
+    "telLinks": [
+      "tel:+256782318727",
+      "tel:+256782318727",
+      "tel:+256755318727",
+      "tel:+255764306184",
+      "tel:+256782318727",
+      "tel:+256782318727"
+    ],
+    "whatsapp": {
+      "bottom": 768,
+      "display": "flex",
+      "height": 56,
+      "left": 318,
+      "opacity": "1",
+      "right": 374,
+      "top": 712,
+      "visibility": "visible",
+      "width": 56
+    },
+    "whatsappAria": "Chat with Active Technical Services on WhatsApp",
+    "whatsappHref": "https://wa.me/256782318727?text=Hello%20Active%20Technical%20Services%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services.",
+    "whatsappRel": "noopener noreferrer",
+    "whatsappTarget": "_blank"
+  },
+  "contact-768x1024": {
+    "callBar": {
+      "bottom": 0,
+      "display": "none",
+      "height": 0,
+      "left": 0,
+      "opacity": "1",
+      "right": 0,
+      "top": 0,
+      "visibility": "visible",
+      "width": 0
+    },
+    "callBarVisible": false,
+    "clientWidth": 768,
+    "forms": 0,
+    "horizontalOverflow": false,
+    "imagesBroken": [],
+    "imagesTotal": 2,
+    "mailLinks": [
+      "mailto:activetechnicalservices@gmail.com",
+      "mailto:activetechnicalservices@gmail.com"
+    ],
+    "mapFrame": {
+      "bottom": 1582,
+      "display": "block",
+      "height": 450,
+      "left": 77,
+      "opacity": "1",
+      "right": 691,
+      "top": 1132,
+      "visibility": "visible",
+      "width": 614
+    },
+    "removedRouteLinks": [],
+    "scrollWidth": 768,
+    "telLinks": [
+      "tel:+256782318727",
+      "tel:+256782318727",
+      "tel:+256755318727",
+      "tel:+255764306184",
+      "tel:+256782318727",
+      "tel:+256782318727"
+    ],
+    "whatsapp": {
+      "bottom": 1000,
+      "display": "flex",
+      "height": 56,
+      "left": 688,
+      "opacity": "1",
+      "right": 744,
+      "top": 944,
+      "visibility": "visible",
+      "width": 56
+    },
+    "whatsappAria": "Chat with Active Technical Services on WhatsApp",
+    "whatsappHref": "https://wa.me/256782318727?text=Hello%20Active%20Technical%20Services%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services.",
+    "whatsappRel": "noopener noreferrer",
+    "whatsappTarget": "_blank"
+  },
+  "home-1440x900": {
+    "callBar": {
+      "bottom": 0,
+      "display": "none",
+      "height": 0,
+      "left": 0,
+      "opacity": "1",
+      "right": 0,
+      "top": 0,
+      "visibility": "visible",
+      "width": 0
+    },
+    "callBarVisible": false,
+    "clientWidth": 1440,
+    "forms": 0,
+    "horizontalOverflow": false,
+    "imagesBroken": [],
+    "imagesTotal": 21,
+    "mailLinks": [
+      "mailto:activetechnicalservices@gmail.com"
+    ],
+    "mapFrame": null,
+    "removedRouteLinks": [],
+    "scrollWidth": 1440,
+    "telLinks": [
+      "tel:+256782318727",
+      "tel:+256782318727",
+      "tel:+256782318727"
+    ],
+    "whatsapp": {
+      "bottom": 876,
+      "display": "flex",
+      "height": 56,
+      "left": 1360,
+      "opacity": "1",
+      "right": 1416,
+      "top": 820,
+      "visibility": "visible",
+      "width": 56
+    },
+    "whatsappAria": "Chat with Active Technical Services on WhatsApp",
+    "whatsappHref": "https://wa.me/256782318727?text=Hello%20Active%20Technical%20Services%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services.",
+    "whatsappRel": "noopener noreferrer",
+    "whatsappTarget": "_blank"
+  },
+  "home-390x844": {
+    "callBar": {
+      "bottom": 844,
+      "display": "flex",
+      "height": 60,
+      "left": 0,
+      "opacity": "1",
+      "right": 390,
+      "top": 784,
+      "visibility": "visible",
+      "width": 390
+    },
+    "callBarVisible": true,
+    "clientWidth": 390,
+    "floaterClearanceAboveCallBar": 16,
+    "forms": 0,
+    "horizontalOverflow": false,
+    "imagesBroken": [],
+    "imagesTotal": 21,
+    "mailLinks": [
+      "mailto:activetechnicalservices@gmail.com"
+    ],
+    "mapFrame": null,
+    "removedRouteLinks": [],
+    "scrollWidth": 390,
+    "telLinks": [
+      "tel:+256782318727",
+      "tel:+256782318727",
+      "tel:+256782318727"
+    ],
+    "whatsapp": {
+      "bottom": 768,
+      "display": "flex",
+      "height": 56,
+      "left": 318,
+      "opacity": "1",
+      "right": 374,
+      "top": 712,
+      "visibility": "visible",
+      "width": 56
+    },
+    "whatsappAria": "Chat with Active Technical Services on WhatsApp",
+    "whatsappHref": "https://wa.me/256782318727?text=Hello%20Active%20Technical%20Services%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services.",
+    "whatsappRel": "noopener noreferrer",
+    "whatsappTarget": "_blank"
+  },
+  "home-768x1024": {
+    "callBar": {
+      "bottom": 0,
+      "display": "none",
+      "height": 0,
+      "left": 0,
+      "opacity": "1",
+      "right": 0,
+      "top": 0,
+      "visibility": "visible",
+      "width": 0
+    },
+    "callBarVisible": false,
+    "clientWidth": 768,
+    "forms": 0,
+    "horizontalOverflow": false,
+    "imagesBroken": [],
+    "imagesTotal": 21,
+    "mailLinks": [
+      "mailto:activetechnicalservices@gmail.com"
+    ],
+    "mapFrame": null,
+    "removedRouteLinks": [],
+    "scrollWidth": 768,
+    "telLinks": [
+      "tel:+256782318727",
+      "tel:+256782318727",
+      "tel:+256782318727"
+    ],
+    "whatsapp": {
+      "bottom": 1000,
+      "display": "flex",
+      "height": 56,
+      "left": 688,
+      "opacity": "1",
+      "right": 744,
+      "top": 944,
+      "visibility": "visible",
+      "width": 56
+    },
+    "whatsappAria": "Chat with Active Technical Services on WhatsApp",
+    "whatsappHref": "https://wa.me/256782318727?text=Hello%20Active%20Technical%20Services%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services.",
+    "whatsappRel": "noopener noreferrer",
+    "whatsappTarget": "_blank"
+  },
+  "portfolio-1440x900": {
+    "callBar": {
+      "bottom": 0,
+      "display": "none",
+      "height": 0,
+      "left": 0,
+      "opacity": "1",
+      "right": 0,
+      "top": 0,
+      "visibility": "visible",
+      "width": 0
+    },
+    "callBarVisible": false,
+    "clientWidth": 1440,
+    "forms": 0,
+    "horizontalOverflow": false,
+    "imagesBroken": [],
+    "imagesTotal": 23,
+    "mailLinks": [
+      "mailto:activetechnicalservices@gmail.com"
+    ],
+    "mapFrame": null,
+    "removedRouteLinks": [],
+    "scrollWidth": 1440,
+    "telLinks": [
+      "tel:+256782318727",
+      "tel:+256782318727",
+      "tel:+256782318727"
+    ],
+    "whatsapp": {
+      "bottom": 876,
+      "display": "flex",
+      "height": 56,
+      "left": 1360,
+      "opacity": "1",
+      "right": 1416,
+      "top": 820,
+      "visibility": "visible",
+      "width": 56
+    },
+    "whatsappAria": "Chat with Active Technical Services on WhatsApp",
+    "whatsappHref": "https://wa.me/256782318727?text=Hello%20Active%20Technical%20Services%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services.",
+    "whatsappRel": "noopener noreferrer",
+    "whatsappTarget": "_blank"
+  },
+  "portfolio-390x844": {
+    "callBar": {
+      "bottom": 844,
+      "display": "flex",
+      "height": 60,
+      "left": 0,
+      "opacity": "1",
+      "right": 390,
+      "top": 784,
+      "visibility": "visible",
+      "width": 390
+    },
+    "callBarVisible": true,
+    "clientWidth": 390,
+    "floaterClearanceAboveCallBar": 16,
+    "forms": 0,
+    "horizontalOverflow": false,
+    "imagesBroken": [],
+    "imagesTotal": 23,
+    "mailLinks": [
+      "mailto:activetechnicalservices@gmail.com"
+    ],
+    "mapFrame": null,
+    "removedRouteLinks": [],
+    "scrollWidth": 390,
+    "telLinks": [
+      "tel:+256782318727",
+      "tel:+256782318727",
+      "tel:+256782318727"
+    ],
+    "whatsapp": {
+      "bottom": 768,
+      "display": "flex",
+      "height": 56,
+      "left": 318,
+      "opacity": "1",
+      "right": 374,
+      "top": 712,
+      "visibility": "visible",
+      "width": 56
+    },
+    "whatsappAria": "Chat with Active Technical Services on WhatsApp",
+    "whatsappHref": "https://wa.me/256782318727?text=Hello%20Active%20Technical%20Services%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services.",
+    "whatsappRel": "noopener noreferrer",
+    "whatsappTarget": "_blank"
+  },
+  "portfolio-768x1024": {
+    "callBar": {
+      "bottom": 0,
+      "display": "none",
+      "height": 0,
+      "left": 0,
+      "opacity": "1",
+      "right": 0,
+      "top": 0,
+      "visibility": "visible",
+      "width": 0
+    },
+    "callBarVisible": false,
+    "clientWidth": 768,
+    "forms": 0,
+    "horizontalOverflow": false,
+    "imagesBroken": [],
+    "imagesTotal": 23,
+    "mailLinks": [
+      "mailto:activetechnicalservices@gmail.com"
+    ],
+    "mapFrame": null,
+    "removedRouteLinks": [],
+    "scrollWidth": 768,
+    "telLinks": [
+      "tel:+256782318727",
+      "tel:+256782318727",
+      "tel:+256782318727"
+    ],
+    "whatsapp": {
+      "bottom": 1000,
+      "display": "flex",
+      "height": 56,
+      "left": 688,
+      "opacity": "1",
+      "right": 744,
+      "top": 944,
+      "visibility": "visible",
+      "width": 56
+    },
+    "whatsappAria": "Chat with Active Technical Services on WhatsApp",
+    "whatsappHref": "https://wa.me/256782318727?text=Hello%20Active%20Technical%20Services%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services.",
+    "whatsappRel": "noopener noreferrer",
+    "whatsappTarget": "_blank"
+  }
+}

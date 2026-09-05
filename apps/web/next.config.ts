@@ -6,7 +6,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-    transpilePackages: ["@ats/contracts", "@ats/config", "@neondatabase/auth"],
 };
 
 export default nextConfig;

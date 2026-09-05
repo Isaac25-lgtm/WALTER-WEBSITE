@@ -6,25 +6,12 @@ const declaredRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), 
 const root = fs.realpathSync.native(declaredRoot);
 const canonicalDir = path.join(root, "context", "canonical");
 const generatedDir = path.join(root, "apps", "web", "src", "generated");
-const apiGeneratedDir = path.join(root, "apps", "api", "src", "generated");
-const webDraftFieldsPath = path.join(generatedDir, "content-draft-fields.ts");
-const apiDraftFieldsPath = path.join(apiGeneratedDir, "content-draft-fields.ts");
-const CONTENT_DRAFT_KEYS = [
-  "homepage.heroHeading",
-  "homepage.heroSupporting",
-  "homepage.servicesHeading",
-  "homepage.servicesIntroduction",
-  "homepage.aboutEyebrow",
-  "homepage.aboutHeading",
-  "homepage.aboutParagraph1",
-  "homepage.aboutParagraph2",
-  "homepage.closingCtaHeading",
-  "homepage.closingCtaSupporting",
-  "contact.heading",
-  "contact.introduction",
-  "thankYou.heading",
-  "thankYou.supporting",
-];
+
+// Developer-managed constants. Edit here, then run `npm run content:generate`.
+const WHATSAPP_NUMBER = "256782318727";
+const WHATSAPP_MESSAGE = "Hello Active Technical Services, I would like to make an enquiry about your services.";
+const MAP_LATITUDE = -6.1683199;
+const MAP_LONGITUDE = 35.7260943;
 
 const FORBIDDEN_SUBSTRINGS = [
   "Walter",
@@ -41,8 +28,6 @@ const FORBIDDEN_SUBSTRINGS = [
   "F:\\",
   "W:\\",
   "/walter",
-  "WhatsApp",
-  "whatsapp",
 ];
 
 function readCanonical(name) {
@@ -238,8 +223,6 @@ export function buildPublicContent() {
   assert(homepageCopy, "canonical homepage copy is missing");
   const contactCopy = publicCopy.contact;
   assert(contactCopy, "canonical contact copy is missing");
-  const thankYouCopy = publicCopy.thankYou;
-  assert(thankYouCopy, "canonical thank-you copy is missing");
   const aboutParagraphs = Array.isArray(homepageCopy.aboutParagraphs) ? homepageCopy.aboutParagraphs.map((block, index) => assertPublicText(block, `aboutParagraphs[${index}]`)) : null;
   assert(aboutParagraphs && aboutParagraphs.length >= 1, "about paragraphs are required");
 
@@ -280,8 +263,27 @@ export function buildPublicContent() {
       primaryPhone: settings.primary_phone,
       primaryPhoneHref: `tel:${settings.primary_phone.replaceAll(" ", "")}`,
       secondaryPhone: settings.secondary_phone,
+      secondaryPhoneHref: `tel:${settings.secondary_phone.replaceAll(" ", "")}`,
       tanzaniaLocalPhone: settings.tanzania_local_phone,
+      tanzaniaLocalPhoneHref: `tel:${settings.tanzania_local_phone.replaceAll(" ", "")}`,
       email: settings.email,
+      emailHref: `mailto:${settings.email}`,
+      whatsapp: {
+        number: WHATSAPP_NUMBER,
+        url: `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`,
+        message: WHATSAPP_MESSAGE,
+        label: "WhatsApp",
+        ariaLabel: "Chat with Active Technical Services on WhatsApp",
+      },
+    },
+    map: {
+      latitude: MAP_LATITUDE,
+      longitude: MAP_LONGITUDE,
+      title: "Active Technical Services Tanzania branch location",
+      label: "Tanzania branch location",
+      linkUrl: `https://www.google.com/maps?q=${MAP_LATITUDE},${MAP_LONGITUDE}&z=17&hl=en`,
+      embedUrl: `https://www.google.com/maps?q=${MAP_LATITUDE},${MAP_LONGITUDE}&z=17&hl=en&output=embed`,
+      linkLabel: "Open in Google Maps",
     },
     services: publicServices,
     projects: featuredWork,
@@ -318,34 +320,22 @@ export function buildPublicContent() {
       heading: assertPublicText(contactCopy.heading, "contact.heading"),
       introduction: assertPublicText(contactCopy.introduction, "contact.introduction"),
       telephoneAlternativeText: assertPublicText(contactCopy.telephoneAlternativeText, "contact.telephoneAlternativeText"),
+      whatsappAlternativeText: assertPublicText(contactCopy.whatsappAlternativeText, "contact.whatsappAlternativeText"),
       emailAlternativeText: assertPublicText(contactCopy.emailAlternativeText, "contact.emailAlternativeText"),
-      formUnavailableMessage: assertPublicText(contactCopy.formUnavailableMessage, "contact.formUnavailableMessage"),
       jinjaLocationLabel: assertPublicText(contactCopy.jinjaLocationLabel, "contact.jinjaLocationLabel"),
       tanzaniaBranchLabel,
-      formRateLimitedMessage: assertPublicText(contactCopy.formRateLimitedMessage, "contact.formRateLimitedMessage"),
-      formAttachmentUnavailableMessage: assertPublicText(
-        contactCopy.formAttachmentUnavailableMessage,
-        "contact.formAttachmentUnavailableMessage",
-      ),
-      formInvalidMessage: assertPublicText(contactCopy.formInvalidMessage, "contact.formInvalidMessage"),
-      formInternalErrorMessage: assertPublicText(contactCopy.formInternalErrorMessage, "contact.formInternalErrorMessage"),
-      formTimeoutMessage: assertPublicText(contactCopy.formTimeoutMessage, "contact.formTimeoutMessage"),
-      formNetworkErrorMessage: assertPublicText(contactCopy.formNetworkErrorMessage, "contact.formNetworkErrorMessage"),
-      formSubmittingMessage: assertPublicText(contactCopy.formSubmittingMessage, "contact.formSubmittingMessage"),
-    },
-    thankYou: {
-      heading: assertPublicText(thankYouCopy.heading, "thankYou.heading"),
-      supporting: assertPublicText(thankYouCopy.supporting, "thankYou.supporting"),
-      otherWork: assertPublicText(thankYouCopy.otherWork, "thankYou.otherWork"),
-      returnHomeLabel: assertPublicText(thankYouCopy.returnHomeLabel, "thankYou.returnHomeLabel"),
-      returnContactLabel: assertPublicText(thankYouCopy.returnContactLabel, "thankYou.returnContactLabel"),
+      whatsappHeading: "Chat on WhatsApp",
+      telephoneHeading: "Telephone",
+      emailHeading: "Email",
+      locationsHeading: "Where we work",
+      mapHeading: "Tanzania branch location",
     },
     navigation: [
       { label: "Services", href: "/#what-we-do" },
       { label: "Portfolio", href: "/portfolio/" },
       { label: "Contact", href: "/contact/" },
     ],
-    routes: ["/", "/contact/", "/portfolio/", "/thank-you/"],
+    routes: ["/", "/contact/", "/portfolio/"],
   };
 
   const serialized = JSON.stringify(content);
@@ -361,15 +351,17 @@ export function buildPublicContent() {
   assert(content.homepage.heroHeading.length > 0, "homepage hero heading is required");
   assert(content.homepage.aboutParagraphs.length >= 1, "homepage about paragraphs are required");
   assert(content.contact.heading === "Contact Us", "contact heading must be Contact Us");
-  assert(content.thankYou.heading === "Thank you", "thank-you heading must be Thank you");
-  assert(!/whatsapp/i.test(content.contact.formUnavailableMessage), "contact copy must not claim WhatsApp");
   assert(
-    !/24-hour|response time|whatsapp/i.test(
-      `${content.contact.introduction} ${content.contact.formUnavailableMessage} ${content.thankYou.supporting} ${content.thankYou.otherWork}`,
-    ),
-    "contact and thank-you copy must not promise availability",
+    !/24-hour|response time|same day|within \d+ (hour|day)/i.test(content.contact.introduction),
+    "contact copy must not promise a response time",
   );
-  assert(content.navigation.every((item) => item.href !== "/thank-you/"), "thank-you must not be a visible nav item");
+  assert(content.contacts.whatsapp.number === "256782318727", "WhatsApp number must be the approved Uganda primary line");
+  assert(content.contacts.whatsapp.url.startsWith("https://wa.me/256782318727?text="), "WhatsApp URL is malformed");
+  assert(content.map.latitude === -6.1683199 && content.map.longitude === 35.7260943, "map coordinates must match the supplied location");
+  assert(content.map.embedUrl.endsWith("&output=embed"), "map embed URL must request the embed output");
+  assert(!/head office|headquarters/i.test(content.map.label), "map must not be labelled as headquarters");
+  assert(!content.routes.includes("/thank-you/"), "thank-you route must not be emitted");
+  assert(!content.routes.some((route) => route.includes("walter")), "management routes must not be emitted");
   assert(content.projects.length === 6, "homepage featured-work selection is incomplete");
   assert(content.projectMedia.length >= 18, "portfolio media selection is incomplete");
   assert(content.latestWork.length === 0, "unapproved latest-work items must not be emitted");
@@ -382,62 +374,6 @@ export function buildPublicContent() {
   return content;
 }
 
-function readBySelector(source, selector) {
-  const parts = selector.split(".");
-  let current = source;
-  for (const part of parts) {
-    if (current == null) return undefined;
-    current = /^\d+$/.test(part) ? current[Number(part)] : current[part];
-  }
-  return current;
-}
-
-export function buildContentDraftFields() {
-  const publicCopy = readCanonical("public-copy.json");
-  const fieldFile = readCanonical("content-draft-fields.json");
-  assert(fieldFile.plain_text_policy === "plain_text_no_html", "plain-text policy must reject HTML");
-  assert(
-    Array.isArray(fieldFile.fields) && fieldFile.fields.length === CONTENT_DRAFT_KEYS.length,
-    "controlled field count mismatch",
-  );
-  const fields = fieldFile.fields.map((field, index) => {
-    assert(field.key === CONTENT_DRAFT_KEYS[index], `field order must match ${CONTENT_DRAFT_KEYS[index]}`);
-    assert(typeof field.page === "string" && field.page.trim(), `${field.key} page is required`);
-    assert(typeof field.section === "string" && field.section.trim(), `${field.key} section is required`);
-    assert(typeof field.label === "string" && field.label.trim(), `${field.key} label is required`);
-    assert(typeof field.description === "string" && field.description.trim(), `${field.key} description is required`);
-    assert(Number.isInteger(field.min_length) && field.min_length >= 1, `${field.key} min_length is invalid`);
-    assert(Number.isInteger(field.max_length) && field.max_length >= field.min_length, `${field.key} max_length is invalid`);
-    assert(typeof field.multiline === "boolean", `${field.key} multiline is required`);
-    assert(
-      typeof field.canonical_selector === "string" && field.canonical_selector.trim(),
-      `${field.key} canonical_selector is required`,
-    );
-    const block = readBySelector(publicCopy, field.canonical_selector);
-    const canonicalValue = assertPublicText(block, field.key);
-    assert(!field.description.includes("<") && !canonicalValue.includes("<"), `${field.key} must remain plain text`);
-    return {
-      key: field.key,
-      page: field.page,
-      section: field.section,
-      label: field.label,
-      description: field.description,
-      minLength: field.min_length,
-      maxLength: field.max_length,
-      multiline: field.multiline,
-      canonicalSelector: field.canonical_selector,
-      plainTextPolicy: fieldFile.plain_text_policy,
-      canonicalValue,
-    };
-  });
-  return fields;
-}
-
-export function renderContentDraftFieldFiles(fields = buildContentDraftFields()) {
-  const ts = `export const CONTENT_DRAFT_FIELDS = ${JSON.stringify(fields, null, 2)} as const;\n\nexport type GeneratedContentDraftField = (typeof CONTENT_DRAFT_FIELDS)[number];\n`;
-  return { ts };
-}
-
 export function renderPublicContentFiles(content) {
   const json = `${JSON.stringify(content, null, 2)}\n`;
   const ts = `export const publicContent = ${JSON.stringify(content, null, 2)} as const;\n\nexport type PublicContent = typeof publicContent;\n`;
@@ -446,20 +382,13 @@ export function renderPublicContentFiles(content) {
 
 export function writePublicContent(content = buildPublicContent()) {
   fs.mkdirSync(generatedDir, { recursive: true });
-  fs.mkdirSync(apiGeneratedDir, { recursive: true });
   const files = renderPublicContentFiles(content);
-  const draftFields = renderContentDraftFieldFiles();
   fs.writeFileSync(path.join(generatedDir, "public-content.json"), files.json, "utf8");
   fs.writeFileSync(path.join(generatedDir, "public-content.ts"), files.ts, "utf8");
-  fs.writeFileSync(webDraftFieldsPath, draftFields.ts, "utf8");
-  fs.writeFileSync(apiDraftFieldsPath, draftFields.ts, "utf8");
   return {
     jsonPath: "apps/web/src/generated/public-content.json",
     tsPath: "apps/web/src/generated/public-content.ts",
-    webDraftFieldsPath: "apps/web/src/generated/content-draft-fields.ts",
-    apiDraftFieldsPath: "apps/api/src/generated/content-draft-fields.ts",
     files,
-    draftFields,
     content,
   };
 }
@@ -480,50 +409,47 @@ Generated at ${now}
 - context/canonical/publication-controls.json
 - context/canonical/public-copy.json
 - context/canonical/company-media.json
-- context/canonical/content-draft-fields.json
+
+All inputs are committed developer-managed files. The build reads nothing outside
+the repository and requires no environment variable, database or network access.
 
 ## Public records emitted
 
 - Identity: Active Technical Services / ATS / Gift of God
 - Locations: Jinja primary operation; Dodoma branch
-- Contacts: canonical phones and email
+- Contacts: two Uganda telephones, one Tanzania telephone, one email, one WhatsApp action
 - Services: ${result.content.services.length}
 - Homepage copy slots: hero, services, about, portfolio CTA, closing CTA
 - Curated company photography: hero, about, closing CTA, nine service cards, six featured-work tiles, and grouped portfolio gallery
-- Contact copy slots: heading, introduction, alternatives, unavailable/rate-limit/attachment/invalid/internal/timeout/network/submitting messages, location labels
-- Thank-you copy slots: heading, supporting, other work, return-home, return-contact
-- Projects: ${result.content.projects.length}
-- Project media: ${result.content.projectMedia.length}
-- People: ${result.content.people.length}
-- Client names: ${result.content.clientNames.length}
-- Client logos: ${result.content.clientLogos.length}
-- Testimonials: ${result.content.testimonials.length}
-- Social links: ${result.content.socialLinks.length}
-- Map coordinates: ${result.content.mapCoordinates.length}
-- Prices: ${result.content.prices.length}
-- Pricing mode: ${result.content.pricingMode}
+- Contact copy slots: heading, introduction, alternatives, location labels, section headings
+- Map: Tanzania branch location embed and external link
+- Featured work: ${result.content.projects.length}
+- Portfolio media: ${result.content.projectMedia.length}
+- Routes: ${result.content.routes.join(", ")}
 
 ## Records withheld
 
-- All 21 named canonical project records and their extracted PDF media
+- All 21 named canonical project records and their extracted source media
 - Identifiable people
 - Named clients
 - Client logos
 - Testimonials
 - Social links
-- Map coordinates
 - Public prices
 
 ## Withholding reasons
 
-Publication controls mark the named project collections as draft with public_allowed=false. No reviewer, consent, or client permission has been recorded for those records. The separately supplied company-image folder is curated through context/canonical/company-media.json using generic capability labels and no client names.
+Publication controls mark the named project collections as draft with
+public_allowed=false. No reviewer, consent, or client permission has been
+recorded for those records. The separately supplied company-image folder is
+curated through context/canonical/company-media.json using generic capability
+labels and no client names. Only the curated photographs committed under
+apps/web/public/media/company/ are validated and published.
 
 ## Generated output paths
 
 - ${result.jsonPath}
 - ${result.tsPath}
-- ${result.webDraftFieldsPath}
-- ${result.apiDraftFieldsPath}
 
 ## Validation result
 

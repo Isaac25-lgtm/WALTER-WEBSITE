@@ -32,8 +32,27 @@ export const publicContent = {
     "primaryPhone": "+256 782 318 727",
     "primaryPhoneHref": "tel:+256782318727",
     "secondaryPhone": "+256 755 318 727",
+    "secondaryPhoneHref": "tel:+256755318727",
     "tanzaniaLocalPhone": "+255 764 306 184",
-    "email": "activetechnicalservices@gmail.com"
+    "tanzaniaLocalPhoneHref": "tel:+255764306184",
+    "email": "activetechnicalservices@gmail.com",
+    "emailHref": "mailto:activetechnicalservices@gmail.com",
+    "whatsapp": {
+      "number": "256782318727",
+      "url": "https://wa.me/256782318727?text=Hello%20Active%20Technical%20Services%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services.",
+      "message": "Hello Active Technical Services, I would like to make an enquiry about your services.",
+      "label": "WhatsApp",
+      "ariaLabel": "Chat with Active Technical Services on WhatsApp"
+    }
+  },
+  "map": {
+    "latitude": -6.1683199,
+    "longitude": 35.7260943,
+    "title": "Active Technical Services Tanzania branch location",
+    "label": "Tanzania branch location",
+    "linkUrl": "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en",
+    "embedUrl": "https://www.google.com/maps?q=-6.1683199,35.7260943&z=17&hl=en&output=embed",
+    "linkLabel": "Open in Google Maps"
   },
   "services": [
     {
@@ -880,26 +899,17 @@ export const publicContent = {
   },
   "contact": {
     "heading": "Contact Us",
-    "introduction": "For project enquiries and quotation requests, complete the form below or contact Active Technical Services by email or telephone.",
+    "introduction": "For project enquiries and quotation requests, contact Active Technical Services on WhatsApp, by telephone or by email.",
     "telephoneAlternativeText": "Call Active Technical Services",
+    "whatsappAlternativeText": "Send Active Technical Services a message on WhatsApp",
     "emailAlternativeText": "Email Active Technical Services",
-    "formUnavailableMessage": "Online inquiry submission is being prepared. Please contact us by telephone or email.",
     "jinjaLocationLabel": "Jinja, Uganda",
     "tanzaniaBranchLabel": "Tanzania branch: Dodoma, Tanzania",
-    "formRateLimitedMessage": "Too many inquiry attempts. Try again later, or contact us by telephone or email.",
-    "formAttachmentUnavailableMessage": "File upload is not available yet. Remove the file to send your message, or contact us by telephone or email.",
-    "formInvalidMessage": "Check your details and try again, or contact us by telephone or email.",
-    "formInternalErrorMessage": "The inquiry could not be sent. Please try again, or contact us by telephone or email.",
-    "formTimeoutMessage": "The request timed out. Please try again, or contact us by telephone or email.",
-    "formNetworkErrorMessage": "A network error occurred. Please try again, or contact us by telephone or email.",
-    "formSubmittingMessage": "Submitting…"
-  },
-  "thankYou": {
-    "heading": "Thank you",
-    "supporting": "We will be in touch.",
-    "otherWork": "In the meantime, please take a look at some of our other work.",
-    "returnHomeLabel": "Return home",
-    "returnContactLabel": "Return to contact"
+    "whatsappHeading": "Chat on WhatsApp",
+    "telephoneHeading": "Telephone",
+    "emailHeading": "Email",
+    "locationsHeading": "Where we work",
+    "mapHeading": "Tanzania branch location"
   },
   "navigation": [
     {
@@ -918,8 +928,7 @@ export const publicContent = {
   "routes": [
     "/",
     "/contact/",
-    "/portfolio/",
-    "/thank-you/"
+    "/portfolio/"
   ]
 } as const;
 
