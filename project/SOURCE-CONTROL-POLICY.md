@@ -1,96 +1,46 @@
-# Source-control policy
+# Source-control policy (current state)
 
-Git is **intentionally not initialised** in this prompt (Prompt 4). This workspace remains a local foundation until a later prompt authorises `git init` and a remote.
+The repository holds one static website. There is no backend, so there are no
+server secrets, connection strings or deploy-hook URLs to protect.
 
-## What stays local until an explicit decision
+Historical policy discussion — including the decisions about the original PDFs
+and the retired backend — is preserved in [`PROGRESS.md`](PROGRESS.md).
 
-These are source or private engineering evidence, not public website media:
+## Tracked
 
-- Original PDFs: `active company profile new 2025 civil and construction-1.pdf`, `COMPANY CONTEXT.pdf`
-- Original logo files: `active logo.pdf`, `active logo.jpg`
-- Raw image extracts: `context/assets/_raw_extract/`
-- Page preview renders: `context/assets/previews/`
-- Reference-site screenshots: `context/reference/screenshots/`
-- Browser capture dumps: `context/reference/_capture_raw.json` and related `_*.json` artefacts
-
-They must **not** be pushed casually. Several of these trees are large, private, or both.
-
-**Before the first remote push**, decide for each of the above whether it belongs in:
-
-- Git LFS
-- An external archive (not in the Git remote)
-- `.gitignore` (already used for extracts, previews, screenshots, and capture dumps)
-
-Do not treat “it is in the workspace” as “it should be on the remote”.
-
-## What is expected to be source-controlled later
-
-When Git is initialised:
-
-- Application code under `apps/` and `packages/`
-- Canonical JSON and editorial documents under `context/canonical/`
-- Architecture and process documents under `project/`
-- Safe configuration templates (`.env.example`, `render.yaml` without secrets)
-- Drizzle schema and migrations **once they exist as code** (not remote database state)
-- `package-lock.json`
-
-Classified extracts under `context/assets/{brand,people,projects,services,miscellaneous}/` still need a LFS / archive / ignore decision before push; they are ATS-owned evidence, not public `/` media.
-
-## Never commit
-
-- `.env`, `.env.*` (except committed `.env.example` templates with empty or non-secret placeholders)
-- Database URLs, Neon Auth server secrets, R2 keys, Resend API keys, Render deploy-hook URLs
-- Any other credential or key file
-
-`.gitignore` is written to enforce this even before Git exists.
-
-## Decision taken before the first remote push
-
-Git was initialised on branch `main` and pushed to
-`https://github.com/Isaac25-lgtm/WALTER-WEBSITE.git`. The outstanding
-LFS / archive / ignore decision was resolved as follows:
-
-| Item | Decision |
-| --- | --- |
-| `COMPANY CONTEXT.pdf` (110 MB) | **Ignored.** Local / external archive only. |
-| `active company profile new 2025 civil and construction-1.pdf` (64 MB) | **Ignored.** Local / external archive only. |
-| `active logo.pdf` (16 KB) | **Git LFS.** Canonical logo master, hashed by `scripts/prepare-brand-assets.py`. |
-| `active logo.jpg` (80 KB) | **Committed normally.** |
-| `context/assets/{brand,people,projects,services,miscellaneous}/` | **Committed normally.** ~77 MB, largest single file 3 MB. |
-| `context/assets/_raw_extract/`, `context/assets/previews/`, `context/reference/screenshots/` | **Ignored**, as before. |
-
-Rationale for excluding the two large documents: no build, test, lint,
-typecheck or content-generation step reads them. The only references to
-`COMPANY CONTEXT.pdf` in code are denylist string literals in
-`scripts/check-public-content.mjs` and `scripts/content-leak.test.ts`, which
-assert the filename never appears in generated public content. Their extracted
-derivatives and provenance metadata are already committed under
-`context/assets/`. They remain available locally and must be preserved in an
-external archive — they are not recoverable from the Git remote.
-
-`.gitattributes` retains `*.pdf filter=lfs diff=lfs merge=lfs -text`, so any
-PDF that is committed in future is stored in Git LFS automatically.
-
-## Superseded: the site is now a pure static website
-
-The backend was removed. There is no API, database, authentication or `/walter/`
-management area, so the source-control questions about server code, migrations
-and secrets no longer apply.
-
-What this repository tracks:
-
-- `apps/web/` — the whole application
+- `apps/web/` — the entire application
 - `context/canonical/` — the developer-managed content source of truth
-- `apps/web/public/media/` — the 21 curated company photographs and the logo derivatives
-- `project/`, `scripts/`, `render.yaml`, `package-lock.json`
+- `apps/web/public/media/brand/` — logo derivatives
+- `apps/web/public/media/company/` — the 21 curated company photographs
+- `context/extracted/`, `context/reference/` — original evidence and recorded
+  layout specifications, kept immutable
+- `project/`, `scripts/`, `render.yaml`, `package.json`, `package-lock.json`
+- `apps/web/src/generated/public-content.{ts,json}` — generated, but committed,
+  because the build verifies the committed snapshot matches the canonical input
 
-What stays out:
+## Never tracked
 
-- **No PDF.** The original ATS profile documents are archived outside the workspace.
+- **Any PDF.** The original ATS profile documents are archived outside the
+  workspace. `git ls-files "*.pdf"` must stay empty.
 - `compan images/` — the raw set of 86 source photographs. Only the 21 curated,
-  committed copies under `apps/web/public/media/company/` are used or validated.
-- Build output (`apps/web/out/`, `.next/`), `node_modules/`, diagnostic
-  screenshots, and any `.env` file.
+  committed copies are used or validated.
+- `node_modules/`, `apps/web/.next/`, `apps/web/out/`, `.tmp-web-build/`
+- Diagnostic screenshots under `project/visual-checks/*/` (the `measurements.json`
+  files beside them are kept)
+- Private extraction and preview artefacts: `context/assets/_raw_extract/`,
+  `context/assets/previews/`, `context/reference/screenshots/` and the
+  `context/reference/_*.json` capture dumps
+- `.env` and `.env.*` files. There is no `.env.example`, because the site reads
+  no environment variable at all.
+- Agent instruction files (`AGENTS.md`, `CLAUDE.md`) regenerated by tooling
 
-There are no secrets to protect any more: the site reads no environment
-variable at build or run time.
+## Generated content must be committed in step
+
+`npm run content:check` regenerates the public snapshot in memory and compares
+it with the committed one. Commit a canonical edit and its regenerated snapshot
+together, or the build fails.
+
+## Publishing
+
+Edit → `npm run content:generate` → `npm run verify` → commit → push to `main`.
+Render rebuilds the static site. There is nothing else to configure.

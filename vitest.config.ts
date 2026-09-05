@@ -4,8 +4,11 @@ export default defineConfig({
   resolve: {
     preserveSymlinks: true,
   },
-  esbuild: {
-    jsx: "automatic",
+  // Vitest 4 / Vite 8 transform with oxc, not esbuild. apps/web/tsconfig.json sets
+  // jsx: "preserve" for Next.js, so the JSX runtime must be set explicitly here or
+  // .tsx test files fail to parse.
+  oxc: {
+    jsx: { runtime: "automatic" },
   },
   test: {
     environment: "node",

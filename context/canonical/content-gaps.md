@@ -24,13 +24,15 @@ Questions already provisionally resolved in `editorial-decisions.md` are **not**
 9. **Footer legal-name treatment:** Uganda only, or Uganda plus Tanzania branch name.
 10. **Ochan Tony current role** if the public About page lists directors.
 
-## Required before backend implementation
+## Resolved: there is no backend
 
-1. Owner email(s) for Neon Auth / `/walter` access (Walter remains unpublished).
-2. Confirmation that inquiry notifications should use Resend to `activetechnicalservices@gmail.com` or a different inbox.
-3. Cloudflare R2 bucket split: public project media vs private inquiry attachments.
-4. Render deploy-hook URL handling (server-side only; not needed as public content).
-5. Whether draft/preview hosts are required besides the static public site.
+The questions previously listed here concerned Neon Auth, `/walter` access,
+Resend notification inboxes, Cloudflare R2 bucket splits, Render deploy-hook
+handling and draft/preview hosts. None of them apply any more.
+
+The website is a pure static export with no API, database, authentication,
+file storage, email backend or deploy hook. Enquiries reach ATS directly by
+WhatsApp, telephone and email. Nothing needs to be supplied to deploy it.
 
 ## Helpful but optional
 
@@ -61,12 +63,13 @@ Pending additional user content:
 - Any retail SKUs (if they exist at all)
 - Public price list (if any)
 - Currency display besides the provisional default `UGX`
-- `/walter/pricing` seed rows (canonical pricing remains an empty array)
 
-Until then the public model is **quote / inquiry only**.
+Until then the public model is **quote only**, and no price is published.
 
 ## Maps and social profiles
 
-- No map coordinates in the sources.
+- No map coordinates appear in the source documents. The Tanzania branch map on
+  the contact page uses coordinates supplied directly by the owner, and is
+  labelled as the branch location, never as a headquarters.
 - No Facebook, LinkedIn, X, Instagram, YouTube or website URLs in the four source files.
 - Both remain `null` in site settings until supplied.

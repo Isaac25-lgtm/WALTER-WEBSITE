@@ -261,8 +261,8 @@ generated and is not committed.
 | Publish directory | `apps/web/out` |
 | Environment variables | `NODE_VERSION` only |
 
-There is no `sync: false` value anywhere, so **applying the Blueprint asks for
-nothing**. No secrets, no database, no health check, no start command.
+No value is left for the operator to supply, so **applying the Blueprint asks
+for nothing**. No secrets, no database, no health check, no start command.
 
 **First deployment:** in Render choose **New → Blueprint**, select this
 repository, and deploy.

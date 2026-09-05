@@ -14,8 +14,8 @@ One Render Static Site. Nothing else.
 | Publish directory | `apps/web/out` |
 | Environment variables | `NODE_VERSION` only |
 
-There is no `sync: false` value anywhere, so applying the Blueprint asks for no
-input. There is no start command, no health check and no plan line, because a
+No value is left for the operator to supply, so applying the Blueprint asks for
+no input. There is no start command, no health check and no plan line, because a
 static site needs none of them.
 
 `next build` is invoked directly. `scripts/build-web.mjs` is a Windows-only

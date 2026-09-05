@@ -21,32 +21,6 @@ function runNpm(args, cwd = root) {
   });
 }
 
-function relativePosix(from, to) {
-  return path.relative(from, to).replaceAll("\\", "/");
-}
-
-function isVisualRoutePath(relative) {
-  return (
-    relative === "walter-visual" ||
-    relative.startsWith("walter-visual/") ||
-    relative.includes("/walter-visual/") ||
-    relative.endsWith("/walter-visual")
-  );
-}
-
-function removeVisualRoute(dir) {
-  if (!fs.existsSync(dir)) return;
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    const full = path.join(dir, entry.name);
-    const relative = relativePosix(outDir, full);
-    if (isVisualRoutePath(relative)) {
-      fs.rmSync(full, { recursive: true, force: true });
-      continue;
-    }
-    if (entry.isDirectory()) removeVisualRoute(full);
-  }
-}
-
 function copyOut(fromDir) {
   const from = path.join(fromDir, "out");
   if (!fs.existsSync(from)) {
@@ -54,7 +28,6 @@ function copyOut(fromDir) {
   }
   fs.mkdirSync(outDir, { recursive: true });
   fs.cpSync(from, outDir, { recursive: true, force: true });
-  removeVisualRoute(outDir);
 }
 
 const nextCache = path.join(webDir, ".next");

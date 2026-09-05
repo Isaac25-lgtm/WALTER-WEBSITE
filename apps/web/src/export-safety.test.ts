@@ -182,3 +182,145 @@ describe("public source and export safety", () => {
     });
   });
 });
+
+/**
+ * The retired backend must not come back by accident.
+ *
+ * Scope note: guard code and history legitimately name what they forbid, so
+ * project/PROGRESS.md, context/extracted/ and context/reference/ are excluded,
+ * and test files are excluded from the source scan.
+ */
+describe("retired backend stays retired", () => {
+  const scriptsDir = path.join(root, "scripts");
+
+  it("has deleted the unused backend-era URL helper", () => {
+    expect(existsSync(path.join(webDir, "src", "lib", "public-url.ts"))).toBe(false);
+  });
+
+  it("has deleted the obsolete visual evidence for the retired backend", () => {
+    for (let n = 8; n <= 18; n += 1) {
+      const dir = path.join(root, "project", "visual-checks", `prompt-${String(n).padStart(2, "0")}`);
+      expect(existsSync(dir), `${dir} should not exist`).toBe(false);
+    }
+  });
+
+  it("keeps the current visual evidence", () => {
+    for (const keep of [
+      path.join(root, "project", "visual-checks", "prompt-06"),
+      path.join(root, "project", "visual-checks", "prompt-07"),
+      path.join(root, "project", "visual-checks", "static-site", "measurements.json"),
+      path.join(root, "project", "visual-checks", "company-media", "measurements.json"),
+    ]) {
+      expect(existsSync(keep), `${keep} must be kept`).toBe(true);
+    }
+  });
+
+  it("keeps retired identifiers out of application source", () => {
+    const banned = [
+      "parsePublicApiOrigin",
+      "parseNeonAuthBaseUrl",
+      "walter-visual",
+      "NEXT_PUBLIC_API_BASE_URL",
+      "NEXT_PUBLIC_NEON_AUTH_BASE_URL",
+      "DATABASE_URL",
+      "apps/api",
+      "fastify",
+      "Fastify",
+      "drizzle",
+      "Drizzle",
+      "@neondatabase",
+      "Neon Auth",
+      "management/session",
+      "/walter",
+      "R2_SECRET_ACCESS_KEY",
+      "RESEND_API_KEY",
+      "STATIC_SITE_DEPLOY_HOOK_URL",
+    ];
+    expect(sourceFiles.length).toBeGreaterThan(5);
+    for (const file of sourceFiles) {
+      const text = readFileSync(file, "utf8");
+      for (const needle of banned) {
+        expect(text, `${file} reintroduces ${needle}`).not.toContain(needle);
+      }
+    }
+  });
+
+  it("keeps retired dependencies and secrets out of active scripts", () => {
+    // Content guards legitimately list "/walter" and "Walter" as forbidden
+    // tokens, so this tier bans wiring markers rather than bare mentions.
+    const banned = [
+      "parsePublicApiOrigin",
+      "parseNeonAuthBaseUrl",
+      "walter-visual",
+      "NEXT_PUBLIC_API_BASE_URL",
+      "NEXT_PUBLIC_NEON_AUTH_BASE_URL",
+      "DATABASE_URL",
+      "apps/api",
+      "fastify",
+      "drizzle",
+      "@neondatabase",
+      "management/session",
+      "R2_SECRET_ACCESS_KEY",
+      "RESEND_API_KEY",
+      "STATIC_SITE_DEPLOY_HOOK_URL",
+    ];
+    const scripts = collectFiles(scriptsDir, new Set([".mjs", ".js", ".py"]));
+    expect(scripts.length).toBeGreaterThan(3);
+    for (const file of scripts) {
+      const text = readFileSync(file, "utf8");
+      for (const needle of banned) {
+        expect(text, `${file} reintroduces ${needle}`).not.toContain(needle);
+      }
+    }
+  });
+
+  it("keeps backend build and database commands out of current architecture docs", () => {
+    // Prose may say a thing was removed; these are operational instructions
+    // that only exist if the backend is presented as active again.
+    const docs = [
+      path.join(root, "README.md"),
+      path.join(root, "scripts", "README.md"),
+      path.join(root, "project", "ARCHITECTURE.md"),
+      path.join(root, "project", "DEPLOYMENT-PLAN.md"),
+      path.join(root, "project", "LOCAL-DEVELOPMENT.md"),
+      path.join(root, "project", "DECISIONS.md"),
+      path.join(root, "project", "SOURCE-CONTROL-POLICY.md"),
+      path.join(root, "context", "canonical", "content-model.md"),
+      path.join(root, "context", "canonical", "content-gaps.md"),
+      path.join(root, "context", "canonical", "editorial-decisions.md"),
+    ];
+    const banned = [
+      "run dev:api",
+      "run build:api",
+      "run db:migrate",
+      "run db:generate",
+      "run db:check",
+      "drizzle-kit",
+      "apps/api/dist",
+      "sync: false",
+      "walter-visual",
+      "parsePublicApiOrigin",
+      "parseNeonAuthBaseUrl",
+    ];
+    for (const file of docs) {
+      expect(existsSync(file), `${file} must exist`).toBe(true);
+      const text = readFileSync(file, "utf8");
+      for (const needle of banned) {
+        expect(text, `${file} presents ${needle} as current`).not.toContain(needle);
+      }
+    }
+  });
+
+  it("declares exactly one static Render service with no operator-supplied value", () => {
+    const blueprint = readFileSync(path.join(root, "render.yaml"), "utf8");
+    expect(blueprint.match(/^\s*- type: /gm) ?? []).toHaveLength(1);
+    expect(blueprint).toContain("name: ats-public-web");
+    expect(blueprint).toContain("runtime: static");
+    expect(blueprint).toContain("staticPublishPath: apps/web/out");
+    for (const needle of ["runtime: node", "startCommand", "healthCheckPath", "plan:", "sync: false", "ats-api"]) {
+      expect(blueprint, `render.yaml still declares ${needle}`).not.toContain(needle);
+    }
+    const keys = (blueprint.match(/^\s*- key: (.+)$/gm) ?? []).map((line) => line.split("key:")[1]?.trim());
+    expect(keys).toEqual(["NODE_VERSION"]);
+  });
+});
